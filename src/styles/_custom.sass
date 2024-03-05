@@ -2,13 +2,18 @@
   &-1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 40%
-    right: 50%
+    left: 7%
+    bottom: 15%
   &-2
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
+    top: 12%
+    left: 30%
+  &-3
+    animation: float1 3s ease-in-out infinite alternate
+    position: absolute
+    top: 15%
+    right: 10%
 
 
 @keyframes float1
@@ -17,3 +22,80 @@
 
   100%
     transform: translateY(0px)
+
+.banner-principal .tarjeta
+  @media screen and (max-width: 768px)
+    background-position: inherit
+  @media screen and (max-width: 576px)
+    background-position: center
+    background-image: url(../assets/curso/portada/fondo-banner-principal-movil.png) !important
+
+.banner-interno
+  height: 160px
+  .banner-interno__fondo
+    background-image: url(../assets/curso/fondo_tema.png) !important
+
+.bloque-texto-b.bloque-texto-defecto
+  &:before
+    left: 15%
+    opacity: 0.2
+
+.cont-titulo-decorativo
+  position: relative
+  max-width: max-content
+  figure
+    width: 40px
+    position: relative
+  h3
+    position: relative
+  &:before
+    content: ""
+    position: absolute
+    left: 0
+    bottom: 0
+    right: 0
+    top: 16px
+    background-color: $color-adicional-3
+    border-radius: 6px
+    z-index: 0
+
+// estilos componente
+
+.cont_1_1
+  position: relative
+  *
+    position: relative
+  &:before
+    border-radius: 8px
+    content: ""
+    position: absolute
+    top: 0
+    left: -10%
+    right: 0
+    bottom: 0
+    background-color: white
+    z-index: 0
+    @media screen and (max-width: 992px)
+      left: 0
+
+.figura-deco-1
+  z-index: 1
+  bottom: 35px
+  @media screen and (max-width: $bp-max-xl)
+      bottom: 20px
+
+// colores de fondo
+.fondo-color-sistema-i
+  background-color: $color-sistema-i !important
+.fondo-color-sistema-j
+  background-color: $color-sistema-j !important
+.fondo-color-sistema-h
+  background-color: $color-sistema-h !important
+
+//bordes
+.borde-8
+  border-radius: 8px !important
+.borde-20
+  border-radius: 20px !important
+.borde-16
+  border-radius: 16px !important
