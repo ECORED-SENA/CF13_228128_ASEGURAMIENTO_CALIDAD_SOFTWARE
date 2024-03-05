@@ -91,6 +91,21 @@
 
     p.mb-4 Generalmente, se llevan a cabo durante la fase de desarrollo de las aplicaciones o software. Esta tarea es ejecutada por los programadores, aunque los aseguradores de calidad también pueden participar en su realización. Las razones para desarrollar este tipo de pruebas incluyen:
 
+    .row.justify-content-center
+      .col-lg-8
+        .row 
+          .col-lg-2
+            figure.mb-4.mb-lg-0
+              img.mx-auto(src="@/assets/curso/temas/9.svg",style="max-width: 141px;")
+          .col-lg-10
+            ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
+              li
+                i.fas.fa-circle
+                span #[b Sistema operativo:] Microsoft Windows XP Professional de 32/64 bits.
+              li 
+                i.fas.fa-circle
+                span #[b Procesador:] Intel Core 2 Duo 2 GHz o superior.
+              li
 
     
 
