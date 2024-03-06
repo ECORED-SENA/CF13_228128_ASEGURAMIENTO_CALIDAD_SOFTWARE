@@ -40,6 +40,16 @@
     left: 15%
     opacity: 0.2
 
+.tabs-b__tab
+  background-color: $color-sistema-l !important
+  border-bottom: none
+  &--active
+    background-color: $color-sistema-k !important
+
+.slyder-f
+  .slyder-f__btn
+    color: $color-acento-botones
+
 .cont-titulo-decorativo
   position: relative
   max-width: max-content
@@ -58,6 +68,18 @@
     background-color: $color-adicional-3
     border-radius: 6px
     z-index: 0
+
+.acordion__accion__btn--a
+  background-color: $color-acento-botones !important
+
+
+.contenedor-cuerpo-acordion-a
+  padding-left: 55px !important
+  @media screen and (max-width: $bp-max-md)
+    padding-left: 0 !important
+
+
+
 
 // estilos componente
 
@@ -89,8 +111,55 @@
   background-color: $color-sistema-i !important
 .fondo-color-sistema-j
   background-color: $color-sistema-j !important
-.fondo-color-sistema-h
-  background-color: $color-sistema-h !important
+.fondo-color-sistema-k
+  background-color: $color-sistema-k !important
+.fondo-color-sistema-l
+  background-color: $color-sistema-l !important
+.fondo-color-sistema-g
+  background-color: $color-sistema-g !important
+.fondo-color-sistema-m
+  background-color: $color-sistema-m !important
+
+//fondos gradientes
+.fondo-gradiente-1
+  position: relative
+  *
+    position: relative
+  &:before
+    content: ""
+    background: url(../assets/curso/temas/10.png)
+    background-size: cover
+    background-position: top
+    background-repeat: no-repeat
+    position: absolute
+    width: 120%
+    left: -10%
+    top: 0
+    bottom: 0
+    z-index: 0
+  &.posicion-1
+    &:before
+      top: 0
+      bottom: 150px
+
+//fondos flotantes
+.fondo-float-1
+  position: relative
+  *
+    position: relative
+  &:before
+    content: ""
+    background: $color-primario
+    opacity: 0.2
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    z-index: 0
+  &.posicion-1
+    &:before
+      left: 15%
 
 //bordes
 .borde-8
@@ -99,6 +168,10 @@
   border-radius: 20px !important
 .borde-16
   border-radius: 16px !important
+.borde-13
+  border-radius: 13px !important
+.no-border-radius
+  border-radius: 0 !important
 
 //listas
 .lista-tipo-1
@@ -106,5 +179,12 @@
     display: flex !important
     margin-bottom: 0 !important
   i.fas.fa-circle
-    font-size: 0.5em
+    font-size: 0.4em
     margin-top: 3px
+  i.far.fa-check-square
+    color: $color-secundario !important
+  span.dec-lista
+    font-weight: bold
+    color: $color-secundario !important
+
+
