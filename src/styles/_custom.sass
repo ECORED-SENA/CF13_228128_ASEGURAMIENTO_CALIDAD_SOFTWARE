@@ -106,6 +106,38 @@
   @media screen and (max-width: $bp-max-xl)
       bottom: 20px
 
+.tarjeta-personalizada-1
+  position: relative
+  p
+    position: relative
+  &:before
+    content: ""
+    position: absolute
+    top: 50px
+    left: 0
+    right: 0
+    bottom: 0
+    border-radius: 12px
+  &--color-1
+    &:before
+      background-color: #9DF9F3
+  &--color-2
+    &:before
+      background-color: #C4DAF8
+
+
+.figura-flecha
+  position: relative
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  &__titulo
+    position: absolute
+  &__fig
+    img
+      pointer-events: none
+      user-select: none
+
 // colores de fondo
 .fondo-color-sistema-i
   background-color: $color-sistema-i !important
@@ -119,6 +151,8 @@
   background-color: $color-sistema-g !important
 .fondo-color-sistema-m
   background-color: $color-sistema-m !important
+.fondo-color-sistema-n
+  background-color: $color-sistema-n !important
 
 //fondos gradientes
 .fondo-gradiente-1
@@ -141,6 +175,25 @@
     &:before
       top: 0
       bottom: 150px
+.fondo-gradiente-2
+  position: relative
+  *
+    position: relative
+  &:before
+    content: ""
+    background: url(../assets/curso/temas/33.png)
+    background-size: cover
+    background-position: top
+    background-repeat: no-repeat
+    position: absolute
+    width: 120%
+    left: -10%
+    top: 0
+    bottom: 0
+    z-index: 0
+  &.posicion-1
+    &:before
+      top: 80px
 
 //fondos flotantes
 .fondo-float-1

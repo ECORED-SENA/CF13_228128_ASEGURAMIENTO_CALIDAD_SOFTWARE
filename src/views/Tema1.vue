@@ -196,166 +196,166 @@
             img(src="@/assets/curso/temas/4.svg")
         .col.align-self-end
           h3.mt-3.mb-0.me-2 Pruebas de integración
+    .fondo-gradiente-2.posicion-1
+      .row.align-items-center.mb-5
+        .col-lg-4
+          figure.mb-4.mb-lg-0
+            img.mx-auto(src="@/assets/curso/temas/16.png",style="max-width: 400px;")
+        .col-lg-8
+          p.mb-4 Estas pruebas se centran en validar distintos módulos o componentes de un producto de #[em software] de tal forma que se verifique su funcionamiento como grupo funcional. Productos como aplicaciones de #[em software], sistemas de información o aplicaciones web están compuestos por diversos componentes, módulos y submódulos distribuidos en distintos niveles y capas, que colaboran y se coordinan para habilitar diferentes funcionalidades.
 
-    .row.align-items-center.mb-5
-      .col-lg-4
-        figure.mb-4.mb-lg-0
-          img.mx-auto(src="@/assets/curso/temas/16.png",style="max-width: 400px;")
-      .col-lg-8
-        p.mb-4 Estas pruebas se centran en validar distintos módulos o componentes de un producto de #[em software] de tal forma que se verifique su funcionamiento como grupo funcional. Productos como aplicaciones de #[em software], sistemas de información o aplicaciones web están compuestos por diversos componentes, módulos y submódulos distribuidos en distintos niveles y capas, que colaboran y se coordinan para habilitar diferentes funcionalidades.
-
-        .p-3.fondo-float-1.posicion-1.mb-4
-          p.mb-0 #[b El objetivo de estas pruebas es asegurar que la integración entre estos componentes sea adecuada y detectar posibles problemas o errores relacionados con la sinergia y comunicación entre ellos.]
-        
-        .p-4.fondo-color-sistema-j.borde-16
-          .row.align-items-center
-            .col-md-2
-              figure.mb-4.mb-md-0
-                img.mx-auto(src="@/assets/curso/temas/17.svg",style="max-width: 70px;")
-            .col-md-10
-              p.mb-0 #[b Según Mera  (2016) #[em “Las pruebas de integración se encargan de probar las interfaces entre los componentes o módulos; por ejemplo, el componente validación de usuario con el sistema operativo, el sistema de archivos en integración con el hardware”]]
-
-    p.mb-4 De acuerdo con lo anterior, es importante tener en cuenta los siguientes objetos típicos de prueba:
-
-    .row.justify-content-center.mb-4
-      .col-lg-8
-        .fondo-color-sistema-k.p-4.borde-20
-          .row.align-items-center
-            .col-lg-3.col-md-3
-              figure.mb-4.mb-lg-0
-                img.mx-auto(src="@/assets/curso/temas/15.png",style="max-width: 115px;")
-            .col-lg-9.col-md-9
-              ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
-                li
-                  i.far.fa-check-square
-                  span Bases de datos de subsistemas
-                li
-                  i.far.fa-check-square
-                  span Datos de configuración
-                li
-                  i.far.fa-check-square
-                  span Configuración del sistema
-                li
-                  i.far.fa-check-square
-                  span Infraestructura
-                li
-                  i.far.fa-check-square
-                  span Interfaces
-
-    .cont-titulo-decorativo.p-2.mt-5.mb-4
-      .row
-        .col-auto.pe-0
-          figure
-            img(src="@/assets/curso/temas/4.svg")
-        .col.align-self-end
-          h3.mt-3.mb-0.me-2 Pruebas no funcionales
-    
-    p.mb-4 Estas pruebas, similares a las pruebas funcionales, se diferencian en que se realizan bajo condiciones de carga de rendimiento para evaluar aspectos como #[b la fiabilidad, usabilidad, escalabilidad, instalación, confiabilidad y seguridad del software]. Generalmente, se llevan a cabo mediante herramientas o soluciones automatizadas.
-
-    .row.justify-content-center.mb-5
-      .col-lg-8
-        .fondo-color-sistema-j.borde-16.p-3.ps-5
-          p.ms-md-5.mb-0 #[b #[em Según Mera (2016) en este tipo de pruebas se comprueban los requisitos basados en la operación de un software. Para verificar la carga que resiste el producto software, identificando si su rendimiento es el adecuado o si es estable a nivel de contacto con el servidor.]]
-    
-    p.mb-5 Algunos aspectos, como el rendimiento de una aplicación, pueden ser complejos; sin embargo, esta prueba permite evaluar la calidad del #[em software] a probar. La calidad se basa principalmente en factores como el tiempo, la precisión, la estabilidad, la corrección y la durabilidad del producto bajo diversas circunstancias adversas. A partir de estos criterios de calidad, es posible explorar distintos tipos de pruebas no funcionales, tales como:
-
-    SlyderF.estilo-slyder(columnas="col-lg-6 col-xl-4")
-      .tarjeta.color-secundario.p-4
-        figure.mb-4
-          img.mx-auto(src="@/assets/curso/temas/18.svg",style="max-width: 124px;")
-        p.mb-4 #[b Pruebas de carga]
-        p.mb-0 Simulan la demanda esperada que puede tener una aplicación y mide el resultado.
-      .tarjeta.color-secundario.p-4
-        figure.mb-4
-          img.mx-auto(src="@/assets/curso/temas/19.svg",style="max-width: 124px;")
-        p.mb-4 #[b Pruebas de rendimiento]
-        p.mb-0 Se calcula la respuesta del programa con diferentes medidas de peticiones del usuario.
-      .tarjeta.color-secundario.p-4
-        figure.mb-4
-          img.mx-auto(src="@/assets/curso/temas/20.svg",style="max-width: 124px;")
-        p.mb-4 #[b Pruebas de estrés]
-        p.mb-0 Nos permite saber cuántos usuarios o peticiones puede soportar el programa, con esta prueba determinamos si el sistema es estable. 
-      .tarjeta.color-secundario.p-4
-        figure.mb-4
-          img.mx-auto(src="@/assets/curso/temas/21.svg",style="max-width: 124px;")
-        p.mb-4 #[b Pruebas de volumen]
-        p.mb-0 Consiste en probar el funcionamiento del programa con ciertos volúmenes de datos.
-      .tarjeta.color-secundario.p-4
-        figure.mb-4
-          img.mx-auto(src="@/assets/curso/temas/22.svg",style="max-width: 124px;")
-        p.mb-4 #[b Pruebas de usabilidad]
-        p.mb-0 Se centran en validar que tan fácil se utiliza el programa en cuanto a facilidad de aprendizaje, eficiencia, memorización, errores y satisfacción.
-      .tarjeta.color-secundario.p-4
-        figure.mb-4
-          img.mx-auto(src="@/assets/curso/temas/23.svg",style="max-width: 124px;")
-        p.mb-4 #[b Pruebas de robustez]
-        p.mb-0 Son las encargadas de verificar la capacidad del programa para soportar entradas o instrucciones incorrectas. Una de sus características principales es implementar mecanismos de software de detección de errores en el hardware.
-
-    .cont-titulo-decorativo.p-2.mt-5.mb-4
-      .row
-        .col-auto.pe-0
-          figure
-            img(src="@/assets/curso/temas/4.svg")
-        .col.align-self-end
-          h3.mt-3.mb-0.me-2 Pruebas de rendimiento
-
-    .row.align-items-center.mb-4
-      .col-lg-8
-        p.mb-4 Las pruebas de rendimiento son un tipo de pruebas no funcionales realizadas con el propósito de determinar la estabilidad, escalabilidad y velocidad de una funcionalidad específica en el producto de #[em software]. El objetivo de estas pruebas es evaluar el comportamiento de la aplicación considerando diferentes parámetros de referencia del sistema y de la red, como #[b la capacidad de la CPU, la velocidad de renderizado o carga de páginas, el manejo del tráfico, la concurrencia, el consumo de recursos del servidor], entre otros. Dentro de esta categoría, podemos distinguir las pruebas de carga y las pruebas de estrés.
-
-        .p-3.fondo-color-sistema-j.borde-16
-          .row.align-items-center
-            .col-md-2
-              figure.mb-4.mb-md-0
-                img.mx-auto(src="@/assets/curso/temas/24.svg",style="max-width: 61px;")
-            .col-md-10
-              p.mb-0 #[b #[em Según IBM (2021) estas pruebas sirven para evaluar lo rápido que el programa realiza una tarea en condiciones específicas de trabajo, también evalúa la escalabilidad, fiabilidad y uso de los recursos.]]
-
-      .col-lg-4.order-first.order-lg-last
-        figure.mb-4.mb-lg-0
-          img.mx-auto(src="@/assets/curso/temas/25.png",style="max-width: 400px;")
-
-    p.mb-4 El mismo autor expresa que los objetivos de estas pruebas son:
-
-    .tarjeta--container.row.mb-5
-      .col-md.tarjeta.fondo-color-sistema-k.p-5
-        .row.justify-content-center.mb-4
-          .col-6
-            figure
-              img.mx-auto(src='@/assets/curso/temas/26.svg',style="max-width: 142px;")
-        
-        h3.text-center Identificar y localizar problemas de rendimiento.
-        p Es permitir encontrar un fallo en el rendimiento, y también ayudar a localizar en que parte está ese problema para poder solucionarlo.
-      .col-md.tarjeta.fondo-color-sistema-m.p-5
-        .row.justify-content-center.mb-4
-          .col-6
-            figure
-              img.mx-auto(src='@/assets/curso/temas/27.svg',style="max-width: 142px;")
+          .p-3.fondo-float-1.posicion-1.mb-4
+            p.mb-0 #[b El objetivo de estas pruebas es asegurar que la integración entre estos componentes sea adecuada y detectar posibles problemas o errores relacionados con la sinergia y comunicación entre ellos.]
           
-        h3.text-center Verificar el cumplimiento de los SLA (Acuerdos de Nivel de Servicio).
+          .p-4.fondo-color-sistema-j.borde-16
+            .row.align-items-center
+              .col-md-2
+                figure.mb-4.mb-md-0
+                  img.mx-auto(src="@/assets/curso/temas/17.svg",style="max-width: 70px;")
+              .col-md-10
+                p.mb-0 #[b Según Mera  (2016) #[em “Las pruebas de integración se encargan de probar las interfaces entre los componentes o módulos; por ejemplo, el componente validación de usuario con el sistema operativo, el sistema de archivos en integración con el hardware”]]
 
-        p Se utiliza para medir los tiempos de respuesta del #[em software] en condiciones y tiempos específicos.
-      .col-md.tarjeta.fondo-color-sistema-k.p-5
-        .row.justify-content-center.mb-4
-          .col-6
+      p.mb-4 De acuerdo con lo anterior, es importante tener en cuenta los siguientes objetos típicos de prueba:
+
+      .row.justify-content-center.mb-4
+        .col-lg-8
+          .fondo-color-sistema-k.p-4.borde-20
+            .row.align-items-center
+              .col-lg-3.col-md-3
+                figure.mb-4.mb-lg-0
+                  img.mx-auto(src="@/assets/curso/temas/15.png",style="max-width: 115px;")
+              .col-lg-9.col-md-9
+                ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
+                  li
+                    i.far.fa-check-square
+                    span Bases de datos de subsistemas
+                  li
+                    i.far.fa-check-square
+                    span Datos de configuración
+                  li
+                    i.far.fa-check-square
+                    span Configuración del sistema
+                  li
+                    i.far.fa-check-square
+                    span Infraestructura
+                  li
+                    i.far.fa-check-square
+                    span Interfaces
+
+      .cont-titulo-decorativo.p-2.mt-5.mb-4
+        .row
+          .col-auto.pe-0
             figure
-              img.mx-auto(src='@/assets/curso/temas/28.svg',style="max-width: 142px;")
+              img(src="@/assets/curso/temas/4.svg")
+          .col.align-self-end
+            h3.mt-3.mb-0.me-2 Pruebas no funcionales
+      
+      p.mb-4 Estas pruebas, similares a las pruebas funcionales, se diferencian en que se realizan bajo condiciones de carga de rendimiento para evaluar aspectos como #[b la fiabilidad, usabilidad, escalabilidad, instalación, confiabilidad y seguridad del software]. Generalmente, se llevan a cabo mediante herramientas o soluciones automatizadas.
+
+      .row.justify-content-center.mb-5
+        .col-lg-8
+          .fondo-color-sistema-j.borde-16.p-3.ps-5
+            p.ms-md-5.mb-0 #[b #[em Según Mera (2016) en este tipo de pruebas se comprueban los requisitos basados en la operación de un software. Para verificar la carga que resiste el producto software, identificando si su rendimiento es el adecuado o si es estable a nivel de contacto con el servidor.]]
+      
+      p.mb-5 Algunos aspectos, como el rendimiento de una aplicación, pueden ser complejos; sin embargo, esta prueba permite evaluar la calidad del #[em software] a probar. La calidad se basa principalmente en factores como el tiempo, la precisión, la estabilidad, la corrección y la durabilidad del producto bajo diversas circunstancias adversas. A partir de estos criterios de calidad, es posible explorar distintos tipos de pruebas no funcionales, tales como:
+
+      SlyderF.estilo-slyder(columnas="col-lg-6 col-xl-4")
+        .tarjeta.color-secundario.p-4
+          figure.mb-4
+            img.mx-auto(src="@/assets/curso/temas/18.svg",style="max-width: 124px;")
+          p.mb-4 #[b Pruebas de carga]
+          p.mb-0 Simulan la demanda esperada que puede tener una aplicación y mide el resultado.
+        .tarjeta.color-secundario.p-4
+          figure.mb-4
+            img.mx-auto(src="@/assets/curso/temas/19.svg",style="max-width: 124px;")
+          p.mb-4 #[b Pruebas de rendimiento]
+          p.mb-0 Se calcula la respuesta del programa con diferentes medidas de peticiones del usuario.
+        .tarjeta.color-secundario.p-4
+          figure.mb-4
+            img.mx-auto(src="@/assets/curso/temas/20.svg",style="max-width: 124px;")
+          p.mb-4 #[b Pruebas de estrés]
+          p.mb-0 Nos permite saber cuántos usuarios o peticiones puede soportar el programa, con esta prueba determinamos si el sistema es estable. 
+        .tarjeta.color-secundario.p-4
+          figure.mb-4
+            img.mx-auto(src="@/assets/curso/temas/21.svg",style="max-width: 124px;")
+          p.mb-4 #[b Pruebas de volumen]
+          p.mb-0 Consiste en probar el funcionamiento del programa con ciertos volúmenes de datos.
+        .tarjeta.color-secundario.p-4
+          figure.mb-4
+            img.mx-auto(src="@/assets/curso/temas/22.svg",style="max-width: 124px;")
+          p.mb-4 #[b Pruebas de usabilidad]
+          p.mb-0 Se centran en validar que tan fácil se utiliza el programa en cuanto a facilidad de aprendizaje, eficiencia, memorización, errores y satisfacción.
+        .tarjeta.color-secundario.p-4
+          figure.mb-4
+            img.mx-auto(src="@/assets/curso/temas/23.svg",style="max-width: 124px;")
+          p.mb-4 #[b Pruebas de robustez]
+          p.mb-0 Son las encargadas de verificar la capacidad del programa para soportar entradas o instrucciones incorrectas. Una de sus características principales es implementar mecanismos de software de detección de errores en el hardware.
+
+      .cont-titulo-decorativo.p-2.mt-5.mb-4
+        .row
+          .col-auto.pe-0
+            figure
+              img(src="@/assets/curso/temas/4.svg")
+          .col.align-self-end
+            h3.mt-3.mb-0.me-2 Pruebas de rendimiento
+
+      .row.align-items-center.mb-4
+        .col-lg-8
+          p.mb-4 Las pruebas de rendimiento son un tipo de pruebas no funcionales realizadas con el propósito de determinar la estabilidad, escalabilidad y velocidad de una funcionalidad específica en el producto de #[em software]. El objetivo de estas pruebas es evaluar el comportamiento de la aplicación considerando diferentes parámetros de referencia del sistema y de la red, como #[b la capacidad de la CPU, la velocidad de renderizado o carga de páginas, el manejo del tráfico, la concurrencia, el consumo de recursos del servidor], entre otros. Dentro de esta categoría, podemos distinguir las pruebas de carga y las pruebas de estrés.
+
+          .p-3.fondo-color-sistema-j.borde-16
+            .row.align-items-center
+              .col-md-2
+                figure.mb-4.mb-md-0
+                  img.mx-auto(src="@/assets/curso/temas/24.svg",style="max-width: 61px;")
+              .col-md-10
+                p.mb-0 #[b #[em Según IBM (2021) estas pruebas sirven para evaluar lo rápido que el programa realiza una tarea en condiciones específicas de trabajo, también evalúa la escalabilidad, fiabilidad y uso de los recursos.]]
+
+        .col-lg-4.order-first.order-lg-last
+          figure.mb-4.mb-lg-0
+            img.mx-auto(src="@/assets/curso/temas/25.png",style="max-width: 400px;")
+
+      p.mb-4 El mismo autor expresa que los objetivos de estas pruebas son:
+
+      .tarjeta--container.row.mb-5
+        .col-md.tarjeta.fondo-color-sistema-k.p-5
+          .row.justify-content-center.mb-4
+            .col-6
+              figure
+                img.mx-auto(src='@/assets/curso/temas/26.svg',style="max-width: 142px;")
           
-        h3.text-center Localizar cuellos de botella.
+          h3.text-center Identificar y localizar problemas de rendimiento.
+          p Es permitir encontrar un fallo en el rendimiento, y también ayudar a localizar en que parte está ese problema para poder solucionarlo.
+        .col-md.tarjeta.fondo-color-sistema-m.p-5
+          .row.justify-content-center.mb-4
+            .col-6
+              figure
+                img.mx-auto(src='@/assets/curso/temas/27.svg',style="max-width: 142px;")
+            
+          h3.text-center Verificar el cumplimiento de los SLA (Acuerdos de Nivel de Servicio).
 
-        p Ayudar a detallar en qué lugar se generan estos cuellos de botellas si se debe a problemas de hardware como CPU, memoria, o es el ancho de banda.
+          p Se utiliza para medir los tiempos de respuesta del #[em software] en condiciones y tiempos específicos.
+        .col-md.tarjeta.fondo-color-sistema-k.p-5
+          .row.justify-content-center.mb-4
+            .col-6
+              figure
+                img.mx-auto(src='@/assets/curso/temas/28.svg',style="max-width: 142px;")
+            
+          h3.text-center Localizar cuellos de botella.
 
-    .cont-titulo-decorativo.p-2.mt-5.mb-4
-      .row
-        .col-auto.pe-0
-          figure
-            img(src="@/assets/curso/temas/4.svg")
-        .col.align-self-end
-          h3.mt-3.mb-0.me-2 Ventajas y desventajas de los tipos de pruebas.
+          p Ayudar a detallar en qué lugar se generan estos cuellos de botellas si se debe a problemas de hardware como CPU, memoria, o es el ancho de banda.
+
+      .cont-titulo-decorativo.p-2.mt-5.mb-4
+        .row
+          .col-auto.pe-0
+            figure
+              img(src="@/assets/curso/temas/4.svg")
+          .col.align-self-end
+            h3.mt-3.mb-0.me-2 Ventajas y desventajas de los tipos de pruebas.
 
     p.mb-4 Aplicar los distintos tipos de pruebas puede asegurar que el #[em software] funcione conforme a lo esperado en todo momento, garantizando así su calidad. Por lo tanto, es esencial, para su aplicación, identificar las ventajas y desventajas de cada uno, con el fin de determinar las diferencias entre ellos. Podemos observar las ventajas de estos tipos de pruebas en el siguiente recurso.
 
-    AcordionA(tipo="a" clase-tarjeta="tarjeta no-border-radius tarjeta--azul")
+    AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta no-border-radius tarjeta--azul")
       .row.contenedor-cuerpo-acordion-a.align-items-center(titulo="Pruebas de rendimiento")
         .col-md-6.mb-4.mb-md-0
           ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
@@ -435,6 +435,61 @@
         .col-md-6
           figure
             img.mx-auto(src="@/assets/curso/temas/32.png",style="max-width: 400px;")
+
+    .cont-titulo-decorativo.p-2.mt-5.mb-5
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/temas/4.svg")
+        .col.align-self-end
+          h3.mt-3.mb-0.me-2 Desventajas de los tipos de pruebas
+
+    .row.align-items-center.justify-content-center.mb-5
+      .col-md-5.col-sm-6.col-lg-3
+        .mb-4.mb-lg-0.fondo-color-sistema-k.borde-8.p-2
+          figure
+            img.mx-auto(src="@/assets/curso/temas/34.svg",style="max-width: 94px;")
+      .col-lg-9
+        p.mb-0 Todos los tipos de pruebas mejoran la experiencia del usuario, las funcionalidades y garantizan la calidad del #[em software]. Esto significa que, más que desventajas, lo que encontramos son ventajas en su aplicación. Sin embargo, el tiempo y el costo asociados a la realización de pruebas de #[em software] podrían considerarse como desventajas. Llevar a cabo pruebas demanda recursos y esfuerzos, y existe el riesgo de obtener resultados inexactos. No obstante, omitir las pruebas en las aplicaciones podría acarrear problemas serios al producto.
+
+    .cont-titulo-decorativo.p-2.mt-5.mb-5
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/temas/4.svg")
+        .col.align-self-end
+          h3.mt-3.mb-0.me-2 Documentos de caso de pruebas
+
+    .row.align-items-center.justify-content-center.mb-5
+      .col-md-5.col-sm-6.col-lg-3.order-first.order-lg-last
+        .mb-4.mb-lg-0.fondo-color-sistema-k.borde-8.p-2
+          figure
+            img.mx-auto(src="@/assets/curso/temas/35.svg",style="max-width: 94px;")
+      .col-lg-9
+        p.mb-0 Los productos derivados del proceso de desarrollo de #[em software] son conocidos como artefactos; entre ellos se incluyen el código fuente, los defectos identificados, el plan de pruebas, los casos de prueba y los scripts de prueba. El aseguramiento de la calidad del #[em software] (SQA, por sus siglas en inglés) involucra artefactos específicos que se generan en las distintas fases del proceso de SQA, los cuales se detallan a continuación:
+
+    .row.justify-content-center
+      .col-lg-4.col-md-6.mb-4
+        .tarjeta-personalizada-1.tarjeta-personalizada-1--color-1.h-100
+          .figura-flecha.mb-4.me-4
+            h4.figura-flecha__titulo.mb-0 Planificación
+            figure.figura-flecha__fig
+              img.mx-auto(src="@/assets/curso/temas/36.png",style="max-width: 228px;")
+          p.px-3.pb-4 En esta etapa se realiza el plan de pruebas como documento que describe un enfoque sistemático para probar un sistema, así como el informe de resultados de pruebas que organiza y presenta un análisis resumido de los resultados de las pruebas para su auditoría y evaluación.
+      .col-lg-4.col-md-6.mb-4
+        .tarjeta-personalizada-1.tarjeta-personalizada-1--color-2.h-100
+          .figura-flecha.mb-4.me-4.ps-2
+            h4.figura-flecha__titulo.mb-0 Construcción
+            figure.figura-flecha__fig
+              img.mx-auto(src="@/assets/curso/temas/37.png",style="max-width: 228px;")
+          p.px-3.pb-4 En esta etapa se encuentran los casos y script de prueba como conjunto de condiciones con las cuales un tester debe determinar si un sistema funciona según lo requerido.
+      .col-lg-4.col-md-6.mb-4
+        .tarjeta-personalizada-1.tarjeta-personalizada-1--color-1.h-100
+          .figura-flecha.mb-4.me-4
+            h4.figura-flecha__titulo.mb-0 Ejecución
+            figure.figura-flecha__fig
+              img.mx-auto(src="@/assets/curso/temas/36.png",style="max-width: 228px;")
+          p.px-3.pb-4 En esta etapa se obtiene el resultado de la ejecución de pruebas, recopilando la información relacionada con los resultados de la ejecución de cada script de prueba.
 
 </template>
 
