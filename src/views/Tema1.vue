@@ -727,8 +727,8 @@
         .col-lg-8
           p.mb-4 Para planificar las pruebas ágiles, podemos basarnos en los cuadrantes de #[em Agile Testing], que proporcionan una biblioteca de tipos de pruebas aplicables para satisfacer los requerimientos. Estos cuatro cuadrantes ofrecen una clasificación útil para la planificación de las pruebas ágiles, asegurando que se consideren los métodos y recursos necesarios para lograr productos de #[em software] de alta calidad.
           p.mb-0 Las pruebas definidas por los cuadrantes se centran en brindar apoyo al equipo de desarrollo a lo largo del proceso de creación del producto, ya que guían el desarrollo de la funcionalidad. Posteriormente, facilitan la introducción de nuevo código y la refactorización, asegurando que no se produzcan resultados inesperados en el comportamiento del sistema. En la siguiente figura, se pueden observar los cuadrantes de las pruebas ágiles, los cuales se organizan en torno a dos ejes principales: #[b las pruebas que apoyan al equipo y las tecnologías que facilitan el proceso.]
-        .col-lg-4
-          figure.mb-4.mb-lg-0.order-first.order-lg-last
+        .col-lg-4.order-first.order-lg-last
+          figure.mb-4.mb-lg-0
             img.mx-auto(src="@/assets/curso/temas/53.png",style="max-width: 400px;")
 
       .row.justify-content-center.pb-5
@@ -893,6 +893,289 @@
                   .bg-white.borde-9.p-2.py-5.mb-4.mb-lg-0
                     figure
                       img.mx-auto(src='@/assets/curso/temas/66.svg',style="max-width: 322px;")
+
+
+    .fondo-gradiente-1.posicion-1
+      p.mb-5.pt-5 Ahora, se describen algunas recomendaciones para tener en cuenta al momento de trabajar con pruebas de software agiles #[em (Agil Testing)].
+
+      AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta no-border-radius tarjeta--azul")
+        .row.contenedor-cuerpo-acordion-a.align-items-center(titulo="Gestión de pruebas por <em>sprint</em>")
+          .col-md-6.mb-4.mb-md-0
+            ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
+              li
+                i.fas.fa-cog
+                span Integrar pruebas unitarias, funcionales y de carga en la planificación desde el principio. 
+              li
+                i.fas.fa-cog
+                span Identificar y rectificar problemas de forma temprana, antes que se conviertan en problemas complejos que puedan influir el proyecto.
+        
+          .col-md-6
+            figure
+              img.mx-auto(src="@/assets/curso/temas/67.png",style="max-width: 400px;")
+        .row.contenedor-cuerpo-acordion-a.align-items-center(titulo="Integración de analistas en desarrollo")
+          .col-md-6.mb-4.mb-md-0
+            ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
+              li
+                i.fas.fa-cog
+                span Los #[em testers] tienen el conocimiento para asegurar que se entregue un producto de calidad y que cumpla los requerimientos del cliente. 
+              li
+                i.fas.fa-cog
+                span Al integrar a los #[em testers] al equipo de desarrollo se logra compartir el conocimiento.
+        
+          .col-md-6
+            figure
+              img.mx-auto(src="@/assets/curso/temas/68.png",style="max-width: 400px;")
+        .row.contenedor-cuerpo-acordion-a.align-items-center(titulo="Revisión de pruebas unitarias por <em>testers</em>")
+          .col-md-6.mb-4.mb-md-0
+            ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
+              li
+                i.fas.fa-cog
+                span Los desarrolladores suelen deliberar de forma distinta que los #[em testers].  
+              li
+                i.fas.fa-cog
+                span Para mejorar las pruebas unitarias, se debe permitir que los analistas de pruebas revisen las pruebas unitarias y realicen sugerencias.
+        
+          .col-md-6
+            figure
+              img.mx-auto(src="@/assets/curso/temas/69.png",style="max-width: 400px;")
+        .row.contenedor-cuerpo-acordion-a.align-items-center(titulo="Pruebas de carga diarias")
+          .col-md-6.mb-4.mb-md-0
+            ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
+              li
+                i.fas.fa-cog
+                span Las pruebas de estrés son cada vez más críticas para el éxito, considerando que el #[em software] de hoy se diseña para implementaciones masivas que puedan escalar. 
+              li
+                i.fas.fa-cog
+                span Deben incorporarse pruebas de estrés en todas las construcciones de #[em software] a diario.
+        
+          .col-md-6
+            figure
+              img.mx-auto(src="@/assets/curso/temas/70.png",style="max-width: 400px;")
+        .row.contenedor-cuerpo-acordion-a.align-items-center(titulo="Automatización de pruebas de <em>software</em>")
+          .col-md-6.mb-4.mb-md-0
+            ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
+              li
+                i.fas.fa-cog
+                span Hacer uso de herramientas de automatización de pruebas. De esta forma será más eficiente y eliminará inexactitudes.
+              li
+                i.fas.fa-cog
+                span La automatización de pruebas permitirá ejecutar con mayor eficiencia las pruebas de regresión cada vez que se incorpore actualizaciones.
+        
+          .col-md-6
+            figure
+              img.mx-auto(src="@/assets/curso/temas/71.png",style="max-width: 400px;")
+
+    .cont-titulo-decorativo.p-2.mt-5.mb-4
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/temas/4.svg")
+        .col.align-self-end
+          h3.mt-3.mb-0.me-2 #[em Test Driven Development (TDD)]
+    .fondo-gradiente-1.posicion-3
+      .row.align-items-center.mb-4
+        .col-lg-8
+          p.mb-0 Es una técnica de desarrollo que permite crear pruebas antes del código de producción, es decir, antes de la implementación final. La esencia del TDD (Desarrollo Guiado por Pruebas) consiste en elaborar una prueba antes de proceder con la implementación, de tal manera que el código desarrollado permita que la prueba se ejecute satisfactoriamente. Además, esta técnica se complementa con la refactorización. Generalmente, se tienen requerimientos que se expresan en historias de usuario como criterios de aceptación o pueden ser descritos como casos de uso. Posteriormente, estos requerimientos se traducen en pruebas automatizadas que, a su vez, orientan el desarrollo del código siguiendo buenas prácticas.
+        .col-lg-4.order-first.order-lg-last
+          figure.mb-4.mb-lg-0
+            img.mx-auto(src="@/assets/curso/temas/72.png",style="max-width: 400px;")
+
+      .titulo-sexto.color-acento-contenido
+        p.mb-0 #[b Figura 5.]  Flujo del TDD
+
+      .fondo-color-sistema-q.p-2.p-lg-4.borde-24.mb-4
+        .row
+          .col-lg-7.mb-4.mb-lg-0
+            .fondo-color-sistema-k.p-2.p-lg-4.borde-16.h-100.d-flex.align-items-center
+              figure
+                img.mx-auto(src="@/assets/curso/temas/73.svg",style="max-width: 650px;",alt="La figura muestra el ciclo de Desarrollo Guiado por Pruebas. Inicia con la fase RED, donde se escribe una prueba que no pasa. Sigue con la fase GREEN, en la cual se modifica el código para que la prueba pase. El último paso es REFACTOR, donde se optimiza el código eliminando redundancias. Estos pasos forman un ciclo continuo que se repite a lo largo del proceso de desarrollo para mejorar la calidad del software. El TDD está en el centro del diagrama, indicando que es el enfoque principal del ciclo.")
+          .col-lg-5
+            .fondo-color-sistema-k.px-3.py-4.borde-16
+              .tarjeta.color-secundario.p-3.mb-4
+                p.h4.mb-0.text-center El Desarrollo Guiado por Pruebas (TDD, por sus siglas en inglés) se fundamenta en tres pasos esenciales:
+              .tarjeta.p-3.bg-white.mb-4
+                p.mb-0 #[span.fw-bold(style="color: #FF0000;") Red:] este paso se denomina así porque implica la creación de una prueba que inicialmente falla, lo cual se refleja con letras rojas en la consola al ejecutarla.
+              .tarjeta.p-3.bg-white.mb-4
+                p.mb-0 #[span.fw-bold(style="color: #25A118;") Green:] el objetivo de este paso es modificar el código para que la prueba anteriormente fallida ahora pase exitosamente. Se llama Green  porque, al pasar la prueba, los resultados suelen mostrarse en letras verdes en la consola.
+              .tarjeta.p-3.bg-white
+                p.mb-0 #[span.fw-bold(style="color: #D750FF;") Refactor:] una vez que la prueba ha sido superada, se procede a revisar y mejorar el código para optimizarlo, limpiarlo o aplicar mejores prácticas, sin alterar su funcionalidad.
+
+      p.mb-5 En la siguiente tabla podemos verificar cada uno de los pasos guiados por las pruebas TDD donde se explica cada uno de los pasos con sus ejemplos.
+
+      .titulo-sexto.color-acento-contenido
+        p.mb-0 #[b Tabla 2.] Flujo del TDD.
+
+      .tabla-a.color-acento-contenido.mb-5.bg-white
+        table
+          thead
+            tr
+              th PASO 
+              th PASOS
+              th EJEMPLO
+          tbody
+            tr
+              td RED
+              td 1. Lo primero es que el cliente escriba una historia de usuario.       
+              td Supóngase que el cliente solicita que se desarrolle una aplicación con operaciones matemáticas sencillas que sume y reste.
+            tr
+              td RED
+              td 2. Los criterios de aceptación de esta historia se escriben con el cliente, deben estar bien detallados.     
+              td Se define con el cliente que el criterio de aceptación está relacionado con: si se introduce en la aplicación dos números y se suma o resta, entonces la aplicación visualiza el resultado en pantalla.
+            tr
+              td RED
+              td 3. Se debe seleccionar el criterio de aceptación más sencillo y se traduce en una prueba unitaria.     
+              td De acuerdo a este criterio, se empieza a especificar o definir el funcionamiento del algoritmo para la suma y la resta y se luego se convierte el criterio de aceptación en una prueba específica, por ejemplo, un algoritmo que si se introduce los números 3 y 8 devuelve 11. Ejemplo de cómo sería la clase para calcular:  public void testSuma() { assertEquals(8, Operaciones.suma(3,8)); }
+            tr
+              td RED
+              td 4. Se verifica que la prueba falla.    
+              td RED	4. Se verifica que la prueba falla. Si se intenta pasar este test resultara en error, debido a que la clase Operaciones todavía no existe.
+            tr
+              td GREEN
+              td 5. Se escribe el código que hace pasar la prueba.   
+              td Posteriormente el siguiente paso es escribir el código de la clase, en este momento ya se sabe cómo se va a comportar. public class Operaciones { public static int suma (int a, int b) { int c = a + b; return c; } }
+            tr
+              td GREEN
+              td 6. Se ejecutan todas las pruebas automatizadas.  
+              td Posteriormente se ejecuta la prueba y en este momento se tiene el código funcionado con la prueba pasada.
+            tr
+              td REFACTOR
+              td 7. Se ejecutan todas las pruebas automatizadas.  
+              td Cuando esté todo funcionando, se pasa a refactorizar y a eliminar código duplicado.
+            tr
+              td REFACTOR
+              td 8. Se refactoriza y se limpia el código.
+              td Es necesario pasar todos los test después de refactorizar.
+
+    .cont-titulo-decorativo.p-2.mt-5.mb-4
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/temas/4.svg")
+        .col.align-self-end
+          h3.mt-3.mb-0.me-2 #[em Acceptance Test Driven Development (ATDD)]
+
+    p.mb-4 El Desarrollo Guiado por Pruebas de Aceptación (ATDD, por sus siglas en inglés) es una metodología de desarrollo que enfatiza la comunicación entre los clientes empresariales, los desarrolladores y los #[em tester]. Antes de que los desarrolladores empiecen a escribir código, ATDD incorpora las pruebas de aceptación, poniendo especial énfasis en la redacción de estas pruebas. El proceso de ATDD se desarrolla a través de los siguientes pasos:
+
+    .titulo-sexto.color-acento-contenido
+      p.mb-0 #[b Figura 6.] #[em ATDD]
+    
+    .fondo-gradiente-4
+      .row.align-items-center.mb-5
+        .col-lg-6
+          figure.mb-4.mb-lg-0
+            img.mx-auto(src="@/assets/curso/temas/74.svg",style="max-width: 610px;",alt="El diagrama representa el flujo de trabajo de ATDD, iniciando con la historia de usuario, pasando por la especificación y automatización de pruebas de aceptación, luego implementando el código con TDD y utilizando el lenguaje de programación. Este proceso es iterativo, indicado por la frase que señala la repetición del ciclo. ATDD, ubicado en el centro, destaca su rol como eje central del proceso.")
+        .col-lg-6
+          ol.lista-tipo-1.margen.lista-ol--cuadro
+            li
+              .lista-ol--cuadro__vineta
+                span 1
+              span #[b Seleccionar la historia de usuario:] en este punto, se asume que se ha realizado una priorización para determinar cuál es la próxima historia de usuario a abordar.
+            li 
+              .lista-ol--cuadro__vineta
+                span 2
+              span #[b Escribir la prueba de aceptación:] en esta etapa, todos los involucrados deben participar de manera colaborativa para definir las pruebas que validen la correcta impzlementación de la historia.
+            li 
+              .lista-ol--cuadro__vineta
+                span 3
+              span #[b Implementar la historia de usuario - Automatizar las pruebas:] existen varias maneras de llevar a cabo este paso, pero lo crucial es que, a partir de las pruebas de aceptación definidas anteriormente, se obtengan pruebas ejecutables. Estas pruebas permitirán verificar el progreso de la implementación de la funcionalidad.
+            li 
+              .lista-ol--cuadro__vineta
+                span 4
+              span #[b Implementar el código:] aunque hay diversas formas de realizar este paso, una de ellas es mediante el uso de TDD (Desarrollo Guiado por Pruebas), que asegura que el código cumpla con los requisitos establecidos en las pruebas de aceptación.
+            li 
+              .lista-ol--cuadro__vineta
+                span 5
+              span #[b Realizar pequeños cambios/Refactorización:] este paso es fundamental tanto en ATDD como en TDD. Se trata de una práctica iterativa que concluye cuando los requerimientos del cliente han sido plenamente satisfechos, optimizando y limpiando el código sin alterar su funcionalidad.
+
+    
+    .fondo-gradiente-1
+      .row.align-items-center.mb-4
+        .col-lg-4
+          figure.mb-4.mb-lg-0
+            img.mx-auto(src="@/assets/curso/temas/75.png",style="max-width: 400px;")
+        .col-lg-8
+          p.mb-4 De acuerdo con lo expuesto anteriormente, se inicia desde un desarrollo al cual los programadores han implementado TDD. Si este proceso se ha llevado a cabo de manera adecuada, deberían haber logrado un código limpio y refactorizado, que además ha sido validado mediante pruebas unitarias. Así, el código resultante es de alta calidad; sin embargo, surge la pregunta: #[b ¿ocurre lo mismo con la aplicación en su totalidad?]
+          p.mb-0 ATDD no constituye simplemente una técnica de desarrollo o una buena práctica, sino que representa un enfoque más amplio. Se trata de una metodología de trabajo diseñada para el desarrollo de #[em software], la cual tiene como objetivo verificar si los procedimientos adoptados durante el desarrollo son los más adecuados para alcanzar los objetivos deseados. Mientras que TDD se enfoca únicamente en confirmar que lo desarrollado esté codificado de forma correcta y libre de errores, lo cual representa una visión limitada centrada exclusivamente en la calidad del código y no en la aplicación como un todo.
+
+      p.mb-4 Al igual que ocurre en TDD, ATDD consta de una serie de pasos secuenciales que se presentan en la siguiente figura:
+
+      .titulo-sexto.color-acento-contenido
+        p.mb-0 #[b Figura 7.] ATDD
+
+      .pb-5
+        .fondo-color-sistema-g.p-4.borde-24
+          figure
+            img.mx-auto(src="@/assets/curso/temas/76.svg",style="max-width: 1008px;",alt="La figura muestra un diagrama de flujo para ATDD, que inicia con el desglose de requisitos en historias, su priorización y aceptación colaborativa. Luego, se establecen y automatizan los criterios de aceptación en tests, continuando con la automatización de tests unitarios y de integración. El ciclo concluye con la verificación de los tests de aceptación para producir una versión entregable del producto, reflejando un proceso iterativo y colaborativo en el desarrollo de software.")
+
+    .cont-titulo-decorativo.p-2.mt-5.mb-4
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/temas/4.svg")
+        .col.align-self-end
+          h3.mt-3.mb-0.me-2 #[em Behaviour Driven Development (BDD)]
+
+    p.mb-4 El Desarrollo Dirigido por Comportamiento (BDD, por sus siglas en inglés) fue propuesto inicialmente por Dan North como una síntesis y refinamiento de prácticas en ingeniería de #[em software], destinadas a asistir a los equipos en la generación y entrega rápida de #[em software] de mayor calidad. El proceso de BDD es similar al de TDD  y sigue los siguientes pasos:
+
+    .titulo-sexto.color-acento-contenido
+      p.mb-0 #[b Figura 8.] Imagen BDD
+
+    .row.mb-5
+      .col-lg-6.mb-4.mb-lg-0
+        .fondo-gradiente-5.p-4
+          figure
+            img.mx-auto(src="@/assets/curso/temas/77.svg",style="max-width: 525px;",alt="El diagrama describe la interacción entre BDD y TDD en el desarrollo de software, donde se comienza redactando una especificación funcional que no se cumple, seguido de la creación de un test que falla en TDD. Después, se escribe el código necesario para pasar el test y se procede a la refactorización del mismo. Este ciclo iterativo enfatiza la importancia de la definición de comportamientos y pruebas previas a la implementación efectiva del código.")
+      .col-lg-6
+
+        figure.mb-4
+          img.mx-auto(src="@/assets/curso/temas/78.png",style="max-width: 610px;")
+
+        ol.lista-tipo-1.margen.lista-ol--cuadro
+          li
+            .lista-ol--cuadro__vineta
+              span 1
+            span Escribir un escenario.
+          li 
+            .lista-ol--cuadro__vineta
+              span 2
+            span Ejecutar el escenario que falla.
+          li 
+            .lista-ol--cuadro__vineta
+              span 3
+            span Escribir la prueba que corresponde a las especificaciones del escenario.
+          li 
+            .lista-ol--cuadro__vineta
+              span 4
+            span Escribir el código más simple para pasar la prueba y el escenario.
+          li 
+            .lista-ol--cuadro__vineta
+              span 5
+            span Refactorizar para eliminar la duplicación.
+
+    p.mb-5 BDD, basado en la técnica de TDD, aborda ciertas limitaciones de esta última. Un problema fundamental de TDD surge cuando el #[em software] supera correctamente una prueba pero no cumple con la funcionalidad esperada. Pasar una prueba no garantiza necesariamente que el #[em software] realice lo que el cliente anticipa.
+
+    .row.justify-content-center.mb-5
+        .col-lg-4.col-md-6.mb-4
+          .d-flex.w-100.flex-column.h-100
+            .p-1.px-4(style="min-height:53px;display:flex;justify-content: start;align-items:center;background-color: #4D828B;border-top-left-radius: 8px;border-top-right-radius: 8px;")
+              p.mb-0.text-white.text-left #[b Ejemplo:]
+            .fondo-color-sistema-k.p-3.h-100
+              ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
+                li
+                  i.far.fa-check-circle
+                  span Inicialmente, se define la característica o funcionalidad que se desea implementar, basándose en una historia de usuario.
+        .col-lg-4.col-md-6.mb-4
+          .d-flex.w-100.flex-column.h-100
+            .p-1.px-4(style="min-height:53px;display:flex;justify-content: start;align-items:center;background-color: #C58239;border-top-left-radius: 8px;border-top-right-radius: 8px;")
+              p.mb-0.text-white.text-center #[b Característica:]
+            .fondo-color-sistema-k.p-3.h-100
+              ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
+                li
+                  i.far.fa-check-circle
+                  span Un usuario desea acceder a una plataforma web universitaria para descargar sus apuntes.
+
+    p.mb-5 A continuación, se presentan dos escenarios derivados de la historia de usuario especificada
+
           
 </template>
 
