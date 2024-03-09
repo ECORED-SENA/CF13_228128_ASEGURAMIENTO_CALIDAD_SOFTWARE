@@ -113,6 +113,33 @@
 
 
 // estilos componente
+.imagen-infografica-personalizada-1
+  .img-infografica__item, .img-infografica-b__item
+    width: 4.5%
+  .tarjeta
+    background-color: #E3ECF7
+
+.slyder-a-personalizado-1
+  overflow: hidden
+  position: relative
+  &__fondo
+    background-color: #13215C
+    position: absolute !important
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    .fig-flotante
+      position: absolute
+  .slyder-a
+    position: relative
+    z-index: 2
+    .slyder-a__btn--sigt,.slyder-a__btn--atrs
+      background-color: #FFCE00
+  p,li
+    color: white !important
+  .titulo-item-slyder
+    color: $color-acento-botones !important
 
 .cont_1_1
   position: relative
@@ -291,6 +318,22 @@
     position: absolute
     width: 100%
     left: 0
+    top: 0
+    bottom: 0
+    z-index: 0
+
+.fondo-gradiente-6
+  position: relative
+  .fondo-gradiente-contenido
+    position: relative
+  &:before
+    content: ""
+    background: url(../assets/curso/temas/10.png)
+    background-size: 100%
+    background-repeat: repeat-y
+    position: absolute
+    width: 120%
+    left: -10%
     top: 0
     bottom: 0
     z-index: 0

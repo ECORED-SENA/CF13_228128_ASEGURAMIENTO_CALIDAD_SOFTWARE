@@ -1120,63 +1120,321 @@
     .titulo-sexto.color-acento-contenido
       p.mb-0 #[b Figura 8.] Imagen BDD
 
-    .row.mb-5
-      .col-lg-6.mb-4.mb-lg-0
-        .fondo-gradiente-5.p-4
+    .fondo-gradiente-6
+      .fondo-gradiente-contenido
+        .row.mb-5
+          .col-lg-6.mb-4.mb-lg-0
+            .fondo-gradiente-5.p-4
+              figure
+                img.mx-auto(src="@/assets/curso/temas/77.svg",style="max-width: 525px;",alt="El diagrama describe la interacción entre BDD y TDD en el desarrollo de software, donde se comienza redactando una especificación funcional que no se cumple, seguido de la creación de un test que falla en TDD. Después, se escribe el código necesario para pasar el test y se procede a la refactorización del mismo. Este ciclo iterativo enfatiza la importancia de la definición de comportamientos y pruebas previas a la implementación efectiva del código.")
+          .col-lg-6
+
+            figure.mb-4
+              img.mx-auto(src="@/assets/curso/temas/78.png",style="max-width: 610px;")
+
+            ol.lista-tipo-1.margen.lista-ol--cuadro
+              li
+                .lista-ol--cuadro__vineta
+                  span 1
+                span Escribir un escenario.
+              li 
+                .lista-ol--cuadro__vineta
+                  span 2
+                span Ejecutar el escenario que falla.
+              li 
+                .lista-ol--cuadro__vineta
+                  span 3
+                span Escribir la prueba que corresponde a las especificaciones del escenario.
+              li 
+                .lista-ol--cuadro__vineta
+                  span 4
+                span Escribir el código más simple para pasar la prueba y el escenario.
+              li 
+                .lista-ol--cuadro__vineta
+                  span 5
+                span Refactorizar para eliminar la duplicación.
+
+        p.mb-5 BDD, basado en la técnica de TDD, aborda ciertas limitaciones de esta última. Un problema fundamental de TDD surge cuando el #[em software] supera correctamente una prueba pero no cumple con la funcionalidad esperada. Pasar una prueba no garantiza necesariamente que el #[em software] realice lo que el cliente anticipa.
+
+        .row.justify-content-center.mb-5
+            .col-lg-4.col-md-6.mb-4
+              .d-flex.w-100.flex-column.h-100
+                .p-1.px-4(style="min-height:53px;display:flex;justify-content: start;align-items:center;background-color: #4D828B;border-top-left-radius: 8px;border-top-right-radius: 8px;")
+                  p.mb-0.text-white.text-left #[b Ejemplo:]
+                .fondo-color-sistema-k.p-3.h-100
+                  ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
+                    li
+                      i.far.fa-check-circle
+                      span Inicialmente, se define la característica o funcionalidad que se desea implementar, basándose en una historia de usuario.
+            .col-lg-4.col-md-6.mb-4
+              .d-flex.w-100.flex-column.h-100
+                .p-1.px-4(style="min-height:53px;display:flex;justify-content: start;align-items:center;background-color: #C58239;border-top-left-radius: 8px;border-top-right-radius: 8px;")
+                  p.mb-0.text-white.text-center #[b Característica:]
+                .fondo-color-sistema-k.p-3.h-100
+                  ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
+                    li
+                      i.far.fa-check-circle
+                      span Un usuario desea acceder a una plataforma web universitaria para descargar sus apuntes.
+
+        p.mb-5 A continuación, se presentan dos escenarios derivados de la historia de usuario especificada
+        
+        .pb-5
+          .slyder-a-personalizado-1.px-3.pb-3.pt-5
+            .slyder-a-personalizado-1__fondo
+              figure.fig-flotante(style="left: 0;top: -140px;max-width:118px;")
+                img(src="@/assets/curso/temas/55.svg",style="max-width:118px;")
+              figure.fig-flotante(style="z-index: 1;right: 10px;top: 10px;max-width:88px;")
+                img(src="@/assets/curso/temas/56.svg",style="max-width:87px;")
+              figure.fig-flotante(style="right: -70px;top: -115px;max-width:173px;")
+                img(src="@/assets/curso/temas/57.svg",style="max-width:173px;")
+              figure.fig-flotante(style="left: 35%;bottom: -160px;max-width:227px;")
+                img(src="@/assets/curso/temas/58.svg",style="max-width:227px;")
+
+            SlyderA(tipo="b")
+              .row.justify-content-center.align-items-start
+                .col-lg-6
+                  .pt-lg-5
+                    h4.mb-4.titulo-item-slyder El desarrollo dirigido por comportamiento (BDD)
+                    p.mb-0 El objetivo de BDD es que las historias de usuario dirijan el desarrollo del proyecto #[em software]. Ademas, BDD permite comprobar que el #[em software] implementado cumple con la funcionalidad requerida.
+                    ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
+                      li
+                        i.fas.fa-cog
+                        span #[b Un ejemplo muy sencillo es el siguiente:] primero definimos la característica o funcionalidad a implementar en la historia de usuario.
+                      li
+                        i.fas.fa-cog
+                        span #[b Característica:] un usuario quiere acceder a una plataforma web universitaria para descargar sus apuntes.
+                .col-lg-4.order-first.order-lg-last
+                  figure.mb-4.mb-lg-0
+                    img.mx-auto(src="@/assets/curso/temas/79.png",style="max-width: 415px;")
+              .row.justify-content-center.align-items-start
+                .col-lg-6
+                  .pt-lg-5
+                    h4.mb-4.titulo-item-slyder Primer escenario
+
+                    ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
+                      li
+                        i.fas.fa-cog
+                        span El usuario entra correctamente.
+                      li
+                        i.fas.fa-cog
+                        span Tiene un email y una contraseña.
+                      li
+                        i.fas.fa-cog
+                        span Verifica que el nombre de usuario existe.
+                      li
+                        i.fas.fa-cog
+                        span Verifica que la contraseña es correcta.
+                      li
+                        i.fas.fa-cog
+                        span El usuario puede acceder a su cuenta, su información y puede descargar sus apuntes.
+                .col-lg-4.order-first.order-lg-last
+                  figure.mb-4.mb-lg-0
+                    img.mx-auto(src="@/assets/curso/temas/80.png",style="max-width: 415px;")
+              .row.justify-content-center.align-items-start
+                .col-lg-6
+                  .pt-lg-5
+                    h4.mb-4.titulo-item-slyder Segundo escenario
+
+                    ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
+                      li
+                        i.fas.fa-cog
+                        span El usuario no recuerda la contraseña.
+                      li
+                        i.fas.fa-cog
+                        span Tiene un email.
+                      li
+                        i.fas.fa-cog
+                        span Cuando el usuario hace clic en: "No recuerdo la contraseña".
+                      li
+                        i.fas.fa-cog
+                        span Luego el usuario inserta su email.
+                      li
+                        i.fas.fa-cog
+                        span Posteriormente el email existe.
+                      li
+                        i.fas.fa-cog
+                        span Se envía un correo de verificación.
+                      li
+                        i.fas.fa-cog
+                        span Y el usuario debe validar el enlace.
+                      li
+                        i.fas.fa-cog
+                        span Y el usuario debe insertar nueva contraseña.
+                      li
+                        i.fas.fa-cog
+                        span El usuario tiene que volver a entrar con su nueva contraseña.
+                      li
+                        i.fas.fa-cog
+                        span Se ejecuta primer escenario.
+
+
+                .col-lg-4.order-first.order-lg-last
+                  figure.mb-4.mb-lg-0
+                    img.mx-auto(src="@/assets/curso/temas/81.png",style="max-width: 415px;")
+              .row.justify-content-center.align-items-start
+                .col-lg-6
+                  .pt-lg-5
+                    h4.mb-4.titulo-item-slyder #[em Frameworks] de BDD por lenguaje
+                    p.mb-0 Una vez definida, BDD utiliza herramientas para convertir esta historia de usuario en código. Para ello se utilizan "contenedores" o #[em frameworks]; hay tantos contenedores como lenguajes de programación. Normalmente están disponibles para la mayoría de los lenguajes de programación. A continuación, se muestran algunos:
+
+                .col-lg-4.order-first.order-lg-last
+                  figure.mb-4.mb-lg-0
+                    img.mx-auto(src="@/assets/curso/temas/82.png",style="max-width: 415px;")
+
+        .cont-titulo-decorativo.p-2.mt-5.mb-4
+          .row
+            .col-auto.pe-0
+              figure
+                img(src="@/assets/curso/temas/4.svg")
+            .col.align-self-end
+              h3.mt-3.mb-0.me-2 #[em Testing] exploratorio
+        
+        .row.mb-4
+          .col-lg-4
+            figure.mb-4.mb-lg-0
+              img.mx-auto(src="@/assets/curso/temas/83.png",style="max-width: 400px;")
+          .col-lg-8
+            .fondo-color-sistema-j.p-4.borde-8.mb-4
+              p.mb-4 Las pruebas exploratorias han captado significativamente la atención dentro de la comunidad de pruebas de #[em software]. Este método de pruebas se caracteriza por una interacción simultánea entre el testeo, el aprendizaje y el diseño de nuevas pruebas.
+            p.mb-0 En la práctica, casi todos los #[em testers] realizan pruebas exploratorias, ya sea de manera consciente o no. Un ejemplo claro de esto son las pruebas de regresión de errores. Para confirmar la corrección de un error, el #[em tester] podría iniciar siguiendo los pasos detallados en el informe de errores. Sin embargo, una vez que el programa supera esta prueba inicial, es probable que el #[em tester] lleve a cabo pruebas adicionales para asegurarse de que el error ha sido completamente resuelto.
+
+        .fondo-color-secundario.borde-8.p-3.mb-4
+          .row.align-items-center
+            .col-md-1
+              figure.mb-4.mb-md-0
+                img.mx-auto(src="@/assets/curso/temas/84.png",style="max-width: 82px;")
+            .col-md-10
+              p.mb-0.text-white El #[em testing] exploratorio integra el diseño, la ejecución y el aprendizaje sobre la aplicación en prueba, fomentando un proceso de exploración y comprensión profunda del producto. A diferencia de otros enfoques, no se basa en un guion o #[em script] de pruebas preestablecido, lo que lo hace particularmente valioso en metodologías ágiles.
+
+        p.mb-4 Después de observar el proceso exploratorio del #[em software], se han identificado las siguientes pruebas exploratorias:
+
+        .pb-5
+          .row.justify-content-center
+            .col-lg-7
+              ImagenInfografica.imagen-infografica-personalizada-1.color-acento-botones
+                template(v-slot:imagen)
+                  figure
+                    img(src='@/assets/curso/temas/85.svg')
+
+                .tarjeta.borde-9.p-3(x="51%" y="13%" numero="+")
+                  .h5.mb-4 Exploración del producto
+                  p.mb-5 Para conocer a fondo cómo cumplir con los requisitos hay que registrar los objetivos, las funciones, los tipos de datos que se procesan y las zonas de inestabilidad del producto.
+                .tarjeta.borde-9.p-3(x="72%" y="41%" numero="+")
+                  .h5.mb-4 Diseño de pruebas
+                  p.mb-5 Crear diferentes estrategias para observar y evaluar por completo el producto.
+                .tarjeta.borde-9.p-3(x="63%" y="74%" numero="+")
+                  .h5.mb-4 Ejecución de pruebas
+                  p.mb-5 Explorar el producto para poder formular una hipótesis de cómo funciona y cuáles pueden ser sus puntos débiles.
+                .tarjeta.borde-9.p-3(x="36%" y="74%" numero="+")
+                  .h5.mb-4 Heurística
+                  p.mb-5 Reglas generales que ayudarán a cómo probar correctamente el producto.
+                .tarjeta.borde-9.p-3(x="28%" y="40%" numero="+")
+                  .h5.mb-4 Resultados revisables
+                  p.mb-5 Cuando se finalicen las pruebas exploratorias, el tester debe ser capaz de explicar cualquier aspecto del programa y mostrar cómo se cumplen los requisitos indicados en el procedimiento.
+
+    .cont-titulo-decorativo.p-2.mt-5.mb-4
+      .row
+        .col-auto.pe-0
           figure
-            img.mx-auto(src="@/assets/curso/temas/77.svg",style="max-width: 525px;",alt="El diagrama describe la interacción entre BDD y TDD en el desarrollo de software, donde se comienza redactando una especificación funcional que no se cumple, seguido de la creación de un test que falla en TDD. Después, se escribe el código necesario para pasar el test y se procede a la refactorización del mismo. Este ciclo iterativo enfatiza la importancia de la definición de comportamientos y pruebas previas a la implementación efectiva del código.")
+            img(src="@/assets/curso/temas/4.svg")
+        .col.align-self-end
+          h3.mt-3.mb-0.me-2 Automatización de pruebas de regresión
+
+    .row.align-items-center.mb-4
       .col-lg-6
+        figure.mb-4.mb-lg-0
+          img.mx-auto(src="@/assets/curso/temas/86.png",style="max-width: 610px;")
+      .col-lg-6
+        p.mb-4 Las pruebas de regresión garantizan que los cambios realizados en una aplicación o sistema no introduzcan errores en las funcionalidades existentes. Sin embargo, realizadas de manera manual, estas pruebas pueden ser muy consumidoras de tiempo, llegando a ser más costosas que las pruebas de las nuevas funcionalidades que se están evaluando. Además, la intervención manual incrementa la susceptibilidad a errores debido al factor humano.
 
-        figure.mb-4
-          img.mx-auto(src="@/assets/curso/temas/78.png",style="max-width: 610px;")
+        .fondo-color-sistema-j.p-4.borde-8
+          p.mb-0 Las pruebas exploratorias han captado significativamente la atención dentro de la comunidad de pruebas de #[em software]. Este método de pruebas se caracteriza por una interacción simultánea entre el testeo, el aprendizaje y el diseño de nuevas pruebas.
 
-        ol.lista-tipo-1.margen.lista-ol--cuadro
-          li
-            .lista-ol--cuadro__vineta
-              span 1
-            span Escribir un escenario.
-          li 
-            .lista-ol--cuadro__vineta
-              span 2
-            span Ejecutar el escenario que falla.
-          li 
-            .lista-ol--cuadro__vineta
-              span 3
-            span Escribir la prueba que corresponde a las especificaciones del escenario.
-          li 
-            .lista-ol--cuadro__vineta
-              span 4
-            span Escribir el código más simple para pasar la prueba y el escenario.
-          li 
-            .lista-ol--cuadro__vineta
-              span 5
-            span Refactorizar para eliminar la duplicación.
+    .fondo-color-secundario.borde-8.p-3.mb-5
+      .row.align-items-center
+        .col-lg-1.col-md-2
+          figure.mb-4.mb-md-0
+            img.mx-auto(src="@/assets/curso/temas/87.png",style="max-width: 78px;")
+        .col-lg-11.col-md-10
+          p.mb-0.text-white Estas pruebas se realizan siguiendo flujos completos, lo que implica ejecutarlas considerando todas las opciones disponibles según la lógica de negocio. Es crucial incluir en las pruebas las partes del código que han sido modificadas, para asegurar que los cambios no afecten negativamente la interacción con el entorno en el que el #[em software] opera.
 
-    p.mb-5 BDD, basado en la técnica de TDD, aborda ciertas limitaciones de esta última. Un problema fundamental de TDD surge cuando el #[em software] supera correctamente una prueba pero no cumple con la funcionalidad esperada. Pasar una prueba no garantiza necesariamente que el #[em software] realice lo que el cliente anticipa.
 
-    .row.justify-content-center.mb-5
-        .col-lg-4.col-md-6.mb-4
-          .d-flex.w-100.flex-column.h-100
-            .p-1.px-4(style="min-height:53px;display:flex;justify-content: start;align-items:center;background-color: #4D828B;border-top-left-radius: 8px;border-top-right-radius: 8px;")
-              p.mb-0.text-white.text-left #[b Ejemplo:]
-            .fondo-color-sistema-k.p-3.h-100
-              ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
-                li
-                  i.far.fa-check-circle
-                  span Inicialmente, se define la característica o funcionalidad que se desea implementar, basándose en una historia de usuario.
-        .col-lg-4.col-md-6.mb-4
-          .d-flex.w-100.flex-column.h-100
-            .p-1.px-4(style="min-height:53px;display:flex;justify-content: start;align-items:center;background-color: #C58239;border-top-left-radius: 8px;border-top-right-radius: 8px;")
-              p.mb-0.text-white.text-center #[b Característica:]
-            .fondo-color-sistema-k.p-3.h-100
-              ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
-                li
-                  i.far.fa-check-circle
-                  span Un usuario desea acceder a una plataforma web universitaria para descargar sus apuntes.
+    .row.mb-4
+      .col-lg-7
+        p.mb-4 Es esencial seleccionar cuidadosamente los flujos a probar, optimizando el proceso para evitar fallos costosos en producción. A pesar de que las pruebas de regresión pueden ser lentas, su automatización permite que sean tanto asertivas como rápidas. Además, la disponibilidad de scripts de pruebas facilita que cualquier persona, sin necesidad de un equipo de #[em testers] especializados, pueda ejecutarlas. Esto es particularmente útil para aplicaciones que han estado en producción durante largo tiempo, ya que reduce el riesgo asociado a la falta de conocimiento sobre los flujos de trabajo por parte del equipo.
 
-    p.mb-5 A continuación, se presentan dos escenarios derivados de la historia de usuario especificada
+        .fondo-color-sistema-k.borde-13.p-3.mb-5
+          .row.align-items-center
+            .col-md-2
+              figure.mb-4.mb-md-0
+                img.mx-auto(src="@/assets/curso/temas/88.png",style="max-width: 73px;")
+            .col-md-10
+              p.mb-0 Este tipo de pruebas, ya sean lanzadas por los desarrolladores o los #[em testers], son susceptibles de automatización. Para su implementación, se utilizan herramientas comunes a las pruebas unitarias y de sistemas. Sin embargo, también se dispone de:
 
-          
+      .col-lg-5.order-first.order-lg-last
+        figure.mb-4.mb-lg-0
+          img.mx-auto(src="@/assets/curso/temas/89.png",style="max-width: 505px;")
+
+    
+    .fondo-gradiente-6.mb-5
+      .fondo-gradiente-contenido
+        .cont-titulo-decorativo.p-2.mt-5.mb-4
+          .row
+            .col-auto.pe-0
+              figure
+                img(src="@/assets/curso/temas/4.svg")
+            .col.align-self-end
+              h3.mt-3.mb-0.me-2 Pruebas de exploratorias, usabilidad y aceptación
+
+        .row.mb-4
+          .col-lg-7
+            p.mb-0.pt-lg-5 Las pruebas de usabilidad y las pruebas de aceptación del usuario, aunque pueden presentar semejanzas en términos de resultados y objetivos, difieren significativamente en su enfoque. Las pruebas de usabilidad se centran en identificar errores o deficiencias en el sistema que puedan afectar la experiencia del usuario, con el objetivo de mejorar el producto. En contraste, las pruebas de aceptación del usuario buscan demostrar que el sistema cumple con los requisitos y expectativas establecidos, señalando así que el producto está listo para su lanzamiento. Por lo tanto, mientras las pruebas de usabilidad se enfocan en perfeccionar la interacción del usuario con el producto, las pruebas de aceptación del usuario se orientan a validar la completitud y adecuación funcional del sistema. Lo invitamos a explorar el siguiente video y conocer más sobre este tipo de pruebas:
+          .col-lg-5.order-first.order-lg-last
+            figure.mb-4.mb-lg-0
+              img.mx-auto(src="@/assets/curso/temas/90.png",style="max-width: 505px;")
+
+        figure.mb-5(data-aos="zoom-in-up")
+          .video
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/hIuEqUdAVJo?si=TD3_Gk_0T7qKjPmR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+          figcaption Video. Pruebas de exploratorias, usabilidad y aceptación
+    
+    .fondo-gradiente-6
+      .fondo-gradiente-contenido
+        .cont-titulo-decorativo.p-2.mt-5.mb-4
+          .row
+            .col-auto.pe-0
+              figure
+                img(src="@/assets/curso/temas/4.svg")
+            .col.align-self-end
+              h3.mt-3.mb-0.me-2 Pruebas desempeño, carga y seguridad
+
+        p.mb-4 Concluir la programación de una aplicación marca un momento de éxito; con el paso del tiempo, tener un producto terminado representa un logro significativo. Sin embargo, este hito también señala el momento crucial para probar diversos aspectos del #[em software], con el fin de asegurar su correcto funcionamiento y controlar su calidad. Factores como el desempeño, la seguridad y la capacidad de carga son elementos críticos que deben evaluarse en todo producto de #[em software] desarrollado, los cuales se describen a continuación.
+
+        h4.mb-4 Pruebas de desempeño
+
+        .row.align-items-center
+          .col-lg-5
+            figure.mb-4.mb-lg-0
+              img.mx-auto(src="@/assets/curso/temas/91.png",style="max-width: 505px;")
+          .col-lg-7
+            .fondo-color-sistema-k.borde-12.p-4
+              p.mb-0 Las pruebas de desempeño evalúan cómo se comporta un sistema en términos de estabilidad y rapidez de respuesta bajo ciertas condiciones, como la carga de trabajo, la concurrencia, el ancho de banda, y las características específicas de equipos o servidores, tales como la RAM y la CPU. Además, estas pruebas permiten identificar, medir, investigar, validar o verificar otros aspectos de calidad, incluyendo la seguridad, la escalabilidad y el consumo de recursos. Constituyen un estándar en la ejecución, diseño y arquitectura de un producto de #[em software]. Entre las pruebas de desempeño más importantes se encuentra la prueba de carga, la cual se detallará a continuación.
+
+        h4.mb-4 Pruebas de carga
+
+        .row 
+          .col-lg-6
+            p.mb-4 Las pruebas de carga se enfocan en determinar o validar las características de rendimiento de un sistema o aplicación bajo prueba al enfrentarse a distintos volúmenes de cargas de trabajo previstos durante las operaciones de producción. Estas pruebas son cruciales para comprender cómo se comportará la aplicación en condiciones reales y garantizar que pueda manejar el tráfico esperado sin degradar su rendimiento (Meier et al., 2007).
+
+            p.mb-0 Para ilustrar mejor el concepto de las pruebas de carga, se presenta el siguiente video tutorial:
+            
+          .col-lg-6
+
+
+
+    
+
+
 </template>
 
 <script>
