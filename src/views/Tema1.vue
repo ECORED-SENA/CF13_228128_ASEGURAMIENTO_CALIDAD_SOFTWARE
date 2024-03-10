@@ -1398,7 +1398,7 @@
             iframe(width="560" height="315" src="https://www.youtube.com/embed/hIuEqUdAVJo?si=TD3_Gk_0T7qKjPmR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
           figcaption Video. Pruebas de exploratorias, usabilidad y aceptación
     
-    .fondo-gradiente-6
+    .fondo-gradiente-6.posicion-1
       .fondo-gradiente-contenido
         .cont-titulo-decorativo.p-2.mt-5.mb-4
           .row
@@ -1412,7 +1412,7 @@
 
         h4.mb-4 Pruebas de desempeño
 
-        .row.align-items-center
+        .row.align-items-center.mb-4
           .col-lg-5
             figure.mb-4.mb-lg-0
               img.mx-auto(src="@/assets/curso/temas/91.png",style="max-width: 505px;")
@@ -1422,18 +1422,283 @@
 
         h4.mb-4 Pruebas de carga
 
-        .row 
+        .row.mb-5
           .col-lg-6
             p.mb-4 Las pruebas de carga se enfocan en determinar o validar las características de rendimiento de un sistema o aplicación bajo prueba al enfrentarse a distintos volúmenes de cargas de trabajo previstos durante las operaciones de producción. Estas pruebas son cruciales para comprender cómo se comportará la aplicación en condiciones reales y garantizar que pueda manejar el tráfico esperado sin degradar su rendimiento (Meier et al., 2007).
 
             p.mb-0 Para ilustrar mejor el concepto de las pruebas de carga, se presenta el siguiente video tutorial:
-            
+
+          .col-lg-6.order-first.order-lg-last
+            figure.mb-4.mb-lg-0
+              img.mx-auto(src="@/assets/curso/temas/92.png",style="max-width: 610px;")
+
+        figure.mb-5(data-aos="zoom-in-up")
+          .video
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/hIuEqUdAVJo?si=TD3_Gk_0T7qKjPmR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+          figcaption Video. Prueba de carga
+
+    h4.mb-4 Pruebas de seguridad
+
+    .row.mb-4
+      .col-lg-5
+        figure.mb-4.mb-lg-0
+          img.mx-auto(src="@/assets/curso/temas/93.png",style="max-width: 504px;")
+      .col-lg-7
+        .fondo-color-sistema-k.p-4.border-12
+          p.mb-0 Las pruebas de seguridad comprenden un conjunto de actividades ejecutadas con el objetivo de identificar fallas y vulnerabilidades, buscando minimizar el impacto de ataques, el acceso no autorizado a información sensible y la pérdida de datos. Estas pruebas son esenciales porque los productos de software deben garantizar constantemente la confidencialidad, disponibilidad e integridad de los datos y funcionalidades que gestionan. La pérdida o corrupción de esta información puede tener consecuencias críticas en el ámbito empresarial. Por tanto, es crucial que estas pruebas se realicen de manera continuada a lo largo de todas las fases del proyecto, asegurando la protección efectiva contra amenazas emergentes.
+
+    p.mb-4 A continuación, se presenta el siguiente video tutorial de instalación del #[em software] OWASP para realizar una prueba de seguridad:
+
+    figure.mb-5(data-aos="zoom-in-up")
+      .video
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/hIuEqUdAVJo?si=TD3_Gk_0T7qKjPmR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+      figcaption Video. Prueba de seguridad
+
+    .cont-titulo-decorativo.p-2.mt-5.mb-4
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/temas/4.svg")
+        .col.align-self-end
+          h3.mt-3.mb-0.me-2 Elaboración de informe de resultados
+
+    p.mb-4 Una vez ejecutadas las pruebas se deben analizar los resultados y los fallos detectados, teniendo en cuenta el reporte de defectos, directrices para detectarlos y el informe de resultados de pruebas. Para ello se puede realizar lo descrito a continuación:
+
+    .fondo-gradiente-7.posicion-1.mb-4
+      .fondo-gradiente-contenido
+        .row.justify-content-center 
+          .col-lg-10
+            PasosA.color-acento-contenido.mb-5.pasos-a-personalizado-1(tipo="n")
+              .row.align-items-center
+                .col-md-6.mb-4.mb-md-0
+                  p.mb-0.text-start Analizar el impacto del defecto.
+                .col-md-6
+                  figure
+                    img.mx-auto(src='@/assets/curso/temas/94.png',style="max-width: 295px;")
+              .row.align-items-center
+                .col-md-6.mb-4.mb-md-0
+                  figure
+                    img.mx-auto(src='@/assets/curso/temas/95.png',style="max-width: 287px;")
+                .col-md-6
+                  p.mb-0.text-start Investigar el problema, en qué condiciones se produce este fallo.
+              .row.align-items-center
+                .col-md-6.mb-4.mb-md-0
+                  p.mb-0.text-start Analizar la severidad, si es alta o baja.
+                .col-md-6
+                  figure
+                    img.mx-auto(src='@/assets/curso/temas/96.png',style="max-width: 295px;")
+              .row.align-items-center
+                .col-md-6.mb-4.mb-md-0
+                  figure
+                    img.mx-auto(src='@/assets/curso/temas/97.png',style="max-width: 287px;")
+                .col-md-6
+                  p.mb-0.text-start Variar los pasos realizados, se pueden ejecutar en orden diferente para observar si existe alguna variante en el resultado esperado.
+              .row.align-items-center
+                .col-md-6.mb-4.mb-md-0
+                  p.mb-0.text-start Variar opciones de configuración, si estamos probando una aplicación web se puede probar con diferentes navegadores.
+                .col-md-6
+                  figure
+                    img.mx-auto(src='@/assets/curso/temas/98.png',style="max-width: 295px;")
+              .row.align-items-center
+                .col-md-6.mb-4.mb-md-0
+                  figure
+                    img.mx-auto(src='@/assets/curso/temas/99.png',style="max-width: 287px;")
+                .col-md-6
+                  p.mb-0.text-start Determinar condiciones específicas bajo las cuales se reproduce el defecto, si estamos probando entradas de datos entonces probar con diferentes datos.
+
+        p.mb-4 El informe de resultados incluye la detección de incidencias o errores de #[em software], puesto que es aquí donde se evalúan y corrigen problemas, por lo tanto, a continuación, se describe la gestión de incidencias y su ciclo de vida.
+
+        h4.mb-4 Incidencias detectadas
+
+        .row 
+          .col-lg-5
+            figure.mb-4.mb-lg-0
+              img.mx-auto(src="@/assets/curso/temas/100.png",style="max-width: 505px;")
+          .col-lg-7
+            .fondo-color-sistema-k.p-4.borde-12
+              p.mb-0 La gestión de incidencias desempeña un papel crucial en el proceso de aseguramiento de la calidad del #[em software], ya que es en esta etapa donde se identifican y abordan los errores #[em (bugs)]. El objetivo principal de tratar las incidencias detectadas es generar las correcciones necesarias para minimizar la posibilidad de que estos errores se repitan. Este proceso asegura que el #[em software] no solo cumpla con los estándares de calidad requeridos, sino que también mejore continuamente, incrementando su fiabilidad y eficiencia.
+
+    h4.mb-4 Ciclo de vida de una incidencia
+    p.mb-4 Un sistema de gestión de incidentes debe manejar los errores de #[em software], teniendo en cuenta el siguiente proceso:
+
+    .fondo-gradiente-7.posicion-1
+      .fondo-gradiente-contenido
+
+        .fondo-float-3.posicion-1.py-4.px-2.mb-5
+          .fondo-float-contenido
+            .row
+              .col-lg-5
+                figure
+                    img.mx-auto(src="@/assets/curso/temas/103.png",style="max-width: 505px;")
+              .col-lg-7.order-first.order-lg-last.mb-5.mb-lg-0
+                ImagenInfografica.imagen-infografica-personalizada-1.color-acento-botones
+                  template(v-slot:imagen)
+                    figure
+                      img(src='@/assets/curso/temas/102.svg')
+
+                  .tarjeta.borde-9.p-3(x="5%" y="36%" numero="+")
+                    .h5.mb-4 Nuevo
+                    p.mb-5 Durante las pruebas de #[em software] los errores de #[em software] deben ser identificados y registrados por el tester de #[em software] siendo ese instante donde se reporta el error.
+                  .tarjeta.borde-9.p-3(x="23%" y="36%" numero="+")
+                    .h5.mb-4 Abierto
+                    p.mb-5 El equipo de desarrollo adquiere el incidente y empieza a analizarlo.
+                  .tarjeta.borde-9.p-3(x="38%" y="36%" numero="+")
+                    .h5.mb-4 Asignado
+                    p.mb-5 El incidente es asignado al desarrollador.
+                  .tarjeta.borde-9.p-3(x="58%" y="5%" numero="+")
+                    .h5.mb-4 Diferido
+                    p.mb-5 Si el incidente aplica y es de bajo impacto.
+                  .tarjeta.borde-9.p-3(x="28%" y="94%" numero="+")
+                    .h5.mb-4 Reabierto
+                    p.mb-5 Cuando el incidente es corregido y es retornado al equipo de #[em #[b testers]] de #[em software].
+                  .tarjeta.borde-9.p-3(x="76%" y="36%" numero="+")
+                    .h5.mb-4 Verificado
+                    p.mb-5 Si la prueba es positiva.
+                  .tarjeta.borde-9.p-3(x="93%" y="36%" numero="+")
+                    .h5.mb-4 Cerrado
+                    p.mb-5 Posterior a una verificación por parte del equipo de #[em testing].
+
+        p.mb-4 El proceso mencionado se adecúa a proyectos de software en fase de desarrollo, pero no así en ambientes de producción.
+
+        h4.mb-4 Redacción del reporte de Incidencias
+        p.mb-4 El propósito del informe de incidentes es documentar cada incidente, por lo tanto, se debe seguir un procedimiento para gestionar de forma sistémica y ordenada las incidencias de producto halladas a lo largo de la ejecución de los casos de prueba. Este procedimiento tiene las siguientes actividades:
+
+        .row.justify-content-center.mb-4
+          .col-lg-4.col-md-6.mb-4
+            .tarjeta-personalizada-2.color-1
+              .tarjeta-personalizada-2__contenido.px-4.pb-2
+                .enumeracion-circulo.mb-5
+                  .enumeracion-circulo__cont
+                    .enumeracion-circulo__cont-fondo
+                      span.numero-texto 1
+                p.mb-5 Verificar con las áreas correspondientes las incidencias.
+          .col-lg-4.col-md-6.mb-4
+            .tarjeta-personalizada-2.color-2
+              .tarjeta-personalizada-2__contenido.px-4.pb-2
+                .enumeracion-circulo.mb-5
+                  .enumeracion-circulo__cont
+                    .enumeracion-circulo__cont-fondo
+                      span.numero-texto 2
+                p.mb-5 Verificar que el estado de las incidencias este actualizado.
+          .col-lg-4.col-md-6.mb-4
+            .tarjeta-personalizada-2.color-1
+              .tarjeta-personalizada-2__contenido.px-4.pb-2
+                .enumeracion-circulo.mb-5
+                  .enumeracion-circulo__cont
+                    .enumeracion-circulo__cont-fondo
+                      span.numero-texto 3
+                p.mb-5 Realizar repruebas y regresión, es decir generar otra vez la ejecución de los casos de prueba necesarios.
+
+        p.mb-4 Por otra parte, para estructurar el informe de incidentes se requiere tener en cuenta los siguientes puntos:
+
+        .row.justify-content-center.mb-5
+          .col-lg-10
+            .fondo-color-secundario.p-4.px-lg-5.borde-20
+              .row.align-items-center.justify-content-between
+                .col-md-2
+                  figure.mb-4.mb-lg-0
+                    img.mx-auto(src="@/assets/curso/temas/104.png",style="max-width: 156px;")
+                .col-md-10.col-lg-9
+                  ul.lista-ul.lista-tipo-1.margen-2.fa-ul.mb-0.ms-0.text-white
+                    li
+                      i.fas.fa-cube
+                      span Identificador.
+                    li
+                      i.fas.fa-cube
+                      span Resumen y descripción del incidente.
+                    li
+                      i.fas.fa-cube
+                      span Descripción de datos (fecha/hora, entradas, resultados esperados).
+                    li
+                      i.fas.fa-cube
+                      span Impacto que los incidentes tendrán con respecto a las pruebas.
+
+    .fondo-gradiente-8.posicion-1
+      .fondo-gradiente-contenido
+        h4.mb-4 Reporte de defectos
+        p.mb-4 Cuando se confirma la existencia de un defecto, se elabora un reporte. Este documento detalla los fallos identificados durante el proceso de pruebas, subrayando la importancia de que cada defecto detectado cuente con un reporte individual. Esto facilita la trazabilidad y su corrección posterior. A continuación, se describe la estructura típica de un reporte de defectos
+
+        .row.justify-content-center.mb-5
+          .col-lg-6
+            figure.mb-4.mb-lg-0
+              img.mx-auto(src="@/assets/curso/temas/105.png",style="max-width: 610px;")
+          .col-lg-3
+            ol.lista-tipo-1.margen.lista-ol--cuadro
+              li
+                .lista-ol--cuadro__vineta
+                  span 1
+                span Identificador.
+              li 
+                .lista-ol--cuadro__vineta
+                  span 2
+                span Título.
+              li 
+                .lista-ol--cuadro__vineta
+                  span 3
+                span Reportado por.
+              li 
+                .lista-ol--cuadro__vineta
+                  span 4
+                span Asignado a.
+              li 
+                .lista-ol--cuadro__vineta
+                  span 5
+                span Fecha de creación.
+              li 
+                .lista-ol--cuadro__vineta
+                  span 6
+                span Severidad.
+              li 
+                .lista-ol--cuadro__vineta
+                  span 7
+                span Nombre de la aplicación.
+              li 
+                .lista-ol--cuadro__vineta
+                  span 8
+                span Descripción.
+              li 
+                .lista-ol--cuadro__vineta
+                  span 9
+                span Método de reproducción.
+              li 
+                .lista-ol--cuadro__vineta
+                  span 10
+                span Información adicional. 
+
+        h4.mb-4 Informe de resultados de pruebas
+
+        .row
+          .col-lg-6
+            .fondo-color-sistema-k.borde-12.p-4.mb-4
+              p.mb-0 El informe de resultados de pruebas presenta y organiza un análisis conciso de los resultados obtenidos en las pruebas, así como las principales métricas utilizadas para la evaluación y verificación. Por tanto, la responsabilidad de este documento recae en el gerente de pruebas. Este informe debe incluir los siguientes puntos:
+
+            figure.mb-4.mb-lg-0
+              img.mx-auto(src="@/assets/curso/temas/106.png",style="max-width: 610px;")
           .col-lg-6
 
-
-
-    
-
+            ol.lista-tipo-1.margen.lista-ol--cuadro
+              li
+                .lista-ol--cuadro__vineta
+                  span A
+                span Alcance de las pruebas, es decir lo que es necesario incluir y no incluir.
+              li 
+                .lista-ol--cuadro__vineta
+                  span B
+                span Resumen de pruebas.
+              ul.ms-5
+                li Casos de prueba planificados.
+                li Casos de prueba ejecutados.
+                li Casos de prueba exitosos.
+                li Casos de prueba fallidos.
+                li Casos de prueba bloqueados.
+              li 
+                .lista-ol--cuadro__vineta
+                  span C
+                span Listado de defectos detectados.
+              li 
+                .lista-ol--cuadro__vineta
+                  span D
+                span Conclusiones.
 
 </template>
 

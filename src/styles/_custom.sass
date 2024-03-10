@@ -113,6 +113,10 @@
 
 
 // estilos componente
+.pasos-a-personalizado-1
+  .pasos-a__circle div
+    color: white !important
+
 .imagen-infografica-personalizada-1
   .img-infografica__item, .img-infografica-b__item
     width: 4.5%
@@ -183,6 +187,67 @@
     &:before
       background-color: #C4DAF8
 
+.tarjeta-personalizada-2
+  &.color-1
+    &:before
+      background-color: #ADD3FD
+    .enumeracion-circulo
+      &__cont
+        border-color: #608AB9
+        &-fondo
+          background-color: #608AB9
+  &.color-2
+    &:before
+      background-color: #BAE9D9
+    .enumeracion-circulo
+      &__cont
+        border-color: #60A58E
+        &-fondo
+          background-color: #60A58E
+  display: flex
+  height: 100%
+  width: 100%
+  position: relative
+  &__contenido
+    width: 100%
+    position: relative
+    display: flex
+    flex-direction: column
+  &:before
+    content: ""
+    position: absolute
+    top: 50px
+    left: 0
+    right: 0
+    bottom: 0
+    border-radius: 12px
+    background-color: green
+  .enumeracion-circulo
+    display: inline-flex
+    margin-left:  auto
+    margin-right:  auto
+    .numero-texto
+      font-size: 60px
+      color: white
+      font-weight: bold
+
+    &__cont
+      width: 124px
+      height: 124px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-width: 1px
+      border-style: solid
+      border-radius: 50%
+      &-fondo
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 50%
+        padding: 1rem
+        width: 102px
+        height: 102px
 
 .figura-flecha
   position: relative
@@ -337,7 +402,46 @@
     top: 0
     bottom: 0
     z-index: 0
+  &.posicion-1
+    &:before
+      bottom: 130px
 
+.fondo-gradiente-7
+  position: relative
+  .fondo-gradiente-contenido
+    position: relative
+  &:before
+    content: ""
+    background: url(../assets/curso/temas/101.png)
+    background-repeat: no-repeat
+    position: absolute
+    width: 120%
+    left: -10%
+    top: 0
+    bottom: 0
+    z-index: 0
+  &.posicion-1
+    &:before
+      background-position: bottom
+      bottom: 70px
+
+.fondo-gradiente-8
+  position: relative
+  .fondo-gradiente-contenido
+    position: relative
+  &:before
+    content: ""
+    position: absolute
+    background: linear-gradient(0deg, rgba(225,246,239,0) 0%, rgba(229,240,255,1) 17%, rgba(135,171,229,0.01) 100%)
+    width: 120%
+    left: -10%
+    top: 0
+    bottom: 0
+    z-index: 0
+  &.posicion-1
+    &:before
+      top: -30px
+      bottom: 100px
 
 //fondos flotantes
 .fondo-float-1
@@ -373,6 +477,24 @@
     right: 0
     z-index: 0
 
+.fondo-float-3
+  position: relative
+  .fondo-float-contenido
+    position: relative
+  &:before
+    content: ""
+    border-radius: 6px
+    background: $color-sistema-k
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    z-index: 0
+  &.posicion-1
+    &:before
+      bottom: 25%
+
 //bordes
 .borde-8
   border-radius: 8px !important
@@ -400,6 +522,9 @@
   &.margen
     li
       margin-bottom: 0.5em !important
+  &.margen-2
+    li
+      margin-bottom: 1em !important
   li
     display: flex !important
     margin-bottom: 0 !important
