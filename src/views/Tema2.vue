@@ -123,7 +123,7 @@
       h2 2.1  Seleccionar las acciones de mejora
 
     .row.align-items-center.mb-4
-      .col-lg-7(data-aos="fade-right")
+      .col-lg-7.mb-lg-0.mb-4(data-aos="fade-right")
         p.mb-4 En este punto, es necesario seleccionar las opciones de mejora para dar prioridad a las más adecuadas. Para ello, se pueden emplear técnicas como la del grupo nominal y la tormenta de ideas, entre otras. Estas técnicas permiten establecer acciones de mejora que se convierten en soluciones para las debilidades identificadas. Esto significa que, para alcanzar los objetivos establecidos, se debe contar con una lista de las principales actuaciones.
 
         .fondo-color-sistema-k.p-4.borde-13
@@ -167,6 +167,55 @@
           h2 2.2 Realizar una planeación
 
         p.mb-4(data-aos="fade") El listado de las principales actuaciones se genera sin tener en cuenta un orden de prioridad especifico. No obstante, ciertas restricciones inherentes a las acciones pueden limitar su inicio, o incluso llevar a la posible eliminación o aplazamiento del plan de mejora. Por lo tanto, es crucial conocer las restricciones que limitan su viabilidad. Determinar un orden óptimo no se basa únicamente en identificar las acciones relacionadas con los factores de mayor urgencia; otros criterios también se consideran al tomar esta decisión. A continuación, se describen algunos de estos criterios:
+
+        .row.justify-content-center
+          .col-lg-9
+            .figura-tema2-1.mb-2(data-aos="flip-up")
+              .d-flex.align-items-center
+                .cont-figura-tem2
+                  figure
+                    img(src="@/assets/curso/temas/118.png")
+                .cont-tema2-1
+                  .fondo-cuerpo-fig.align-items-center.pe-3
+                    p.mb-0.py-1 Plazo de implantación: es de resaltar que existen acciones de mejora, cuyo tiempo está establecido y no requiere de un esfuerzo profundo, por lo tanto, pueden efectuarse a corto plazo. Sin embargo, hay acciones que su realización requiere de un extenso tiempo de implantación. 
+                  .p-2.p-md-4.d-flex.align-items-center.punta-figura
+                    ul
+                      li #[b Mucha]
+                      li #[b Bastante]
+                      li #[b Poca]
+                      li #[b Ninguna]
+
+            .figura-tema2-1.mb-2(data-aos="flip-up")
+              .d-flex.align-items-center
+                .cont-figura-tem2
+                  figure
+                    img(src="@/assets/curso/temas/118.png")
+                .cont-tema2-1
+                  .fondo-cuerpo-fig.align-items-center.pe-3
+                    p.mb-0.py-1 #[b Plazo de implantación:] es de resaltar que existen acciones de mejora, cuyo tiempo está establecido y no requiere de un esfuerzo profundo, por lo tanto, pueden efectuarse a corto plazo. Sin embargo, hay acciones que su realización requiere de un extenso tiempo de implantación.
+                  .p-2.p-md-4.d-flex.align-items-center.punta-figura
+                    ul
+                      li #[b Largo]
+                      li #[b Medio]
+                      li #[b Corto]
+                      li #[b Inmediato]
+
+            .figura-tema2-1.mb-2(data-aos="flip-up")
+              .d-flex.align-items-center
+                .cont-figura-tem2
+                  figure
+                    img(src="@/assets/curso/temas/118.png")
+                .cont-tema2-1
+                  .fondo-cuerpo-fig.align-items-center.pe-3
+                    p.mb-0.py-1 #[b Impacto en la organización:] este es el resultado de la actuación que se va a implantar, medido por medio del grado de mejora obtenido, puesto que, un cambio fundamental tendrá un impacto más grande que cambios continuos pequeños.
+                  .p-2.p-md-4.d-flex.align-items-center.punta-figura
+                    ul
+                      li #[b Ninguno]
+                      li #[b Poco]
+                      li #[b Bastante]
+                      li #[b Mucho]
+        
+
 
         Separador 
 

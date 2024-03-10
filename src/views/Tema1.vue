@@ -1378,6 +1378,13 @@
     
     .fondo-gradiente-6.mb-5
       .fondo-gradiente-contenido
+
+        .d-flex.justify-content-center.flex-lg-nowrap.flex-wrap
+          figure(style="max-width: 583px;" data-aos="fade-right")
+            img(src="@/assets/curso/temas/116.png")
+          figure(style="max-width: 583px;" data-aos="fade-left")
+            img(src="@/assets/curso/temas/117.png")
+
         .cont-titulo-decorativo.p-2.mt-5.mb-4
           .row
             .col-auto.pe-0

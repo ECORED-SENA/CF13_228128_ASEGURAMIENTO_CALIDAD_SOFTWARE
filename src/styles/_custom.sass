@@ -262,6 +262,44 @@
       pointer-events: none
       user-select: none
 
+.figura-tema2-1
+  .cont-tema2-1
+    display: flex
+  .cont-figura-tem2
+    position: relative
+    z-index: 1
+    figure
+      min-width: 206px
+      max-width: 206px
+      @media screen and (max-width: 768px)
+        min-width: 150px
+        max-width: 150px
+      @media screen and (max-width: 576px)
+        min-width: 80px
+        max-width: 80px
+  .fondo-cuerpo-fig
+    position: relative
+    display: flex
+    *
+      position: relative
+    &:before
+      content: ""
+      position: absolute
+      z-index: 0
+      top: 0
+      left: -98px
+      bottom: 0
+      right: 0
+      background-color: #DCECFE
+    @media screen and (max-width: 576px)
+      &:before
+        left: -40px
+        
+  .punta-figura
+    background-color: #B6CDE8
+    border-top-right-radius: 19px
+    border-bottom-right-radius: 19px
+
 .seccion-tarjetas
   .tarjeta--boton
     background-color: #A3BFE4
@@ -444,7 +482,6 @@
   &.posicion-1
     &:before
       top: 25px
-      bottom: -25px
 
 .fondo-gradiente-8
   position: relative
