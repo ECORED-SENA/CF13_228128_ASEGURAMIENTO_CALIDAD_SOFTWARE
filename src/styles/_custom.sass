@@ -255,7 +255,8 @@
   justify-content: center
   align-items: center
   &__titulo
-    position: absolute
+    position: absolute !important
+    z-index: 1
   &__fig
     img
       pointer-events: none
@@ -424,6 +425,26 @@
     &:before
       background-position: bottom
       bottom: 70px
+
+.fondo-gradiente-9
+  position: relative
+  .fondo-gradiente-contenido
+    position: relative
+  &:before
+    content: ""
+    background: url(../assets/curso/temas/115.png)
+    background-repeat: no-repeat
+    background-position: left top
+    position: absolute
+    width: 120%
+    left: -10%
+    top: 0
+    bottom: 0
+    z-index: 0
+  &.posicion-1
+    &:before
+      top: 25px
+      bottom: -25px
 
 .fondo-gradiente-8
   position: relative

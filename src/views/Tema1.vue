@@ -1454,13 +1454,11 @@
         iframe(width="560" height="315" src="https://www.youtube.com/embed/hIuEqUdAVJo?si=TD3_Gk_0T7qKjPmR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
       figcaption Video. Prueba de seguridad
 
-    .cont-titulo-decorativo.p-2.mt-5.mb-4
-      .row
-        .col-auto.pe-0
-          figure
-            img(src="@/assets/curso/temas/4.svg")
-        .col.align-self-end
-          h3.mt-3.mb-0.me-2 Elaboración de informe de resultados
+    Separador
+
+    #t_1_3.titulo-segundo.color-acento-contenido
+      h2 1.3 Elaboración de informe de resultados
+
 
     p.mb-4 Una vez ejecutadas las pruebas se deben analizar los resultados y los fallos detectados, teniendo en cuenta el reporte de defectos, directrices para detectarlos y el informe de resultados de pruebas. Para ello se puede realizar lo descrito a continuación:
 
