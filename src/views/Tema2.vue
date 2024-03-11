@@ -177,7 +177,7 @@
                     img(src="@/assets/curso/temas/118.png")
                 .cont-tema2-1
                   .fondo-cuerpo-fig.align-items-center.pe-3
-                    p.mb-0.py-1 Plazo de implantación: es de resaltar que existen acciones de mejora, cuyo tiempo está establecido y no requiere de un esfuerzo profundo, por lo tanto, pueden efectuarse a corto plazo. Sin embargo, hay acciones que su realización requiere de un extenso tiempo de implantación. 
+                    p.mb-0.py-1 #[b Dificultad de la implantación:] en este momento se prioriza el grado de dificultad de menor a mayor.
                   .p-2.p-md-4.d-flex.align-items-center.punta-figura
                     ul
                       li #[b Mucha]
