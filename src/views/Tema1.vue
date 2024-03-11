@@ -1401,9 +1401,9 @@
               img.mx-auto(src="@/assets/curso/temas/90.png",style="max-width: 505px;")
 
         figure.mb-5(data-aos="zoom-in-up")
-          .video
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/hIuEqUdAVJo?si=TD3_Gk_0T7qKjPmR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-          figcaption Video. Pruebas de exploratorias, usabilidad y aceptación
+          img(src="@/assets/curso/temas/imagen-vid-dev.png")
+        
+          
     
     .fondo-gradiente-6.posicion-1
       .fondo-gradiente-contenido
@@ -1440,9 +1440,7 @@
               img.mx-auto(src="@/assets/curso/temas/92.png",style="max-width: 610px;")
 
         figure.mb-5(data-aos="zoom-in-up")
-          .video
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/hIuEqUdAVJo?si=TD3_Gk_0T7qKjPmR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-          figcaption Video. Prueba de carga
+          img(src="@/assets/curso/temas/imagen-vid-dev.png")
 
     h4.mb-4(data-aos="fade") Pruebas de seguridad
 
@@ -1457,9 +1455,7 @@
     p.mb-4 A continuación, se presenta el siguiente video tutorial de instalación del #[em software] OWASP para realizar una prueba de seguridad:
 
     figure.mb-5(data-aos="zoom-in-up")
-      .video
-        iframe(width="560" height="315" src="https://www.youtube.com/embed/hIuEqUdAVJo?si=TD3_Gk_0T7qKjPmR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-      figcaption Video. Prueba de seguridad
+      img(src="@/assets/curso/temas/imagen-vid-dev.png")
 
     Separador
 
