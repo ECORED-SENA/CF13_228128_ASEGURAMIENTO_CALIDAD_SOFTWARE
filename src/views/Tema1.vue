@@ -19,11 +19,11 @@
       #t_1_1.titulo-segundo.color-acento-contenido(data-aos="flip-up")
         h2 1.1 Tipos de pruebas
 
-      p.mb-4(data-aos="fade") Las pruebas de #[em software] se pueden clasificar principalmente en dos categorías: pruebas funcionales y pruebas no funcionales. Considerando los diversos aspectos y componentes de un producto de #[em software], se requerirán distintos tipos de pruebas, como pruebas unitarias, pruebas de integración, pruebas de estrés, pruebas de rendimiento, pruebas de escalabilidad, entre otras. Cada uno de estos tipos de pruebas determina la calidad de la aplicación, desde el código fuente hasta la interacción y experiencia del usuario.
-
-      .row.justify-content-center(data-aos="fade-down")
-        .col-lg-10
-          .tarjeta.color-secundario.p-3.mb-5.borde-8
+      .row
+        .col-lg-8
+          p.mb-4 Las pruebas de #[em software] se pueden clasificar principalmente en dos categorías: pruebas funcionales y pruebas no funcionales. Considerando los diversos aspectos y componentes de un producto de #[em software], se requerirán distintos tipos de pruebas, como pruebas unitarias, pruebas de integración, pruebas de estrés, pruebas de rendimiento, pruebas de escalabilidad, entre otras. Cada uno de estos tipos de pruebas determina la calidad de la aplicación, desde el código fuente hasta la interacción y experiencia del usuario.
+ 
+          .tarjeta.color-secundario.p-3.mb-5.borde-8(data-aos="fade-down")
             .row.justify-content-around.align-items-center
               .col-auto
                 img(src="@/assets/curso/temas/3.svg").img65
@@ -36,6 +36,10 @@
                     a.boton.color-acento-botones(href="https://www.youtube.com/watch?v=TLs-a1Cok-w" target="_blank")
                       span(style="color: #12263F") Abrir video
                       i.fas.fa-file-video(style="color: #12263F")
+
+        .col-lg-4.order-first.order-lg-last(data-aos="fade")
+          figure.mb-4.mb-lg-0
+            img.mx-auto(src="@/assets/curso/temas/119.png",style="max-width: 400px;")
 
       p.mb-4(data-aos="fade") Algunos de los tipos de pruebas más comunes se describen en los siguientes puntos.
 
@@ -249,8 +253,13 @@
 
       .row.justify-content-center.mb-5(data-aos="fade-right")
         .col-lg-8
-          .fondo-color-sistema-j.borde-16.p-3.ps-5
-            p.ms-md-5.mb-0 #[b #[em Según Mera (2016) en este tipo de pruebas se comprueban los requisitos basados en la operación de un software. Para verificar la carga que resiste el producto software, identificando si su rendimiento es el adecuado o si es estable a nivel de contacto con el servidor.]]
+          .fondo-color-sistema-j.borde-16.p-3.ps-3
+            .row.align-items-center
+              .col-md-2
+                figure.mb-4.mb-md-0
+                  img.mx-auto(src="@/assets/curso/temas/120.png",style="max-width: 74px;")
+              .col-md-10
+                p.mb-0 #[b #[em Según Mera (2016) en este tipo de pruebas se comprueban los requisitos basados en la operación de un software. Para verificar la carga que resiste el producto software, identificando si su rendimiento es el adecuado o si es estable a nivel de contacto con el servidor.]]
       
       p.mb-5(data-aos="fade") Algunos aspectos, como el rendimiento de una aplicación, pueden ser complejos; sin embargo, esta prueba permite evaluar la calidad del #[em software] a probar. La calidad se basa principalmente en factores como el tiempo, la precisión, la estabilidad, la corrección y la durabilidad del producto bajo diversas circunstancias adversas. A partir de estos criterios de calidad, es posible explorar distintos tipos de pruebas no funcionales, tales como:
 
@@ -282,7 +291,7 @@
           p.mb-0 Se centran en validar que tan fácil se utiliza el programa en cuanto a facilidad de aprendizaje, eficiencia, memorización, errores y satisfacción.
         .tarjeta.color-secundario.p-4
           figure.mb-4
-            img.mx-auto(src="@/assets/curso/temas/23.svg",style="max-width: 124px;")
+            img.mx-auto(src="@/assets/curso/temas/121.svg",style="max-width: 124px;")
           p.mb-4 #[b Pruebas de robustez]
           p.mb-0 Son las encargadas de verificar la capacidad del programa para soportar entradas o instrucciones incorrectas. Una de sus características principales es implementar mecanismos de software de detección de errores en el hardware.
 
@@ -440,11 +449,11 @@
           h3.mt-3.mb-0.me-2 Desventajas de los tipos de pruebas
 
     .row.align-items-center.justify-content-center.mb-5(data-aos="fade-left")
-      .col-md-5.col-sm-6.col-lg-3
-        .mb-4.mb-lg-0.fondo-color-sistema-k.borde-8.p-2
+      .col-md-5.col-sm-6.col-lg-3.order-last
+        .fondo-color-sistema-k.borde-8.p-2
           figure
             img.mx-auto(src="@/assets/curso/temas/34.svg",style="max-width: 94px;")
-      .col-lg-9
+      .col-lg-9.mb-4.mb-lg-0
         p.mb-0 Todos los tipos de pruebas mejoran la experiencia del usuario, las funcionalidades y garantizan la calidad del #[em software]. Esto significa que, más que desventajas, lo que encontramos son ventajas en su aplicación. Sin embargo, el tiempo y el costo asociados a la realización de pruebas de #[em software] podrían considerarse como desventajas. Llevar a cabo pruebas demanda recursos y esfuerzos, y existe el riesgo de obtener resultados inexactos. No obstante, omitir las pruebas en las aplicaciones podría acarrear problemas serios al producto.
 
     .fondo-gradiente-1.posicion-2(data-aos="flip-up")
@@ -1195,7 +1204,7 @@
                 .col-lg-6
                   .pt-lg-5
                     h4.mb-4.titulo-item-slyder El desarrollo dirigido por comportamiento (BDD)
-                    p.mb-0 El objetivo de BDD es que las historias de usuario dirijan el desarrollo del proyecto #[em software]. Ademas, BDD permite comprobar que el #[em software] implementado cumple con la funcionalidad requerida.
+                    p.mb-4 El objetivo de BDD es que las historias de usuario dirijan el desarrollo del proyecto #[em software]. Ademas, BDD permite comprobar que el #[em software] implementado cumple con la funcionalidad requerida.
                     ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
                       li
                         i.fas.fa-cog
