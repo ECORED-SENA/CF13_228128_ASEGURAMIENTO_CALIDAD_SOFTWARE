@@ -25,28 +25,10 @@
     p.mb-4(data-aos="fade-right") Una vez elaborado el diagnóstico, se conocen las principales fortalezas y debilidades. Por lo tanto, es importante identificar las áreas de mejora apoyándose en las fortalezas para lograr superar las debilidades, siendo esta una opción de cambio óptima. A continuación, se muestra una tabla como una opción para identificar el área de mejora de acuerdo con las fortalezas y debilidades.
 
     .titulo-sexto.color-acento-contenido(data-aos="fade")
-      p.mb-0 #[b Tabla 3.] Ejemplo estructura de tabla de fortalezas, debilidades y área de mejora.
+      p.mb-0 #[b Figura 3.] Ejemplo estructura de tabla de fortalezas, debilidades y área de mejora.
     
-    .tabla-a.color-acento-contenido.mb-5.bg-white.mb-5(data-aos="zoom-in-up")
-      table
-        thead
-          tr
-            th Fortalezas 
-            th Debilidades
-            th Áreas de mejora
-        tbody
-          tr
-            td #[b 1.]
-            td #[b 1.]
-            td #[b 1.]
-          tr
-            td #[b 2.]
-            td #[b 2.]
-            td #[b 2.]
-          tr
-            td #[b 3.]
-            td #[b 3.]
-            td #[b 3.]
+    figure.mb-5
+      img.mx-auto(src="@/assets/curso/temas/132.png",style="max-width: 1240px;",alt="La figura presenta una tabla de ejemplo con tres columnas destinadas a enlistar fortalezas, debilidades y áreas de mejora, utilizada para el análisis de aspectos internos y la planificación estratégica de mejoras.")
 
     p.mb-4(data-aos="fade") Resolver problemas y mejorar un área específica comienza por identificar las causas que los originaron. Por lo tanto, existen varias herramientas metodológicas diseñadas para esta finalidad. A continuación, se mencionan algunas de ellas:
 
@@ -63,33 +45,29 @@
 
       SlyderA(tipo="b")
         .row.justify-content-center.align-items-center
-          .col-lg-5
-            .pt-lg-5
-              h4.titulo-item-slyder Diagrama de espina de pescado comentado
-          .col-lg-5.order-first.order-lg-last
+          .col-lg-12.mb-3
+            h4.text-center.titulo-item-slyder Diagrama de espina de pescado comentado
+          .col-lg-12.order-first.order-lg-last
             figure.mb-4.mb-lg-0
-              img.mx-auto(src="@/assets/curso/temas/108.png",style="max-width: 505px;",alt="El diagrama de espina de pescado comentado detalla causas de un problema no especificado, agrupadas en seis principales. A la izquierda, las causas son la falta de consideración de colegas, mala supervisión con moral baja y falta de formación que conduce a falta de conocimientos. A la derecha, se mencionan la falta de acceso a información, malas condiciones de trabajo con alta rotación de personal y recursos humanos inadecuados para la elaboración de memorias.")
+              img.mx-auto(src="@/assets/curso/temas/108.png",style="max-width: 800px;",alt="El diagrama de espina de pescado comentado detalla causas de un problema no especificado, agrupadas en seis principales. A la izquierda, las causas son la falta de consideración de colegas, mala supervisión con moral baja y falta de formación que conduce a falta de conocimientos. A la derecha, se mencionan la falta de acceso a información, malas condiciones de trabajo con alta rotación de personal y recursos humanos inadecuados para la elaboración de memorias.")
         .row.justify-content-center.align-items-center
-          .col-lg-5
-            .pt-lg-5
-              h4.titulo-item-slyder El diagrama de espina (causa-efecto)
-          .col-lg-5.order-first.order-lg-last
+          .col-lg-12
+            h4.text-center.titulo-item-slyder El diagrama de espina (causa-efecto)
+          .col-lg-12.order-first.order-lg-last
             figure.mb-4.mb-lg-0
-              img.mx-auto(src="@/assets/curso/temas/109.png",style="max-width: 505px;",alt="El diagrama de espina mostrado es una herramienta de análisis causa-efecto que estructura jerárquicamente las causas principales y sus causas secundarias, todas vinculadas a un efecto central, para desglosar y entender las razones detrás de un problema específico.")
+              img.mx-auto(src="@/assets/curso/temas/109.png",style="max-width: 800px;",alt="El diagrama de espina mostrado es una herramienta de análisis causa-efecto que estructura jerárquicamente las causas principales y sus causas secundarias, todas vinculadas a un efecto central, para desglosar y entender las razones detrás de un problema específico.")
         .row.justify-content-center.align-items-center
-          .col-lg-5
-            .pt-lg-5
-              h4.titulo-item-slyder Diagrama de pareto
-          .col-lg-5.order-first.order-lg-last
+          .col-lg-12
+            h4.text-center.titulo-item-slyder Diagrama de pareto
+          .col-lg-12.order-first.order-lg-last
             figure.mb-4.mb-lg-0
-              img.mx-auto(src="@/assets/curso/temas/110.png",style="max-width: 505px;",alt="El diagrama de Pareto exhibe la distribución y el impacto relativo de distintos tipos de incidencias. Se cuantifican las incidencias por categoría y se muestra el porcentaje acumulado de su impacto para priorizar problemas en base a su frecuencia y significancia.")
+              img.mx-auto(src="@/assets/curso/temas/110.png",style="max-width: 800px;",alt="El diagrama de Pareto exhibe la distribución y el impacto relativo de distintos tipos de incidencias. Se cuantifican las incidencias por categoría y se muestra el porcentaje acumulado de su impacto para priorizar problemas en base a su frecuencia y significancia.")
         .row.justify-content-center.align-items-center
-          .col-lg-5
-            .pt-lg-5
-              h4.titulo-item-slyder Tormenta de ideas
-          .col-lg-5.order-first.order-lg-last
+          .col-lg-12
+            h4.text-center.titulo-item-slyder Tormenta de ideas
+          .col-lg-12.order-first.order-lg-last
             figure.mb-4.mb-lg-0
-              img.mx-auto(src="@/assets/curso/temas/111.png",style="max-width: 505px;",alt="Tormenta de ideas es una traducción correcta del término inglés \"brainstorming\". Se utiliza para referirse a una técnica de grupo para generar ideas creativas y soluciones a problemas, donde se fomenta la participación de todos los miembros y se valora la cantidad sobre la calidad de las ideas, con el objetivo de explorar el mayor número de opciones posibles.")
+              img.mx-auto(src="@/assets/curso/temas/111.png",style="max-width: 800px;",alt="Tormenta de ideas es una traducción correcta del término inglés \"brainstorming\". Se utiliza para referirse a una técnica de grupo para generar ideas creativas y soluciones a problemas, donde se fomenta la participación de todos los miembros y se valora la cantidad sobre la calidad de las ideas, con el objetivo de explorar el mayor número de opciones posibles.")
 
     p.mb-4(data-aos="fade") El uso de estas herramientas contribuye a un análisis más profundo del problema y se convierten en directrices clave al momento de establecer acciones de mejora.
 
@@ -134,32 +112,13 @@
           img.mx-auto(src="@/assets/curso/temas/113.png",style="max-width: 505px;")
 
     .titulo-sexto.color-acento-contenido(data-aos="zoom-in-up")
-      p.mb-0 #[b Tabla 4.] Ejemplo estructura de tabla sobre acciones de mejora.
+      p.mb-0 #[b Figura 4.] Ejemplo estructura de tabla sobre acciones de mejora.
     
     .fondo-gradiente-9.posicion-1
       .fondo-gradiente-contenido
-        .tabla-a.color-acento-contenido.mb-5.bg-white.mb-5(data-aos="flip-up")
-          table
-            thead
-              tr
-                th.text-start ÁREA DE MEJORA N.º 1: 
-                th 
-            tbody
-              tr
-                td #[b Descripción del problema]
-                td
-              tr
-                td #[b Causas que provocan el problema]
-                td
-              tr
-                td #[b Objetivo a conseguir]
-                td
-              tr
-                td #[b Acciones de mejora]
-                td
-              tr
-                td #[b Beneficios esperados]
-                td
+        
+        figure.mb-5.mb-lg-0
+          img.mx-auto(src="@/assets/curso/temas/133.png",style="max-width: 1240px;",alt="La figura es un ejemplo de tabla estructurada para detallar un área de mejora, donde se debe especificar la descripción del problema, sus causas, el objetivo a lograr, las acciones de mejora a implementar y los beneficios esperados")
 
         Separador
 
@@ -231,40 +190,11 @@
               img.mx-auto(src="@/assets/curso/temas/114.png",style="max-width: 400px;")
         
         .titulo-sexto.color-acento-contenido(data-aos="fade")
-          p.mb-0 #[b Tabla 5.] Estructura plan de mejora.
+          p.mb-0 #[b Figura 5.] Estructura plan de mejora.
 
         
-        .tabla-a.color-acento-contenido.bg-white
-          table
-            thead
-              tr
-                th Acciones de mejora
-                th Tareas
-                th Responsable de tarea
-                th Tiempos (inicio-final)
-                th Recursos necesarios
-                th Financiación
-                th Indicador seguimiento
-                th Responsable seguimiento
-            tbody
-              tr
-                td
-                td
-                td
-                td
-                td
-                td
-                td
-                td
-              tr
-                td
-                td
-                td
-                td
-                td
-                td
-                td
-                td
+        figure.mb-4.mb-lg-0
+          img.mx-auto(src="@/assets/curso/temas/134.png",style="max-width: 1240px;",alt="La figura es un ejemplo de tabla para planificar acciones de mejora, que incluye columnas para listar tareas, asignar responsables, definir cronogramas, especificar recursos, financiación, indicadores de seguimiento y responsables de dicho seguimiento, facilitando la organización y la gestión estructurada del proceso de mejora.")
     
       
 

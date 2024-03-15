@@ -103,6 +103,8 @@
 .acordion__accion__btn--a
   background-color: $color-acento-botones !important
 
+.tarjeta.acordion__activo
+  background-color: #E1F6EF !important
 
 .contenedor-cuerpo-acordion-a
   padding-left: 55px !important
@@ -110,18 +112,39 @@
     padding-left: 0 !important
 
 
+.pasos-b
+  .pasos-b__header__item__dot
+    background-color: white
+    border-color: white
+    .text-bold
+      color: #12263F !important
+  .pasos-b__header__btn--right,.pasos-b__header__btn--left
+    background-color: $color-acento-botones
+    border: none
+    i
+      color: #12263F !important
 
+.pasos-b.color-primario
+  .pasos-b__header__item--active
+    .pasos-b__header__item__dot
+      background-color: #3EE2A8 !important
+      border-color: #3EE2A8 !important
+
+.pasos-b__header__item--before
+  .pasos-b__header__item__dot
+    background-color: #3EE2A8 !important
+    border-color: #3EE2A8 !important
 
 // estilos componente
 .pasos-a-personalizado-1
   .pasos-a__circle div
-    color: white !important
+    color: #12263F !important
 
 .imagen-infografica-personalizada-1
   .img-infografica__item, .img-infografica-b__item
     width: 4.5%
   .tarjeta
-    background-color: #E3ECF7
+    background-color: white
 
 .slyder-a-personalizado-1
   overflow: hidden
@@ -463,6 +486,11 @@
     &:before
       background-position: bottom
       bottom: 70px
+  &.posicion-2
+    &:before
+      top: 150px
+      background-position: bottom
+      bottom: 70px
 
 .fondo-gradiente-9
   position: relative
@@ -601,3 +629,19 @@
     color: $color-secundario !important
 
 
+.tarjeta--boton.cust-tar-bot-1
+  background-color: #DCECFE !important
+
+.tarjeta--boton.cust-tar-bot-1.color-1:hover
+  background-color: #007C96 !important
+  p
+    color: white !important
+
+.tarjeta--boton.cust-tar-bot-1.color-2:hover
+  background-color: #C63C00 !important
+  p
+    color: white !important
+
+.imgin-22
+  .img-infografica__item__numero
+    color: #273A89 !important

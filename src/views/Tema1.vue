@@ -359,7 +359,7 @@
 
     p.mb-4(data-aos="fade-right") Aplicar los distintos tipos de pruebas puede asegurar que el #[em software] funcione conforme a lo esperado en todo momento, garantizando así su calidad. Por lo tanto, es esencial, para su aplicación, identificar las ventajas y desventajas de cada uno, con el fin de determinar las diferencias entre ellos. Podemos observar las ventajas de estos tipos de pruebas en el siguiente recurso.
 
-    AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta no-border-radius tarjeta--azul" data-aos="fade")
+    AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta no-border-radius fondo-color-sistema-k" data-aos="fade")
       .row.contenedor-cuerpo-acordion-a.align-items-center(titulo="Pruebas de rendimiento")
         .col-md-6.mb-4.mb-md-0
           ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
@@ -907,7 +907,7 @@
     .fondo-gradiente-1.posicion-1
       p.mb-5.pt-5(data-aos="fade") Ahora, se describen algunas recomendaciones para tener en cuenta al momento de trabajar con pruebas de software agiles #[em (Agil Testing)].
 
-      AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta no-border-radius tarjeta--azul" data-aos="zoom-in-up")
+      AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta no-border-radius fondo-color-sistema-k" data-aos="zoom-in-up")
         .row.contenedor-cuerpo-acordion-a.align-items-center(titulo="Gestión de pruebas por <em>sprint</em>")
           .col-md-6.mb-4.mb-md-0
             ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
@@ -1003,11 +1003,11 @@
               .tarjeta.color-secundario.p-3.mb-4
                 p.h4.mb-0.text-center El Desarrollo Guiado por Pruebas (TDD, por sus siglas en inglés) se fundamenta en tres pasos esenciales:
               .tarjeta.p-3.bg-white.mb-4
-                p.mb-0 #[span.fw-bold(style="color: #FF0000;") Red:] este paso se denomina así porque implica la creación de una prueba que inicialmente falla, lo cual se refleja con letras rojas en la consola al ejecutarla.
+                p.mb-0 #[span.fw-bold(style="color: #FF0000;") #[em Red:]] este paso se denomina así porque implica la creación de una prueba que inicialmente falla, lo cual se refleja con letras rojas en la consola al ejecutarla.
               .tarjeta.p-3.bg-white.mb-4
-                p.mb-0 #[span.fw-bold(style="color: #25A118;") Green:] el objetivo de este paso es modificar el código para que la prueba anteriormente fallida ahora pase exitosamente. Se llama Green  porque, al pasar la prueba, los resultados suelen mostrarse en letras verdes en la consola.
+                p.mb-0 #[span.fw-bold(style="color: #11480B;") #[em Green:]] el objetivo de este paso es modificar el código para que la prueba anteriormente fallida ahora pase exitosamente. Se llama Green  porque, al pasar la prueba, los resultados suelen mostrarse en letras verdes en la consola.
               .tarjeta.p-3.bg-white
-                p.mb-0 #[span.fw-bold(style="color: #D750FF;") Refactor:] una vez que la prueba ha sido superada, se procede a revisar y mejorar el código para optimizarlo, limpiarlo o aplicar mejores prácticas, sin alterar su funcionalidad.
+                p.mb-0 #[span.fw-bold(style="color: #8D00B6;") #[em Refactor:]] una vez que la prueba ha sido superada, se procede a revisar y mejorar el código para optimizarlo, limpiarlo o aplicar mejores prácticas, sin alterar su funcionalidad.
 
       p.mb-5(data-aos="fade-left") En la siguiente tabla podemos verificar cada uno de los pasos guiados por las pruebas TDD donde se explica cada uno de los pasos con sus ejemplos.
 
@@ -1064,37 +1064,62 @@
           h3.mt-3.mb-0.me-2 #[em Acceptance Test Driven Development (ATDD)]
 
     p.mb-4(data-aos="fade-up") El Desarrollo Guiado por Pruebas de Aceptación (ATDD, por sus siglas en inglés) es una metodología de desarrollo que enfatiza la comunicación entre los clientes empresariales, los desarrolladores y los #[em tester]. Antes de que los desarrolladores empiecen a escribir código, ATDD incorpora las pruebas de aceptación, poniendo especial énfasis en la redacción de estas pruebas. El proceso de ATDD se desarrolla a través de los siguientes pasos:
-
-    .titulo-sexto.color-acento-contenido(data-aos="fade")
-      p.mb-0 #[b Figura 6.] #[em ATDD]
     
     .fondo-gradiente-4
-      .row.align-items-center.mb-5
+      .row.align-items-center.mb-5.justify-content-center
         .col-lg-6(data-aos="fade-right")
+          .titulo-sexto.color-acento-contenido(data-aos="fade")
+            p.mb-0 #[b Figura 6.] #[em ATDD]
+
           figure.mb-4.mb-lg-0
             img.mx-auto(src="@/assets/curso/temas/74.svg",style="max-width: 610px;",alt="El diagrama representa el flujo de trabajo de ATDD, iniciando con la historia de usuario, pasando por la especificación y automatización de pruebas de aceptación, luego implementando el código con TDD y utilizando el lenguaje de programación. Este proceso es iterativo, indicado por la frase que señala la repetición del ciclo. ATDD, ubicado en el centro, destaca su rol como eje central del proceso.")
-        .col-lg-6(data-aos="fade-left")
-          ol.lista-tipo-1.margen.lista-ol--cuadro
-            li
-              .lista-ol--cuadro__vineta
-                span 1
-              span #[b Seleccionar la historia de usuario:] en este punto, se asume que se ha realizado una priorización para determinar cuál es la próxima historia de usuario a abordar.
-            li 
-              .lista-ol--cuadro__vineta
-                span 2
-              span #[b Escribir la prueba de aceptación:] en esta etapa, todos los involucrados deben participar de manera colaborativa para definir las pruebas que validen la correcta impzlementación de la historia.
-            li 
-              .lista-ol--cuadro__vineta
-                span 3
-              span #[b Implementar la historia de usuario - Automatizar las pruebas:] existen varias maneras de llevar a cabo este paso, pero lo crucial es que, a partir de las pruebas de aceptación definidas anteriormente, se obtengan pruebas ejecutables. Estas pruebas permitirán verificar el progreso de la implementación de la funcionalidad.
-            li 
-              .lista-ol--cuadro__vineta
-                span 4
-              span #[b Implementar el código:] aunque hay diversas formas de realizar este paso, una de ellas es mediante el uso de TDD (Desarrollo Guiado por Pruebas), que asegura que el código cumpla con los requisitos establecidos en las pruebas de aceptación.
-            li 
-              .lista-ol--cuadro__vineta
-                span 5
-              span #[b Realizar pequeños cambios/Refactorización:] este paso es fundamental tanto en ATDD como en TDD. Se trata de una práctica iterativa que concluye cuando los requerimientos del cliente han sido plenamente satisfechos, optimizando y limpiando el código sin alterar su funcionalidad.
+
+      .tarjeta.tarjeta--gris.color-secundario.p-4.mb-5(style="overflow: hidden;")
+        figure.mb-4.mb-lg-0(style="max-width: 110px;position: absolute;left: 0;bottom: 0;z-index: 0;")
+          img.mx-auto(src="@/assets/curso/temas/123.svg")
+        figure.mb-4.mb-lg-0(style="max-width: 126px;position: absolute;right: -60px;top: -60px;z-index: 0;")
+          img.mx-auto(src="@/assets/curso/temas/124.svg")
+        PasosB.color-primario
+          .row.mb-5(titulo="")
+            .col-md-6.mb-4.mb-md-0
+              h3.mb-4.d-inline-block.bg-white.p-1(style="color: #273A89;") Seleccionar la historia de usuario:
+              p.mb-0 en este punto, se asume que se ha realizado una priorización para determinar cuál es la próxima historia de usuario a abordar.
+          
+            .col-md-6
+              figure
+                img.mx-auto(src="@/assets/curso/temas/122.png",style="max-width: 295px;")
+          .row.mb-5(titulo="")
+            .col-md-6.mb-4.mb-md-0
+              h3.mb-4.d-inline-block.bg-white.p-1(style="color: #273A89;") Escribir la prueba de aceptación:
+              p.mb-0 en esta etapa, todos los involucrados deben participar de manera colaborativa para definir las pruebas que validen la correcta impzlementación de la historia.
+          
+            .col-md-6
+              figure
+                img.mx-auto(src="@/assets/curso/temas/125.png",style="max-width: 295px;")
+          .row.mb-5(titulo="")
+            .col-md-6.mb-4.mb-md-0
+              h3.mb-4.d-inline-block.bg-white.p-1(style="color: #273A89;") Implementar la historia de usuario - Automatizar las pruebas:
+              p.mb-0 existen varias maneras de llevar a cabo este paso, pero lo crucial es que, a partir de las pruebas de aceptación definidas anteriormente, se obtengan pruebas ejecutables. Estas pruebas permitirán verificar el progreso de la implementación de la funcionalidad.
+          
+            .col-md-6
+              figure
+                img.mx-auto(src="@/assets/curso/temas/126.png",style="max-width: 295px;")
+          .row.mb-5(titulo="")
+            .col-md-6.mb-4.mb-md-0
+              h3.mb-4.d-inline-block.bg-white.p-1(style="color: #273A89;") Implementar el código:
+              p.mb-0 aunque hay diversas formas de realizar este paso, una de ellas es mediante el uso de TDD (Desarrollo Guiado por Pruebas), que asegura que el código cumpla con los requisitos establecidos en las pruebas de aceptación.
+          
+            .col-md-6
+              figure
+                img.mx-auto(src="@/assets/curso/temas/127.png",style="max-width: 295px;")
+          .row.mb-5(titulo="")
+            .col-md-6.mb-4.mb-md-0
+              h3.mb-4.d-inline-block.bg-white.p-1(style="color: #273A89;") Realizar pequeños cambios/Refactorización:
+              p.mb-0 este paso es fundamental tanto en ATDD como en TDD. Se trata de una práctica iterativa que concluye cuando los requerimientos del cliente han sido plenamente satisfechos, optimizando y limpiando el código sin alterar su funcionalidad.
+          
+            .col-md-6
+              figure
+                img.mx-auto(src="@/assets/curso/temas/128.png",style="max-width: 295px;")
 
     
     .fondo-gradiente-1
@@ -1326,19 +1351,19 @@
                     img(src='@/assets/curso/temas/85.svg')
 
                 .tarjeta.borde-9.p-3(x="51%" y="13%" numero="+")
-                  .h5.mb-4 Exploración del producto
+                  .h5.mb-4.d-inline-block.p-2(style="background-color: #BAE9D9;") Exploración del producto
                   p.mb-5 Para conocer a fondo cómo cumplir con los requisitos hay que registrar los objetivos, las funciones, los tipos de datos que se procesan y las zonas de inestabilidad del producto.
                 .tarjeta.borde-9.p-3(x="72%" y="41%" numero="+")
-                  .h5.mb-4 Diseño de pruebas
+                  .h5.mb-4.d-inline-block.p-2(style="background-color: #BAE9D9;") Diseño de pruebas
                   p.mb-5 Crear diferentes estrategias para observar y evaluar por completo el producto.
                 .tarjeta.borde-9.p-3(x="63%" y="74%" numero="+")
-                  .h5.mb-4 Ejecución de pruebas
+                  .h5.mb-4.d-inline-block.p-2(style="background-color: #BAE9D9;") Ejecución de pruebas
                   p.mb-5 Explorar el producto para poder formular una hipótesis de cómo funciona y cuáles pueden ser sus puntos débiles.
                 .tarjeta.borde-9.p-3(x="36%" y="74%" numero="+")
-                  .h5.mb-4 Heurística
+                  .h5.mb-4.d-inline-block.p-2(style="background-color: #BAE9D9;") Heurística
                   p.mb-5 Reglas generales que ayudarán a cómo probar correctamente el producto.
                 .tarjeta.borde-9.p-3(x="28%" y="40%" numero="+")
-                  .h5.mb-4 Resultados revisables
+                  .h5.mb-4.d-inline-block.p-2(style="background-color: #BAE9D9;") Resultados revisables
                   p.mb-5 Cuando se finalicen las pruebas exploratorias, el tester debe ser capaz de explicar cualquier aspecto del programa y mostrar cómo se cumplen los requisitos indicados en el procedimiento.
 
     .cont-titulo-decorativo.p-2.mt-5.mb-4(data-aos="fade")
@@ -1385,33 +1410,26 @@
           img.mx-auto(src="@/assets/curso/temas/89.png",style="max-width: 505px;")
 
     
-    .fondo-gradiente-6.mb-5
-      .fondo-gradiente-contenido
-
-        .d-flex.justify-content-center.flex-lg-nowrap.flex-wrap
-          figure(style="max-width: 583px;" data-aos="fade-right")
-            img(src="@/assets/curso/temas/116.png")
-          figure(style="max-width: 583px;" data-aos="fade-left")
-            img(src="@/assets/curso/temas/117.png")
-
-        .cont-titulo-decorativo.p-2.mt-5.mb-4
-          .row
-            .col-auto.pe-0
+    .row.justify-content-center
+      .col-sm-6.col-lg-3.mb-4.mb-lg-0
+        .tarjeta--boton.cust-tar-bot-1.color-1.color-primario.p-4
+          .row.justify-content-center.mb-3
+            .col-7
               figure
-                img(src="@/assets/curso/temas/4.svg")
-            .col.align-self-end
-              h3.mt-3.mb-0.me-2 Pruebas de exploratorias, usabilidad y aceptación
+                img(src='@/assets/curso/temas/129.png', alt='Texto que describa la imagen')
 
-        .row.mb-4
-          .col-lg-7
-            p.mb-0.pt-lg-5 Las pruebas de usabilidad y las pruebas de aceptación del usuario, aunque pueden presentar semejanzas en términos de resultados y objetivos, difieren significativamente en su enfoque. Las pruebas de usabilidad se centran en identificar errores o deficiencias en el sistema que puedan afectar la experiencia del usuario, con el objetivo de mejorar el producto. En contraste, las pruebas de aceptación del usuario buscan demostrar que el sistema cumple con los requisitos y expectativas establecidos, señalando así que el producto está listo para su lanzamiento. Por lo tanto, mientras las pruebas de usabilidad se enfocan en perfeccionar la interacción del usuario con el producto, las pruebas de aceptación del usuario se orientan a validar la completitud y adecuación funcional del sistema. Lo invitamos a explorar el siguiente video y conocer más sobre este tipo de pruebas:
-          .col-lg-5.order-first.order-lg-last(data-aos="fade")
-            figure.mb-4.mb-lg-0
-              img.mx-auto(src="@/assets/curso/temas/90.png",style="max-width: 505px;")
+          p.fw-bold Herramientas especializadas de código abierto diseñadas específicamente para facilitar y optimizar este proceso:
+          p Winrunner, VTest, Canoo, AdventNet y QEngine.
+      .col-sm-6.col-lg-3.mb-4.mb-lg-0
+        .tarjeta--boton.cust-tar-bot-1.color-2.color-primario.p-4
+          .row.justify-content-center.mb-3
+            .col-7
+              figure
+                img(src='@/assets/curso/temas/130.png', alt='Texto que describa la imagen')
 
-        figure.mb-5(data-aos="zoom-in-up")
-          img(src="@/assets/curso/temas/imagen-vid-dev.png")
-        
+          p.fw-bold Otras herramientas comerciales para aplicar este tipo de pruebas son:
+          p HP UFT, Seapine QA Wizart Pro, IBM Rational Test Workbench, SmartBear Test Complete, SOASTA, Ranorex UI y OpKey.
+
           
     
     .fondo-gradiente-6.posicion-1
@@ -1529,46 +1547,41 @@
               p.mb-0 La gestión de incidencias desempeña un papel crucial en el proceso de aseguramiento de la calidad del #[em software], ya que es en esta etapa donde se identifican y abordan los errores #[em (bugs)]. El objetivo principal de tratar las incidencias detectadas es generar las correcciones necesarias para minimizar la posibilidad de que estos errores se repitan. Este proceso asegura que el #[em software] no solo cumpla con los estándares de calidad requeridos, sino que también mejore continuamente, incrementando su fiabilidad y eficiencia.
 
     h4.mb-4(data-aos="fade") Ciclo de vida de una incidencia
-    p.mb-4 Un sistema de gestión de incidentes debe manejar los errores de #[em software], teniendo en cuenta el siguiente proceso:
+    p.mb-5 Un sistema de gestión de incidentes debe manejar los errores de #[em software], teniendo en cuenta el siguiente proceso:
 
-    .fondo-gradiente-7.posicion-1
+    .fondo-gradiente-7.posicion-2
       .fondo-gradiente-contenido
 
-        .fondo-float-3.posicion-1.py-4.px-2.mb-5
-          .fondo-float-contenido
-            .row
-              .col-lg-5(data-aos="fade-left")
+        .row.justify-content-center.mb-5
+          .col-lg-7.order-first.order-lg-last.mb-5.mb-lg-0(data-aos="fade-right")
+            ImagenInfografica.imagen-infografica-personalizada-1.color-acento-botones.imgin-22
+              template(v-slot:imagen)
                 figure
-                    img.mx-auto(src="@/assets/curso/temas/103.png",style="max-width: 505px;")
-              .col-lg-7.order-first.order-lg-last.mb-5.mb-lg-0(data-aos="fade-right")
-                ImagenInfografica.imagen-infografica-personalizada-1.color-acento-botones
-                  template(v-slot:imagen)
-                    figure
-                      img(src='@/assets/curso/temas/102.svg')
+                  img(src='@/assets/curso/temas/102.svg')
 
-                  .tarjeta.borde-9.p-3(x="5%" y="36%" numero="+")
-                    .h5.mb-4 Nuevo
-                    p.mb-5 Durante las pruebas de #[em software] los errores de #[em software] deben ser identificados y registrados por el tester de #[em software] siendo ese instante donde se reporta el error.
-                  .tarjeta.borde-9.p-3(x="23%" y="36%" numero="+")
-                    .h5.mb-4 Abierto
-                    p.mb-5 El equipo de desarrollo adquiere el incidente y empieza a analizarlo.
-                  .tarjeta.borde-9.p-3(x="38%" y="36%" numero="+")
-                    .h5.mb-4 Asignado
-                    p.mb-5 El incidente es asignado al desarrollador.
-                  .tarjeta.borde-9.p-3(x="58%" y="5%" numero="+")
-                    .h5.mb-4 Diferido
-                    p.mb-5 Si el incidente aplica y es de bajo impacto.
-                  .tarjeta.borde-9.p-3(x="28%" y="94%" numero="+")
-                    .h5.mb-4 Reabierto
-                    p.mb-5 Cuando el incidente es corregido y es retornado al equipo de #[em #[b testers]] de #[em software].
-                  .tarjeta.borde-9.p-3(x="76%" y="36%" numero="+")
-                    .h5.mb-4 Verificado
-                    p.mb-5 Si la prueba es positiva.
-                  .tarjeta.borde-9.p-3(x="93%" y="36%" numero="+")
-                    .h5.mb-4 Cerrado
-                    p.mb-5 Posterior a una verificación por parte del equipo de #[em testing].
+              .tarjeta.borde-9.p-3(x="5%" y="36%" numero="+")
+                .h5.mb-4.d-inline-block.p-2(style="background-color: #BAE9D9;") Nuevo
+                p.mb-5 Durante las pruebas de #[em software] los errores de #[em software] deben ser identificados y registrados por el tester de #[em software] siendo ese instante donde se reporta el error.
+              .tarjeta.borde-9.p-3(x="23%" y="36%" numero="+")
+                .h5.mb-4.d-inline-block.p-2(style="background-color: #BAE9D9;") Abierto
+                p.mb-5 El equipo de desarrollo adquiere el incidente y empieza a analizarlo.
+              .tarjeta.borde-9.p-3(x="38%" y="36%" numero="+")
+                .h5.mb-4.d-inline-block.p-2(style="background-color: #BAE9D9;") Asignado
+                p.mb-5 El incidente es asignado al desarrollador.
+              .tarjeta.borde-9.p-3(x="58%" y="5%" numero="+")
+                .h5.mb-4.d-inline-block.p-2(style="background-color: #BAE9D9;") Diferido
+                p.mb-5 Si el incidente aplica y es de bajo impacto.
+              .tarjeta.borde-9.p-3(x="28%" y="94%" numero="+")
+                .h5.mb-4.d-inline-block.p-2(style="background-color: #BAE9D9;") Reabierto
+                p.mb-5 Cuando el incidente es corregido y es retornado al equipo de #[em #[b testers]] de #[em software].
+              .tarjeta.borde-9.p-3(x="76%" y="36%" numero="+")
+                .h5.mb-4.d-inline-block.p-2(style="background-color: #BAE9D9;") Verificado
+                p.mb-5 Si la prueba es positiva.
+              .tarjeta.borde-9.p-3(x="93%" y="36%" numero="+")
+                .h5.mb-4.d-inline-block.p-2(style="background-color: #BAE9D9;") Cerrado
+                p.mb-5 Posterior a una verificación por parte del equipo de #[em testing].
 
-        p.mb-4(data-aos="fade-left") El proceso mencionado se adecúa a proyectos de software en fase de desarrollo, pero no así en ambientes de producción.
+        p.mb-4.pt-5(data-aos="fade-left") El proceso mencionado se adecúa a proyectos de software en fase de desarrollo, pero no así en ambientes de producción.
 
         h4.mb-4(data-aos="zoom-in-up") Redacción del reporte de Incidencias
         p.mb-4 El propósito del informe de incidentes es documentar cada incidente, por lo tanto, se debe seguir un procedimiento para gestionar de forma sistémica y ordenada las incidencias de producto halladas a lo largo de la ejecución de los casos de prueba. Este procedimiento tiene las siguientes actividades:
@@ -1623,92 +1636,102 @@
                       i.fas.fa-cube
                       span Impacto que los incidentes tendrán con respecto a las pruebas.
 
-    .fondo-gradiente-8.posicion-1
-      .fondo-gradiente-contenido
-        h4.mb-4 Reporte de defectos
-        p.mb-4(data-aos="zoom-in-up") Cuando se confirma la existencia de un defecto, se elabora un reporte. Este documento detalla los fallos identificados durante el proceso de pruebas, subrayando la importancia de que cada defecto detectado cuente con un reporte individual. Esto facilita la trazabilidad y su corrección posterior. A continuación, se describe la estructura típica de un reporte de defectos
 
-        .row.justify-content-center.mb-5
-          .col-lg-6(data-aos="fade-right")
-            figure.mb-4.mb-lg-0
-              img.mx-auto(src="@/assets/curso/temas/105.png",style="max-width: 610px;")
-          .col-lg-3(data-aos="fade-left")
-            ol.lista-tipo-1.margen.lista-ol--cuadro
+    h4.mb-4 Reporte de defectos
+    p.mb-4(data-aos="zoom-in-up") Cuando se confirma la existencia de un defecto, se elabora un reporte. Este documento detalla los fallos identificados durante el proceso de pruebas, subrayando la importancia de que cada defecto detectado cuente con un reporte individual. Esto facilita la trazabilidad y su corrección posterior. A continuación, se describe la estructura típica de un reporte de defectos
+
+    .row.justify-content-center.mb-5
+      .col-lg-6(data-aos="fade-right")
+        figure.mb-4.mb-lg-0
+          img.mx-auto(src="@/assets/curso/temas/105.png",style="max-width: 610px;")
+      .col-lg-3(data-aos="fade-left")
+        ol.lista-tipo-1.margen.lista-ol--cuadro
+          li
+            .lista-ol--cuadro__vineta
+              span 1
+            span Identificador.
+          li 
+            .lista-ol--cuadro__vineta
+              span 2
+            span Título.
+          li 
+            .lista-ol--cuadro__vineta
+              span 3
+            span Reportado por.
+          li 
+            .lista-ol--cuadro__vineta
+              span 4
+            span Asignado a.
+          li 
+            .lista-ol--cuadro__vineta
+              span 5
+            span Fecha de creación.
+          li 
+            .lista-ol--cuadro__vineta
+              span 6
+            span Severidad.
+          li 
+            .lista-ol--cuadro__vineta
+              span 7
+            span Nombre de la aplicación.
+          li 
+            .lista-ol--cuadro__vineta
+              span 8
+            span Descripción.
+          li 
+            .lista-ol--cuadro__vineta
+              span 9
+            span Método de reproducción.
+          li 
+            .lista-ol--cuadro__vineta
+              span 10
+            span Información adicional. 
+
+    h4.mb-4 Informe de resultados de pruebas
+
+    .row.align-items-center(data-aos="flip-up")
+      .col-lg-8
+        .fondo-color-sistema-k.borde-12.p-4.mb-4
+          p.mb-4 El informe de resultados de pruebas presenta y organiza un análisis conciso de los resultados obtenidos en las pruebas, así como las principales métricas utilizadas para la evaluación y verificación. Por tanto, la responsabilidad de este documento recae en el gerente de pruebas. Este informe debe incluir los siguientes puntos:
+
+          ol.lista-tipo-1.margen.lista-ol--cuadro
+            li
+              .lista-ol--cuadro__vineta
+                span A
+              span Alcance de las pruebas, es decir lo que es necesario incluir y no incluir.
+            li 
+              .lista-ol--cuadro__vineta
+                span B
+              span Resumen de pruebas.
+            ul.ms-5
+              li 
+                i.fas.fa-cube(style="color: #273A89;position: relative;top:3px;margin-right: 0.3rem;")
+                span Casos de prueba planificados.
+              li 
+                i.fas.fa-cube(style="color: #273A89;position: relative;top:3px;margin-right: 0.3rem;")
+                span Casos de prueba ejecutados.
               li
-                .lista-ol--cuadro__vineta
-                  span 1
-                span Identificador.
+                i.fas.fa-cube(style="color: #273A89;position: relative;top:3px;margin-right: 0.3rem;")
+                span Casos de prueba exitosos.
               li 
-                .lista-ol--cuadro__vineta
-                  span 2
-                span Título.
-              li 
-                .lista-ol--cuadro__vineta
-                  span 3
-                span Reportado por.
-              li 
-                .lista-ol--cuadro__vineta
-                  span 4
-                span Asignado a.
-              li 
-                .lista-ol--cuadro__vineta
-                  span 5
-                span Fecha de creación.
-              li 
-                .lista-ol--cuadro__vineta
-                  span 6
-                span Severidad.
-              li 
-                .lista-ol--cuadro__vineta
-                  span 7
-                span Nombre de la aplicación.
-              li 
-                .lista-ol--cuadro__vineta
-                  span 8
-                span Descripción.
-              li 
-                .lista-ol--cuadro__vineta
-                  span 9
-                span Método de reproducción.
-              li 
-                .lista-ol--cuadro__vineta
-                  span 10
-                span Información adicional. 
-
-        h4.mb-4 Informe de resultados de pruebas
-
-        .row(data-aos="flip-up")
-          .col-lg-6
-            .fondo-color-sistema-k.borde-12.p-4.mb-4
-              p.mb-0 El informe de resultados de pruebas presenta y organiza un análisis conciso de los resultados obtenidos en las pruebas, así como las principales métricas utilizadas para la evaluación y verificación. Por tanto, la responsabilidad de este documento recae en el gerente de pruebas. Este informe debe incluir los siguientes puntos:
-
-            figure.mb-4.mb-lg-0
-              img.mx-auto(src="@/assets/curso/temas/106.png",style="max-width: 610px;")
-          .col-lg-6
-
-            ol.lista-tipo-1.margen.lista-ol--cuadro
+                i.fas.fa-cube(style="color: #273A89;position: relative;top:3px;margin-right: 0.3rem;")
+                span Casos de prueba fallidos.
               li
-                .lista-ol--cuadro__vineta
-                  span A
-                span Alcance de las pruebas, es decir lo que es necesario incluir y no incluir.
-              li 
-                .lista-ol--cuadro__vineta
-                  span B
-                span Resumen de pruebas.
-              ul.ms-5
-                li Casos de prueba planificados.
-                li Casos de prueba ejecutados.
-                li Casos de prueba exitosos.
-                li Casos de prueba fallidos.
-                li Casos de prueba bloqueados.
-              li 
-                .lista-ol--cuadro__vineta
-                  span C
-                span Listado de defectos detectados.
-              li 
-                .lista-ol--cuadro__vineta
-                  span D
-                span Conclusiones.
+                i.fas.fa-cube(style="color: #273A89;position: relative;top:3px;margin-right: 0.3rem;")
+                span Casos de prueba bloqueados.
+            li 
+              .lista-ol--cuadro__vineta
+                span C
+              span Listado de defectos detectados.
+            li 
+              .lista-ol--cuadro__vineta
+                span D
+              span Conclusiones.
+
+      .col-lg-4
+        figure.mb-4.mb-lg-0
+          img.mx-auto(src="@/assets/curso/temas/131.png",style="max-width: 400px;")
+
 
 </template>
 
