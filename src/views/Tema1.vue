@@ -1430,7 +1430,25 @@
           p.fw-bold Otras herramientas comerciales para aplicar este tipo de pruebas son:
           p HP UFT, Seapine QA Wizart Pro, IBM Rational Test Workbench, SmartBear Test Complete, SOASTA, Ranorex UI y OpKey.
 
-          
+    .cont-titulo-decorativo.p-2.mt-5.mb-4(data-aos="fade")
+      .row
+        .col-auto.pe-0
+          figure
+            img(src="@/assets/curso/temas/4.svg")
+        .col.align-self-end
+          h3.mt-3.mb-0.me-2 #[em Pruebas de exploratorias, usabilidad y aceptación]
+
+    .row.mb-4
+      .col-lg-7
+        p.mb-0 Las pruebas de usabilidad y las pruebas de aceptación del usuario, aunque pueden presentar semejanzas en términos de resultados y objetivos, difieren significativamente en su enfoque. Las pruebas de usabilidad se centran en identificar errores o deficiencias en el sistema que puedan afectar la experiencia del usuario, con el objetivo de mejorar el producto. En contraste, las pruebas de aceptación del usuario buscan demostrar que el sistema cumple con los requisitos y expectativas establecidos, señalando así que el producto está listo para su lanzamiento. Por lo tanto, mientras las pruebas de usabilidad se enfocan en perfeccionar la interacción del usuario con el producto, las pruebas de aceptación del usuario se orientan a validar la completitud y adecuación funcional del sistema. Lo invitamos a explorar el siguiente video y conocer más sobre este tipo de pruebas:
+      .col-lg-5.order-first.order-lg-last
+        figure.mb-4.mb-lg-0
+          img.mx-auto(src="@/assets/curso/temas/135.png",style="max-width: 505px;")
+
+    figure.mb-5(data-aos="zoom-in-up")
+      .video
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/CB3Bt4SFnCc?si=qCFzafs_ljfZx3Vf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen)
+      figcaption Video. Pruebas de exploratorias, usabilidad y aceptación
     
     .fondo-gradiente-6.posicion-1
       .fondo-gradiente-contenido
@@ -1467,7 +1485,9 @@
               img.mx-auto(src="@/assets/curso/temas/92.png",style="max-width: 610px;")
 
         figure.mb-5(data-aos="zoom-in-up")
-          img(src="@/assets/curso/temas/imagen-vid-dev.png")
+          .video
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/cQfsW7i0fi4?si=72NqZag0sGfifmUy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen)
+          figcaption Video. Prueba de carga
 
     h4.mb-4(data-aos="fade") Pruebas de seguridad
 
@@ -1482,7 +1502,10 @@
     p.mb-4 A continuación, se presenta el siguiente video tutorial de instalación del #[em software] OWASP para realizar una prueba de seguridad:
 
     figure.mb-5(data-aos="zoom-in-up")
-      img(src="@/assets/curso/temas/imagen-vid-dev.png")
+      .video
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/R7LCpIWshvY?si=HHxvax729zC7En--" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen)
+      figcaption Video. Prueba de seguridad
+
 
     Separador
 
