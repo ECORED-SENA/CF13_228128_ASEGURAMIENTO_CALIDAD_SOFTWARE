@@ -22,7 +22,7 @@
     .fondo-color-secundario.p-3.borde-15.text-white(data-aos="fade-down")
       .row.align-items-center
         .col-lg-9
-          p.mb-4 Las pruebas de software engloban el conjunto de actividades realizadas para identificar posibles fallos de funcionamiento, configuración o usabilidad en programas o aplicaciones, mediante la evaluación de su comportamiento. La complejidad e interoperabilidad de los sistemas informáticos, programas y aplicaciones han aumentado significativamente, lo que a su vez ha incrementado las posibilidades de defectos.
+          p.mb-4 Las pruebas de #[em software] engloban el conjunto de actividades realizadas para identificar posibles fallos de funcionamiento, configuración o usabilidad en programas o aplicaciones, mediante la evaluación de su comportamiento. La complejidad e interoperabilidad de los sistemas informáticos, programas y aplicaciones han aumentado significativamente, lo que a su vez ha incrementado las posibilidades de defectos.
           p.mb-0 Para aplicar pruebas de #[em software] eficazmente, se deben estudiar los diferentes elementos que las componen. Así, se profundizará en los tipos de pruebas funcionales y no funcionales, las pruebas ágiles y la elaboración de informes de resultados. Cabe destacar que, en el contexto del desarrollo de aplicaciones web, verificar la óptima calidad del producto sin errores es esencial, haciendo que las pruebas de #[em software] sean un pilar fundamental en el proceso de desarrollo.
         .col-lg-3.order-first.order-lg-last
           figure.mb-4.mb-lg-0

@@ -66,7 +66,7 @@
       .row.justify-content-center
         .col-lg-8
           .titulo-sexto.color-acento-contenido(data-aos="fade")
-            p.mb-0 #[b Figura 1.] Tipos de pruebas funcionales.
+            p.mb-0 #[b Figura 1.] Tipos de pruebas funcionales
           .fondo-color-sistema-k.borde-20.p-4
             figure.mb-4.mb-lg-0(data-aos="zoom-in-up")
               img.mx-auto(src="@/assets/curso/temas/6.svg",style="max-width: 540px;",alt="El diagrama presenta un esquema de las Pruebas funcionales en el desarrollo de software, destacando su naturaleza cíclica e interconectada. Se detallan cinco tipos de pruebas: Prueba de interfaz de compatibilidad, Pruebas de aceptación (UAT), Pruebas de regresión, Prueba de interfaz de usuario (GUI), y Prueba de instalación. Cada una es crucial para asegurar diferentes aspectos de la funcionalidad del software, desde la compatibilidad hasta la satisfacción del usuario y la estabilidad después de actualizaciones o cambios")
@@ -227,19 +227,19 @@
                 ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
                   li
                     i.far.fa-check-square
-                    span Bases de datos de subsistemas
+                    span Bases de datos de subsistemas.
                   li
                     i.far.fa-check-square
-                    span Datos de configuración
+                    span Datos de configuración.
                   li
                     i.far.fa-check-square
-                    span Configuración del sistema
+                    span Configuración del sistema.
                   li
                     i.far.fa-check-square
-                    span Infraestructura
+                    span Infraestructura.
                   li
                     i.far.fa-check-square
-                    span Interfaces
+                    span Interfaces.
 
       .cont-titulo-decorativo.p-2.mt-5.mb-4(data-aos="zoom-in-up")
         .row
@@ -293,7 +293,7 @@
           figure.mb-4
             img.mx-auto(src="@/assets/curso/temas/121.svg",style="max-width: 124px;")
           p.mb-4 #[b Pruebas de robustez]
-          p.mb-0 Son las encargadas de verificar la capacidad del programa para soportar entradas o instrucciones incorrectas. Una de sus características principales es implementar mecanismos de software de detección de errores en el hardware.
+          p.mb-0 Son las encargadas de verificar la capacidad del programa para soportar entradas o instrucciones incorrectas. Una de sus características principales es implementar mecanismos de #[em software] de detección de errores en el #[em hardware].
 
       .cont-titulo-decorativo.p-2.mt-5.mb-4(data-aos="flip-up")
         .row
@@ -347,7 +347,7 @@
             
           h3.text-center Localizar cuellos de botella.
 
-          p Ayudar a detallar en qué lugar se generan estos cuellos de botellas si se debe a problemas de hardware como CPU, memoria, o es el ancho de banda.
+          p Ayudar a detallar en qué lugar se generan estos cuellos de botellas si se debe a problemas de #[em hardware] como CPU, memoria, o es el ancho de banda.
 
       .cont-titulo-decorativo.p-2.mt-5.mb-4(data-aos="fade-right")
         .row
@@ -494,7 +494,7 @@
               h4.figura-flecha__titulo.mb-0 Ejecución
               figure.figura-flecha__fig
                 img.mx-auto(src="@/assets/curso/temas/36.png",style="max-width: 228px;")
-            p.px-3.pb-4 En esta etapa se obtiene el resultado de la ejecución de pruebas, recopilando la información relacionada con los resultados de la ejecución de cada script de prueba.
+            p.px-3.pb-4 En esta etapa se obtiene el resultado de la ejecución de pruebas, recopilando la información relacionada con los resultados de la ejecución de cada #[em script] de prueba.
 
       .row.mb-4
         .col-lg-8.mb-4.mb-lg-0(data-aos="fade-right")
@@ -506,7 +506,7 @@
               img.mx-auto(src="@/assets/curso/temas/39.svg",style="max-width: 183px;")
 
       .titulo-sexto.color-acento-contenido(data-aos="zoom-in-up")
-        p.mb-0 #[b Tabla 1.] Elementos de un caso de prueba.
+        p.mb-0 #[b Tabla 1.] Elementos de un caso de prueba
 
       .tabla-a.color-acento-contenido.mb-5.bg-white(data-aos="flip-up")
         table
@@ -548,7 +548,7 @@
           figure
             img(src="@/assets/curso/temas/4.svg")
         .col.align-self-end
-          h3.mt-3.mb-0.me-2 Ejecución de las pruebas.
+          h3.mt-3.mb-0.me-2 Ejecución de las pruebas
 
     .row.align-items-center.mb-4(data-aos="fade")
       .col-lg-8
@@ -616,10 +616,10 @@
                   span Se incluyen las siguientes actividades:
                 li
                   i.far.fa-check-circle
-                  span Ejecutar casos y script de prueba.
+                  span Ejecutar casos y #[em script] de prueba.
                 li
                   i.far.fa-check-circle
-                  span Ejecutar casos y script de prueba.
+                  span Analizar y registrar los resultados.
 
       Separador
 
@@ -667,9 +667,9 @@
           figure
             img(src="@/assets/curso/temas/4.svg")
         .col.align-self-end
-          h3.mt-3.mb-0.me-2 Principios de las pruebas agiles (#[em Agile Testing])
+          h3.mt-3.mb-0.me-2 Principios de las pruebas ágiles (#[em Agile Testing])
 
-    p.mb-5(data-aos="fade") El Agile Testing se fundamenta en los siguientes principios, aplicables a un desarrollo de software exitoso:
+    p.mb-5(data-aos="fade") El #[em Agile Testing] se fundamenta en los siguientes principios, aplicables a un desarrollo de #[em software] exitoso:
 
     .fondo-gradiente-1
       TabsB.color-acento-botones.mb-5(data-aos="flip-up")
@@ -699,7 +699,7 @@
               .row.align-items-center
                 .col-lg-6.mb-4.mb-lg-0
                   p.mb-4.fw-bold Elaborar menos documentación
-                  p.mb-0 Los participantes de los equipos en metodologías agiles pueden crear listas y tomar notas para centrarse en probar el software, lo que permite no enfocarse en detalles secundarios que tomarían mucho tiempo.
+                  p.mb-0 Los participantes de los equipos en metodologías ágiles pueden crear listas y tomar notas para centrarse en probar el #[em software], lo que permite no enfocarse en detalles secundarios que tomarían mucho tiempo.
                 .col-lg-6.order-last.order-lg-first
                   figure
                     img.mx-auto(src="@/assets/curso/temas/50.png",style="max-width: 400px;")
@@ -719,7 +719,7 @@
               .row.align-items-center
                 .col-lg-6.mb-4.mb-lg-0
                   p.mb-4.fw-bold Proporcionar retroalimentación constante
-                  p.mb-0 En las pruebas agiles la retroalimentación es continua de modo que el diseño del producto logre los propósitos del negocio requeridos.
+                  p.mb-0 En las pruebas ágiles la retroalimentación es continua, de modo que el diseño del producto logre los propósitos del negocio requeridos.
                 .col-lg-6.order-last.order-lg-first
                   figure
                     img.mx-auto(src="@/assets/curso/temas/52.png",style="max-width: 400px;")
@@ -730,7 +730,7 @@
             figure
               img(src="@/assets/curso/temas/4.svg")
           .col.align-self-end
-            h3.mt-3.mb-0.me-2 Cuadrantes de las pruebas agiles #[em (Agile Testing)]
+            h3.mt-3.mb-0.me-2 Cuadrantes de las pruebas ágiles #[em (Agile Testing)]
 
       .row.align-items-center.mb-5(data-aos="fade")
         .col-lg-8
@@ -745,7 +745,7 @@
           .titulo-sexto.color-acento-contenido
             p.mb-0 #[b Figura 4.] Cuadrantes pruebas ágiles
           figure
-            img.mx-auto(src="@/assets/curso/temas/54.svg",style="max-width: 800px;",alt="La figura es un diagrama que clasifica las pruebas de software en cuatro cuadrantes basados en si son más técnicas o dirigidas al negocio y si son manuales o automatizadas. Incluye pruebas funcionales, exploratorias, unitarias y de componentes, así como pruebas de rendimiento, carga y seguridad. Además, menciona la crítica del producto y las herramientas utilizadas en las pruebas. Este diagrama ayuda a los equipos a seleccionar y organizar las pruebas durante el ciclo de desarrollo del software.")
+            img.mx-auto(src="@/assets/curso/temas/54.svg",style="max-width: 800px;",alt="La figura es un diagrama que clasifica las pruebas de #[em software] en cuatro cuadrantes basados en si son más técnicas o dirigidas al negocio y si son manuales o automatizadas. Incluye pruebas funcionales, exploratorias, unitarias y de componentes, así como pruebas de rendimiento, carga y seguridad. Además, menciona la crítica del producto y las herramientas utilizadas en las pruebas. Este diagrama ayuda a los equipos a seleccionar y organizar las pruebas durante el ciclo de desarrollo del software.")
 
     p.mt-5.mb-4(data-aos="fade") A continuación, se realizará una exploración de los diferentes cuadrantes expuestos:
 
@@ -905,7 +905,7 @@
 
 
     .fondo-gradiente-1.posicion-1
-      p.mb-5.pt-5(data-aos="fade") Ahora, se describen algunas recomendaciones para tener en cuenta al momento de trabajar con pruebas de software agiles #[em (Agil Testing)].
+      p.mb-5.pt-5(data-aos="fade") Ahora, se describen algunas recomendaciones para tener en cuenta al momento de trabajar con pruebas de #[em software] ágiles #[em (Agil Testing)].
 
       AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta no-border-radius fondo-color-sistema-k" data-aos="zoom-in-up")
         .row.contenedor-cuerpo-acordion-a.align-items-center(titulo="Gestión de pruebas por <em>sprint</em>")
@@ -1005,53 +1005,53 @@
               .tarjeta.p-3.bg-white.mb-4
                 p.mb-0 #[span.fw-bold(style="color: #FF0000;") #[em Red:]] este paso se denomina así porque implica la creación de una prueba que inicialmente falla, lo cual se refleja con letras rojas en la consola al ejecutarla.
               .tarjeta.p-3.bg-white.mb-4
-                p.mb-0 #[span.fw-bold(style="color: #11480B;") #[em Green:]] el objetivo de este paso es modificar el código para que la prueba anteriormente fallida ahora pase exitosamente. Se llama Green  porque, al pasar la prueba, los resultados suelen mostrarse en letras verdes en la consola.
+                p.mb-0 #[span.fw-bold(style="color: #11480B;") #[em Green:]] el objetivo de este paso es modificar el código para que la prueba anteriormente fallida ahora pase exitosamente. Se llama #[em Green]  porque, al pasar la prueba, los resultados suelen mostrarse en letras verdes en la consola.
               .tarjeta.p-3.bg-white
                 p.mb-0 #[span.fw-bold(style="color: #8D00B6;") #[em Refactor:]] una vez que la prueba ha sido superada, se procede a revisar y mejorar el código para optimizarlo, limpiarlo o aplicar mejores prácticas, sin alterar su funcionalidad.
 
       p.mb-5(data-aos="fade-left") En la siguiente tabla podemos verificar cada uno de los pasos guiados por las pruebas TDD donde se explica cada uno de los pasos con sus ejemplos.
 
       .titulo-sexto.color-acento-contenido(data-aos="fade-right")
-        p.mb-0 #[b Tabla 2.] Flujo del TDD.
+        p.mb-0 #[b Tabla 2.] Flujo del TDD
 
       .tabla-a.color-acento-contenido.mb-5.bg-white(data-aos="zoom-in-up")
         table
           thead
             tr
-              th PASO 
-              th PASOS
-              th EJEMPLO
+              th Paso
+              th Pasos
+              th Ejemplo
           tbody
             tr
-              td RED
+              td Red
               td 1. Lo primero es que el cliente escriba una historia de usuario.       
               td Supóngase que el cliente solicita que se desarrolle una aplicación con operaciones matemáticas sencillas que sume y reste.
             tr
-              td RED
+              td Red
               td 2. Los criterios de aceptación de esta historia se escriben con el cliente, deben estar bien detallados.     
               td Se define con el cliente que el criterio de aceptación está relacionado con: si se introduce en la aplicación dos números y se suma o resta, entonces la aplicación visualiza el resultado en pantalla.
             tr
-              td RED
+              td Red
               td 3. Se debe seleccionar el criterio de aceptación más sencillo y se traduce en una prueba unitaria.     
               td De acuerdo a este criterio, se empieza a especificar o definir el funcionamiento del algoritmo para la suma y la resta y se luego se convierte el criterio de aceptación en una prueba específica, por ejemplo, un algoritmo que si se introduce los números 3 y 8 devuelve 11. Ejemplo de cómo sería la clase para calcular:  public void testSuma() { assertEquals(8, Operaciones.suma(3,8)); }
             tr
-              td RED
+              td Red
               td 4. Se verifica que la prueba falla.    
               td RED	4. Se verifica que la prueba falla. Si se intenta pasar este test resultara en error, debido a que la clase Operaciones todavía no existe.
             tr
-              td GREEN
+              td Green
               td 5. Se escribe el código que hace pasar la prueba.   
               td Posteriormente el siguiente paso es escribir el código de la clase, en este momento ya se sabe cómo se va a comportar. public class Operaciones { public static int suma (int a, int b) { int c = a + b; return c; } }
             tr
-              td GREEN
+              td Green
               td 6. Se ejecutan todas las pruebas automatizadas.  
               td Posteriormente se ejecuta la prueba y en este momento se tiene el código funcionado con la prueba pasada.
             tr
-              td REFACTOR
+              td Refactor
               td 7. Se ejecutan todas las pruebas automatizadas.  
               td Cuando esté todo funcionando, se pasa a refactorizar y a eliminar código duplicado.
             tr
-              td REFACTOR
+              td Refactor
               td 8. Se refactoriza y se limpia el código.
               td Es necesario pasar todos los test después de refactorizar.
 
@@ -1091,7 +1091,7 @@
           .row.mb-5(titulo="")
             .col-md-6.mb-4.mb-md-0
               h3.mb-4.d-inline-block.bg-white.p-1(style="color: #273A89;") Escribir la prueba de aceptación:
-              p.mb-0 en esta etapa, todos los involucrados deben participar de manera colaborativa para definir las pruebas que validen la correcta impzlementación de la historia.
+              p.mb-0 en esta etapa, todos los involucrados deben participar de manera colaborativa para definir las pruebas que validen la correcta implementación de la historia.
           
             .col-md-6
               figure
@@ -1381,9 +1381,6 @@
       .col-lg-6(data-aos="fade-rigth")
         p.mb-4 Las pruebas de regresión garantizan que los cambios realizados en una aplicación o sistema no introduzcan errores en las funcionalidades existentes. Sin embargo, realizadas de manera manual, estas pruebas pueden ser muy consumidoras de tiempo, llegando a ser más costosas que las pruebas de las nuevas funcionalidades que se están evaluando. Además, la intervención manual incrementa la susceptibilidad a errores debido al factor humano.
 
-        .fondo-color-sistema-j.p-4.borde-8
-          p.mb-0 Las pruebas exploratorias han captado significativamente la atención dentro de la comunidad de pruebas de #[em software]. Este método de pruebas se caracteriza por una interacción simultánea entre el testeo, el aprendizaje y el diseño de nuevas pruebas.
-
     .fondo-color-secundario.borde-8.p-3.mb-5(data-aos="flip-up")
       .row.align-items-center
         .col-lg-1.col-md-2
@@ -1497,7 +1494,7 @@
           img.mx-auto(src="@/assets/curso/temas/93.png",style="max-width: 504px;")
       .col-lg-7
         .fondo-color-sistema-k.p-4.border-12
-          p.mb-0 Las pruebas de seguridad comprenden un conjunto de actividades ejecutadas con el objetivo de identificar fallas y vulnerabilidades, buscando minimizar el impacto de ataques, el acceso no autorizado a información sensible y la pérdida de datos. Estas pruebas son esenciales porque los productos de software deben garantizar constantemente la confidencialidad, disponibilidad e integridad de los datos y funcionalidades que gestionan. La pérdida o corrupción de esta información puede tener consecuencias críticas en el ámbito empresarial. Por tanto, es crucial que estas pruebas se realicen de manera continuada a lo largo de todas las fases del proyecto, asegurando la protección efectiva contra amenazas emergentes.
+          p.mb-0 Las pruebas de seguridad comprenden un conjunto de actividades ejecutadas con el objetivo de identificar fallas y vulnerabilidades, buscando minimizar el impacto de ataques, el acceso no autorizado a información sensible y la pérdida de datos. Estas pruebas son esenciales porque los productos de #[em software] deben garantizar constantemente la confidencialidad, disponibilidad e integridad de los datos y funcionalidades que gestionan. La pérdida o corrupción de esta información puede tener consecuencias críticas en el ámbito empresarial. Por tanto, es crucial que estas pruebas se realicen de manera continuada a lo largo de todas las fases del proyecto, asegurando la protección efectiva contra amenazas emergentes.
 
     p.mb-4 A continuación, se presenta el siguiente video tutorial de instalación del #[em software] OWASP para realizar una prueba de seguridad:
 
@@ -1604,7 +1601,7 @@
                 .h5.mb-4.d-inline-block.p-2(style="background-color: #BAE9D9;") Cerrado
                 p.mb-5 Posterior a una verificación por parte del equipo de #[em testing].
 
-        p.mb-4.pt-5(data-aos="fade-left") El proceso mencionado se adecúa a proyectos de software en fase de desarrollo, pero no así en ambientes de producción.
+        p.mb-4.pt-5(data-aos="fade-left") El proceso mencionado se adecúa a proyectos de #[em software] en fase de desarrollo, pero no así en ambientes de producción.
 
         h4.mb-4(data-aos="zoom-in-up") Redacción del reporte de Incidencias
         p.mb-4 El propósito del informe de incidentes es documentar cada incidente, por lo tanto, se debe seguir un procedimiento para gestionar de forma sistémica y ordenada las incidencias de producto halladas a lo largo de la ejecución de los casos de prueba. Este procedimiento tiene las siguientes actividades:
@@ -1661,7 +1658,7 @@
 
 
     h4.mb-4 Reporte de defectos
-    p.mb-4(data-aos="zoom-in-up") Cuando se confirma la existencia de un defecto, se elabora un reporte. Este documento detalla los fallos identificados durante el proceso de pruebas, subrayando la importancia de que cada defecto detectado cuente con un reporte individual. Esto facilita la trazabilidad y su corrección posterior. A continuación, se describe la estructura típica de un reporte de defectos
+    p.mb-4(data-aos="zoom-in-up") Cuando se confirma la existencia de un defecto, se elabora un reporte. Este documento detalla los fallos identificados durante el proceso de pruebas, subrayando la importancia de que cada defecto detectado cuente con un reporte individual. Esto facilita la trazabilidad y su corrección posterior. A continuación, se describe la estructura típica de un reporte de defectos.
 
     .row.justify-content-center.mb-5
       .col-lg-6(data-aos="fade-right")

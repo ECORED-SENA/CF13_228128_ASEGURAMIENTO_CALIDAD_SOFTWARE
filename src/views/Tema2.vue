@@ -25,7 +25,7 @@
     p.mb-4(data-aos="fade-right") Una vez elaborado el diagnóstico, se conocen las principales fortalezas y debilidades. Por lo tanto, es importante identificar las áreas de mejora apoyándose en las fortalezas para lograr superar las debilidades, siendo esta una opción de cambio óptima. A continuación, se muestra una tabla como una opción para identificar el área de mejora de acuerdo con las fortalezas y debilidades.
 
     .titulo-sexto.color-acento-contenido(data-aos="fade")
-      p.mb-0 #[b Figura 3.] Ejemplo estructura de tabla de fortalezas, debilidades y área de mejora.
+      p.mb-0 #[b Figura 3.] Ejemplo estructura de tabla de fortalezas, debilidades y área de mejora
     
     figure.mb-5
       img.mx-auto(src="@/assets/curso/temas/132.png",style="max-width: 1240px;",alt="La figura presenta una tabla de ejemplo con tres columnas destinadas a enlistar fortalezas, debilidades y áreas de mejora, utilizada para el análisis de aspectos internos y la planificación estratégica de mejoras.")
@@ -112,7 +112,7 @@
           img.mx-auto(src="@/assets/curso/temas/113.png",style="max-width: 505px;")
 
     .titulo-sexto.color-acento-contenido(data-aos="zoom-in-up")
-      p.mb-0 #[b Figura 4.] Ejemplo estructura de tabla sobre acciones de mejora.
+      p.mb-0 #[b Figura 4.] Ejemplo estructura de tabla sobre acciones de mejora
     
     .fondo-gradiente-9.posicion-1
       .fondo-gradiente-contenido
@@ -190,7 +190,7 @@
               img.mx-auto(src="@/assets/curso/temas/114.png",style="max-width: 400px;")
         
         .titulo-sexto.color-acento-contenido(data-aos="fade")
-          p.mb-0 #[b Figura 5.] Estructura plan de mejora.
+          p.mb-0 #[b Figura 5.] Estructura plan de mejora
 
         
         figure.mb-4.mb-lg-0

@@ -230,12 +230,12 @@ export default {
     },
     {
       referencia:
-        'Bustamante Ramírez, J. (2011). Sistema de informes para pruebas de software. Obtenido de',
+        'Bustamante Ramírez, J. (2011). <em>Sistema de informes para pruebas de software.</em> Obtenido de',
       link: 'http://bibliotecadigital.iue.edu.co/xmlui/handle/20.500.12717/153',
     },
     {
       referencia:
-        'Clemente, P. J., & Gómez, A. (2014). Aplicación de un proceso de mejora continua en una. Obtenido de',
+        'Clemente, P. J., & Gómez, A. (2014). <em>Aplicación de un proceso de mejora continua en una asignatura de Desarrollo de Software Dirigido por Modelos.</em> Obtenido de',
       link: 'http://hdl.handle.net/2099/15497',
     },
     {
@@ -245,13 +245,14 @@ export default {
     },
     {
       referencia:
-        'Kruchten, P. (2003). The Rational Unified Process: An Introduction (3rd Edition) (3rd ed.). Addison-Wesley Professional.',
+        'Kruchten, P. (2003). <em>The Rational Unified Process: An Introduction</em> (3rd Edition) (3rd ed.). Addison-Wesley Professional.',
       link: '',
     },
     {
       referencia:
-        'Maida, EG, Pacienzia, J. (2015). Metodologías de desarrollo de software [en línea]. Tesis de Licenciatura en Sistemas y Computación. Facultad de Química e Ingeniería “Fray Rogelio Bacon”. Universidad Católica Argentina, 2015.',
-      link: 'https://bit.ly/3hJMwXP',
+        'Maida, EG, Pacienzia, J. (2015). <em>Metodologías de desarrollo de software</em> [en línea]. Tesis de Licenciatura en Sistemas y Computación. Facultad de Química e Ingeniería “Fray Rogelio Bacon”. Universidad Católica Argentina, 2015.',
+      link:
+        'https://repositorio.uca.edu.ar/bitstream/123456789/522/1/metodologias-desarrollo-software.pdf',
     },
     {
       referencia:
@@ -265,12 +266,12 @@ export default {
     },
     {
       referencia:
-        'Mera Paz, J. A. (19 de 10 de 2016). Pruebas de Calidad software. Obtenido de ',
+        'Mera Paz, J. A. (19 de 10 de 2016). <em>Pruebas de Calidad software.</em> Obtenido de ',
       link: 'https://repository.ucc.edu.co/handle/20.500.12494/962',
     },
     {
       referencia:
-        'Royce, W.W. (1970) Managing the Development of Large Software Systems. Proceedings of IEEE WESCON, 26, 328-388.',
+        'Royce, W.W. (1970) <em>Managing the Development of Large Software Systems.</em> Proceedings of IEEE WESCON, 26, 328-388.',
       link: '',
     },
     {
@@ -333,6 +334,16 @@ export default {
         {
           nombre: 'Edgar Mauricio Cortés García',
           cargo: 'Actividad Didáctica',
+          centro: 'Centro de Servicios de Salud - Regional Antioquia',
+        },
+        {
+          nombre: 'Daniela Muñoz Bedoya',
+          cargo: 'Animador y Productor Multimedia',
+          centro: 'Centro de Servicios de Salud - Regional Antioquia',
+        },
+        {
+          nombre: 'Andrés Felipe Guevara Ariza',
+          cargo: 'Locución',
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
       ],
