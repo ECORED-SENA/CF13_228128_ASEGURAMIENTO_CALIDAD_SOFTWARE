@@ -30,7 +30,7 @@
               .col
                 .row.justify-content-between.align-items-center
                   .col.mb-3.mb-sm-0
-                    h4.mb-1 Pruebas y calidad de software
+                    h4.mb-1 Pruebas y calidad de #[em software]
                     p.mb-0.text-small Les invitamos a explorar el video y  descubrir los diferentes tipos de pruebas y enriquecer su conocimiento en esta área clave del desarrollo de #[em software].
                   .col-sm-auto
                     a.boton.color-acento-botones(href="https://www.youtube.com/watch?v=TLs-a1Cok-w" target="_blank")
@@ -94,7 +94,7 @@
         figure.mb-4.mb-lg-0
           img.mx-auto(src="@/assets/curso/temas/8.png",style="max-width: 388px;")
 
-    p.mb-4(data-aos="fade") Generalmente, se llevan a cabo durante la fase de desarrollo de las aplicaciones o software. Esta tarea es ejecutada por los programadores, aunque los aseguradores de calidad también pueden participar en su realización. Las razones para desarrollar este tipo de pruebas incluyen:
+    p.mb-4(data-aos="fade") Generalmente, se llevan a cabo durante la fase de desarrollo de las aplicaciones o #[em software]. Esta tarea es ejecutada por los programadores, aunque los aseguradores de calidad también pueden participar en su realización. Las razones para desarrollar este tipo de pruebas incluyen:
 
     .row.justify-content-center.mb-4(data-aos="flip-up")
       .col-lg-8
@@ -249,7 +249,7 @@
           .col.align-self-end
             h3.mt-3.mb-0.me-2 Pruebas no funcionales
       
-      p.mb-4(data-aos="fade-left") Estas pruebas, similares a las pruebas funcionales, se diferencian en que se realizan bajo condiciones de carga de rendimiento para evaluar aspectos como #[b la fiabilidad, usabilidad, escalabilidad, instalación, confiabilidad y seguridad del software]. Generalmente, se llevan a cabo mediante herramientas o soluciones automatizadas.
+      p.mb-4(data-aos="fade-left") Estas pruebas, similares a las pruebas funcionales, se diferencian en que se realizan bajo condiciones de carga de rendimiento para evaluar aspectos como #[b la fiabilidad, usabilidad, escalabilidad, instalación, confiabilidad y seguridad del #[em software]]. Generalmente, se llevan a cabo mediante herramientas o soluciones automatizadas.
 
       .row.justify-content-center.mb-5(data-aos="fade-right")
         .col-lg-8
