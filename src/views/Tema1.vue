@@ -1083,7 +1083,7 @@
           .row.mb-5(titulo="")
             .col-md-6.mb-4.mb-md-0
               h3.mb-4.d-inline-block.bg-white.p-1(style="color: #273A89;") Seleccionar la historia de usuario:
-              p.mb-0 en este punto, se asume que se ha realizado una priorización para determinar cuál es la próxima historia de usuario a abordar.
+              p.mb-0 En este punto, se asume que se ha realizado una priorización para determinar cuál es la próxima historia de usuario a abordar.
           
             .col-md-6
               figure
@@ -1091,7 +1091,7 @@
           .row.mb-5(titulo="")
             .col-md-6.mb-4.mb-md-0
               h3.mb-4.d-inline-block.bg-white.p-1(style="color: #273A89;") Escribir la prueba de aceptación:
-              p.mb-0 en esta etapa, todos los involucrados deben participar de manera colaborativa para definir las pruebas que validen la correcta implementación de la historia.
+              p.mb-0 En esta etapa, todos los involucrados deben participar de manera colaborativa para definir las pruebas que validen la correcta implementación de la historia.
           
             .col-md-6
               figure
@@ -1099,7 +1099,7 @@
           .row.mb-5(titulo="")
             .col-md-6.mb-4.mb-md-0
               h3.mb-4.d-inline-block.bg-white.p-1(style="color: #273A89;") Implementar la historia de usuario - Automatizar las pruebas:
-              p.mb-0 existen varias maneras de llevar a cabo este paso, pero lo crucial es que, a partir de las pruebas de aceptación definidas anteriormente, se obtengan pruebas ejecutables. Estas pruebas permitirán verificar el progreso de la implementación de la funcionalidad.
+              p.mb-0 Existen varias maneras de llevar a cabo este paso, pero lo crucial es que, a partir de las pruebas de aceptación definidas anteriormente, se obtengan pruebas ejecutables. Estas pruebas permitirán verificar el progreso de la implementación de la funcionalidad.
           
             .col-md-6
               figure
@@ -1107,7 +1107,7 @@
           .row.mb-5(titulo="")
             .col-md-6.mb-4.mb-md-0
               h3.mb-4.d-inline-block.bg-white.p-1(style="color: #273A89;") Implementar el código:
-              p.mb-0 aunque hay diversas formas de realizar este paso, una de ellas es mediante el uso de TDD (Desarrollo Guiado por Pruebas), que asegura que el código cumpla con los requisitos establecidos en las pruebas de aceptación.
+              p.mb-0 Aunque hay diversas formas de realizar este paso, una de ellas es mediante el uso de TDD (Desarrollo Guiado por Pruebas), que asegura que el código cumpla con los requisitos establecidos en las pruebas de aceptación.
           
             .col-md-6
               figure
@@ -1115,7 +1115,7 @@
           .row.mb-5(titulo="")
             .col-md-6.mb-4.mb-md-0
               h3.mb-4.d-inline-block.bg-white.p-1(style="color: #273A89;") Realizar pequeños cambios/Refactorización:
-              p.mb-0 este paso es fundamental tanto en ATDD como en TDD. Se trata de una práctica iterativa que concluye cuando los requerimientos del cliente han sido plenamente satisfechos, optimizando y limpiando el código sin alterar su funcionalidad.
+              p.mb-0 Este paso es fundamental tanto en ATDD como en TDD. Se trata de una práctica iterativa que concluye cuando los requerimientos del cliente han sido plenamente satisfechos, optimizando y limpiando el código sin alterar su funcionalidad.
           
             .col-md-6
               figure
