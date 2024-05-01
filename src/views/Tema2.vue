@@ -93,7 +93,7 @@
               span Su redacción debe ser clara.
             li
               i.fas.fa-cube(style="color: #273A89;")
-              span Deben ser alcanzables, comprensibles y flexibles, es decir que se puedan cumplir, interpretar y en algún caso extremo modificar.
+              span Deben ser alcanzables, comprensibles y flexibles, es decir, que se puedan cumplir, interpretar y en algún caso extremo modificar.
 
     Separador
 
@@ -125,7 +125,7 @@
         #t_2_2.titulo-segundo.color-acento-contenido
           h2 2.2 Realizar una planeación
 
-        p.mb-4(data-aos="fade") El listado de las principales actuaciones se genera sin tener en cuenta un orden de prioridad especifico. No obstante, ciertas restricciones inherentes a las acciones pueden limitar su inicio, o incluso llevar a la posible eliminación o aplazamiento del plan de mejora. Por lo tanto, es crucial conocer las restricciones que limitan su viabilidad. Determinar un orden óptimo no se basa únicamente en identificar las acciones relacionadas con los factores de mayor urgencia; otros criterios también se consideran al tomar esta decisión. A continuación, se describen algunos de estos criterios:
+        p.mb-4(data-aos="fade") El listado de las principales actuaciones se genera sin tener en cuenta un orden de prioridad específico. No obstante, ciertas restricciones inherentes a las acciones pueden limitar su inicio, o incluso llevar a la posible eliminación o aplazamiento del plan de mejora. Por lo tanto, es crucial conocer las restricciones que limitan su viabilidad. Determinar un orden óptimo no se basa únicamente en identificar las acciones relacionadas con los factores de mayor urgencia; otros criterios también se consideran al tomar esta decisión. A continuación, se describen algunos de estos criterios:
 
         .row.justify-content-center
           .col-lg-9
@@ -184,7 +184,7 @@
         .row.mb-4
           .col-lg-8(data-aos="fade-right")
             p.mb-4 En este momento, se procede a elaborar un cronograma para la implantación y seguimiento de las acciones de mejora. Dicho cronograma organizará de manera ordenada las prioridades junto con los plazos establecidos para su desarrollo.
-            p.mb-0 Una vez seleccionadas las acciones por orden de prioridad, se construye el plan de mejoras. Este incluirá los elementos necesarios para realizar un seguimiento detallado del plan, garantizando así su eficiencia y eficacia. Todo ello teniendo en cuenta la tabla presentada en la siguiente tabla:
+            p.mb-0 Una vez seleccionadas las acciones por orden de prioridad, se construye el plan de mejoras. Este incluirá los elementos necesarios para realizar un seguimiento detallado del plan, garantizando así su eficiencia y eficacia. Todo ello teniendo en cuenta la información presentada en la siguiente tabla:
           .col-lg-4(data-aos="fade-left")
             figure.mb-4.mb-lg-0
               img.mx-auto(src="@/assets/curso/temas/114.png",style="max-width: 400px;")

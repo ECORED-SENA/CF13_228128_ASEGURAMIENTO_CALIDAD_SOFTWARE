@@ -189,7 +189,7 @@ export default {
     {
       termino: 'ATDD',
       significado:
-        'Desarrollo Orientado a pruebas de Aceptacion (<em>Acceptance test–driven development</em>) es una metodología de desarrollo basada en la comunicación entre los clientes comerciales, los desarrolladores y los evaluadores.',
+        'Desarrollo Orientado a pruebas de Aceptación (<em>Acceptance test–driven development</em>) es una metodología de desarrollo basada en la comunicación entre los clientes comerciales, los desarrolladores y los evaluadores.',
     },
     {
       termino: 'BDD',
@@ -214,7 +214,7 @@ export default {
     {
       termino: 'TDD',
       significado:
-        'desarrollo Guiado por Pruebas (<em>Test Driven Development</em>) con el TDD se puede agilizar el proceso de creación de código. Este se centra más por el qué y el por qué antes del cómo.',
+        'desarrollo Guiado por Pruebas (<em>Test Driven Development</em>) con el TDD se puede agilizar el proceso de creación de código. Este se centra más por el qué y el porqué antes del cómo.',
     },
     {
       termino: 'UX',

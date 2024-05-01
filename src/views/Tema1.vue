@@ -89,7 +89,7 @@
               figure.mb-4.mb-lg-0
                 img.mx-auto(src="@/assets/curso/temas/7.svg",style="max-width: 57px;")
             .col-sm-10(data-aos="fade-down")
-              p.mb-0.fw-bold De acuerdo a Mera (2016) también se las conoce como #[em unit testing] son pequeños #[em tests] en los cuales se revisa que el comportamiento de un objeto y su lógica funcione adecuadamente.
+              p.mb-0.fw-bold De acuerdo a Mera (2016) también se las conoce como #[em unit testing], son pequeños #[em tests] en los cuales se revisa que el comportamiento de un objeto y su lógica funcione adecuadamente.
       .col-lg-4.order-first.order-lg-last(data-aos="fade-left")
         figure.mb-4.mb-lg-0
           img.mx-auto(src="@/assets/curso/temas/8.png",style="max-width: 388px;")
@@ -177,7 +177,7 @@
               ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
                 li
                   span.dec-lista A.
-                  span Se debe probar un sólo código a la vez.
+                  span Se debe probar un solo código a la vez.
                 li 
                   span.dec-lista B.
                   span Hay que realizar pruebas frecuentemente mientras se programa.
@@ -487,7 +487,7 @@
               h4.figura-flecha__titulo.mb-0 Construcción
               figure.figura-flecha__fig
                 img.mx-auto(src="@/assets/curso/temas/37.png",style="max-width: 228px;")
-            p.px-3.pb-4 En esta etapa se encuentran los casos y script de prueba como conjunto de condiciones con las cuales un tester debe determinar si un sistema funciona según lo requerido.
+            p.px-3.pb-4 En esta etapa se encuentran los casos y script de prueba como conjunto de condiciones con las cuales un #[em tester] debe determinar si un sistema funciona según lo requerido.
         .col-lg-4.col-md-6.mb-4(data-aos="fade-left")
           .tarjeta-personalizada-1.tarjeta-personalizada-1--color-1.h-100
             .figura-flecha.mb-4.me-4
@@ -517,22 +517,22 @@
           tbody
             tr
               td Identificador
-              td Identificador	Puede ser alfanumérico o numérico.
+              td Puede ser alfanumérico o numérico.
             tr
               td Nombre
-              td Nombre	Nombre del caso de prueba de manera concisa.
+              td Nombre del caso de prueba de manera concisa.
             tr
               td Descripción 
-              td Objetivo del caso de prueba, también describe que probara, en ciertas ocasiones se incluye el ambiente de pruebas.
+              td Objetivo del caso de prueba, también describe qué probará, en ciertas ocasiones se incluye el ambiente de pruebas.
             tr
               td Número de orden Ejecución
-              td Orden en la cual se ejecuta el caso de prueba, en la situación de que se tengan múltiples casos de prueba.
+              td Orden en el cual se ejecuta el caso de prueba, en la situación de que se tengan múltiples casos de prueba.
             tr
               td Requerimiento asociado
-              td Si se plantea un caso de prueba se debe saber a qué requerimiento va asociado para mantener la trazabilidad.
+              td Si se plantea un caso de prueba, se debe saber a qué requerimiento va asociado para mantener la trazabilidad.
             tr
               td Precondición
-              td Estado en la cual se debe encontrar el sistema antes de comenzar la prueba.
+              td Estado en el cual se debe encontrar el sistema antes de comenzar la prueba.
             tr
               td Postcondición
               td El estado en que debe encontrarse el sistema luego de ejecutar la prueba.
@@ -637,7 +637,7 @@
       .row.justify-content-center.mb-5(data-aos="zoom-in-up")
         .col-lg-10
           .titulo-sexto.color-acento-contenido
-            p.mb-0 #[b Figura 3.] Actividades #[em Sprints Reléase]
+            p.mb-0 #[b Figura 3.] Actividades #[em Sprints Release]
           .fondo-color-sistema-k.borde-18.p-3.p-md-4.pt-4.pb-4
             figure
               img.mx-auto.d-none.d-lg-block(src="@/assets/curso/temas/43.png",style="max-width: 820px;",alt="La figura muestra un diagrama que representa la estructura de los sprints en un marco de trabajo Agile. Cada sprint está dividido en dos semanas y sigue un flujo de trabajo consistente. Comienza con la fase de Requisitos, seguida por la fase de Diseño/Implementación, luego viene la fase de Agile Testing, y termina con la fase de Release/Entrega. El diagrama repite esta estructura para Sprint 1, Sprint 2, y así sucesivamente hasta Sprint n, indicando que es un proceso iterativo y escalable que se aplica a través de múltiples sprints.")
@@ -905,7 +905,7 @@
 
 
     .fondo-gradiente-1.posicion-1
-      p.mb-5.pt-5(data-aos="fade") Ahora, se describen algunas recomendaciones para tener en cuenta al momento de trabajar con pruebas de #[em software] ágiles #[em (Agil Testing)].
+      p.mb-5.pt-5(data-aos="fade") Ahora, se describen algunas recomendaciones para tener en cuenta al momento de trabajar con pruebas de #[em software] ágiles #[em (Agile Testing)].
 
       AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta no-border-radius fondo-color-sistema-k" data-aos="zoom-in-up")
         .row.contenedor-cuerpo-acordion-a.align-items-center(titulo="Gestión de pruebas por <em>sprint</em>")
@@ -1033,15 +1033,15 @@
             tr
               td Red
               td 3. Se debe seleccionar el criterio de aceptación más sencillo y se traduce en una prueba unitaria.     
-              td De acuerdo a este criterio, se empieza a especificar o definir el funcionamiento del algoritmo para la suma y la resta y se luego se convierte el criterio de aceptación en una prueba específica, por ejemplo, un algoritmo que si se introduce los números 3 y 8 devuelve 11. Ejemplo de cómo sería la clase para calcular:  public void testSuma() { assertEquals(8, Operaciones.suma(3,8)); }
+              td De acuerdo a este criterio, se empieza a especificar o definir el funcionamiento del algoritmo para la suma y la resta, y luego se convierte el criterio de aceptación en una prueba específica, por ejemplo, un algoritmo que si se introduce los números 3 y 8 devuelve 11. Ejemplo de cómo sería la clase para calcular:  public void testSuma() { assertEquals(8, Operaciones.suma(3,8)); }
             tr
               td Red
               td 4. Se verifica que la prueba falla.    
-              td RED	4. Se verifica que la prueba falla. Si se intenta pasar este test resultara en error, debido a que la clase Operaciones todavía no existe.
+              td RED	4. Se verifica que la prueba falla. Si se intenta pasar este test resultará en error, debido a que la clase Operaciones todavía no existe.
             tr
               td Green
               td 5. Se escribe el código que hace pasar la prueba.   
-              td Posteriormente el siguiente paso es escribir el código de la clase, en este momento ya se sabe cómo se va a comportar. public class Operaciones { public static int suma (int a, int b) { int c = a + b; return c; } }
+              td Posteriormente, el siguiente paso es escribir el código de la clase, en este momento ya se sabe cómo se va a comportar. public class Operaciones { public static int suma (int a, int b) { int c = a + b; return c; } }
             tr
               td Green
               td 6. Se ejecutan todas las pruebas automatizadas.  
@@ -1229,7 +1229,7 @@
                 .col-lg-6
                   .pt-lg-5
                     h4.mb-4.titulo-item-slyder El desarrollo dirigido por comportamiento (BDD)
-                    p.mb-4 El objetivo de BDD es que las historias de usuario dirijan el desarrollo del proyecto #[em software]. Ademas, BDD permite comprobar que el #[em software] implementado cumple con la funcionalidad requerida.
+                    p.mb-4 El objetivo de BDD es que las historias de usuario dirijan el desarrollo del proyecto #[em software]. Además, BDD permite comprobar que el #[em software] implementado cumple con la funcionalidad requerida.
                     ul.lista-ul.lista-tipo-1.fa-ul.mb-0.ms-0
                       li
                         i.fas.fa-cog
@@ -1364,7 +1364,7 @@
                   p.mb-5 Reglas generales que ayudarán a cómo probar correctamente el producto.
                 .tarjeta.borde-9.p-3(x="28%" y="40%" numero="+")
                   .h5.mb-4.d-inline-block.p-2(style="background-color: #BAE9D9;") Resultados revisables
-                  p.mb-5 Cuando se finalicen las pruebas exploratorias, el tester debe ser capaz de explicar cualquier aspecto del programa y mostrar cómo se cumplen los requisitos indicados en el procedimiento.
+                  p.mb-5 Cuando se finalicen las pruebas exploratorias, el #[em tester] debe ser capaz de explicar cualquier aspecto del programa y mostrar cómo se cumplen los requisitos indicados en el procedimiento.
 
     .cont-titulo-decorativo.p-2.mt-5.mb-4(data-aos="fade")
       .row
@@ -1455,7 +1455,7 @@
               figure
                 img(src="@/assets/curso/temas/4.svg")
             .col.align-self-end
-              h3.mt-3.mb-0.me-2 Pruebas desempeño, carga y seguridad
+              h3.mt-3.mb-0.me-2 Pruebas de desempeño, carga y seguridad
 
         p.mb-4(data-aos="fade") Concluir la programación de una aplicación marca un momento de éxito; con el paso del tiempo, tener un producto terminado representa un logro significativo. Sin embargo, este hito también señala el momento crucial para probar diversos aspectos del #[em software], con el fin de asegurar su correcto funcionamiento y controlar su calidad. Factores como el desempeño, la seguridad y la capacidad de carga son elementos críticos que deben evaluarse en todo producto de #[em software] desarrollado, los cuales se describen a continuación.
 
@@ -1473,9 +1473,9 @@
 
         .row.mb-5(data-aos="flip-up")
           .col-lg-6
-            p.mb-4 Las pruebas de carga se enfocan en determinar o validar las características de rendimiento de un sistema o aplicación bajo prueba al enfrentarse a distintos volúmenes de cargas de trabajo previstos durante las operaciones de producción. Estas pruebas son cruciales para comprender cómo se comportará la aplicación en condiciones reales y garantizar que pueda manejar el tráfico esperado sin degradar su rendimiento (Meier et al., 2007).
+            p.mb-4 Las pruebas de carga se enfocan en determinar o validar las características de rendimiento de un sistema o aplicación bajo prueba, al enfrentarse a distintos volúmenes de cargas de trabajo, previstos durante las operaciones de producción. Estas pruebas son cruciales para comprender cómo se comportará la aplicación en condiciones reales y garantizar que pueda manejar el tráfico esperado sin degradar su rendimiento (Meier et al., 2007).
 
-            p.mb-0 Para ilustrar mejor el concepto de las pruebas de carga, se presenta el siguiente video tutorial:
+            p.mb-0 Para ilustrar mejor el concepto de las pruebas de carga, se presenta el siguiente videotutorial:
 
           .col-lg-6.order-first.order-lg-last
             figure.mb-4.mb-lg-0
@@ -1496,7 +1496,7 @@
         .fondo-color-sistema-k.p-4.border-12
           p.mb-0 Las pruebas de seguridad comprenden un conjunto de actividades ejecutadas con el objetivo de identificar fallas y vulnerabilidades, buscando minimizar el impacto de ataques, el acceso no autorizado a información sensible y la pérdida de datos. Estas pruebas son esenciales porque los productos de #[em software] deben garantizar constantemente la confidencialidad, disponibilidad e integridad de los datos y funcionalidades que gestionan. La pérdida o corrupción de esta información puede tener consecuencias críticas en el ámbito empresarial. Por tanto, es crucial que estas pruebas se realicen de manera continuada a lo largo de todas las fases del proyecto, asegurando la protección efectiva contra amenazas emergentes.
 
-    p.mb-4 A continuación, se presenta el siguiente video tutorial de instalación del #[em software] OWASP para realizar una prueba de seguridad:
+    p.mb-4 A continuación, se presenta el siguiente videotutorial de instalación del #[em software] OWASP para realizar una prueba de seguridad:
 
     figure.mb-5(data-aos="zoom-in-up")
       .video
@@ -1552,7 +1552,7 @@
                   figure
                     img.mx-auto(src='@/assets/curso/temas/99.png',style="max-width: 287px;")
                 .col-md-6
-                  p.mb-0.text-start Determinar condiciones específicas bajo las cuales se reproduce el defecto, si estamos probando entradas de datos entonces probar con diferentes datos.
+                  p.mb-0.text-start Determinar condiciones específicas bajo las cuales se reproduce el defecto, si estamos probando entradas de datos, entonces probar con diferentes datos.
 
         p.mb-4(data-aos="fade") El informe de resultados incluye la detección de incidencias o errores de #[em software], puesto que es aquí donde se evalúan y corrigen problemas, por lo tanto, a continuación, se describe la gestión de incidencias y su ciclo de vida.
 
@@ -1581,7 +1581,7 @@
 
               .tarjeta.borde-9.p-3(x="5%" y="36%" numero="+")
                 .h5.mb-4.d-inline-block.p-2(style="background-color: #BAE9D9;") Nuevo
-                p.mb-5 Durante las pruebas de #[em software] los errores de #[em software] deben ser identificados y registrados por el tester de #[em software] siendo ese instante donde se reporta el error.
+                p.mb-5 Durante las pruebas de #[em software], los errores de #[em software] deben ser identificados y registrados por el #[em tester] de #[em software], siendo ese instante donde se reporta el error.
               .tarjeta.borde-9.p-3(x="23%" y="36%" numero="+")
                 .h5.mb-4.d-inline-block.p-2(style="background-color: #BAE9D9;") Abierto
                 p.mb-5 El equipo de desarrollo adquiere el incidente y empieza a analizarlo.
@@ -1622,7 +1622,7 @@
                   .enumeracion-circulo__cont
                     .enumeracion-circulo__cont-fondo
                       span.numero-texto 2
-                p.mb-5 Verificar que el estado de las incidencias este actualizado.
+                p.mb-5 Verificar que el estado de las incidencias esté actualizado.
           .col-lg-4.col-md-6.mb-4(data-aos="fade-up")
             .tarjeta-personalizada-2.color-1
               .tarjeta-personalizada-2__contenido.px-4.pb-2
@@ -1630,7 +1630,7 @@
                   .enumeracion-circulo__cont
                     .enumeracion-circulo__cont-fondo
                       span.numero-texto 3
-                p.mb-5 Realizar repruebas y regresión, es decir generar otra vez la ejecución de los casos de prueba necesarios.
+                p.mb-5 Realizar repruebas y regresión, es decir, generar otra vez la ejecución de los casos de prueba necesarios.
 
         p.mb-4(data-aos="fade") Por otra parte, para estructurar el informe de incidentes se requiere tener en cuenta los siguientes puntos:
 
@@ -1718,7 +1718,7 @@
             li
               .lista-ol--cuadro__vineta
                 span A
-              span Alcance de las pruebas, es decir lo que es necesario incluir y no incluir.
+              span Alcance de las pruebas, es decir, lo que es necesario incluir y no incluir.
             li 
               .lista-ol--cuadro__vineta
                 span B
