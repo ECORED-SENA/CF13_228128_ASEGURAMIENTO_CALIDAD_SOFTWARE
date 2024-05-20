@@ -10,7 +10,7 @@
             img(src="@/assets/template/arrastrar.svg", alt="Texto que describa la imagen")
       .col-12.col-md-8.col-lg-9
         .titulo-segundo
-          h2 Conceptos básicos de pruebas de #[em software]
+          h2 Aplicación de pruebas de software #[em software]
         p.mb-4 Afianzar algunos Conceptos básicos de Pruebas de #[em Software].
         .tarjeta.actividad.p-3
           .row.justify-content-around.align-items-center            
